@@ -24,14 +24,14 @@ public class TestPlayer_Move_Prot : MonoBehaviour
 
     void playerMove()
     {
-        // TODO: controls
+        // controls
         moveX = Input.GetAxis("Horizontal");
         if(Input.GetButtonDown("Jump"))
         {
             jump();
         }
         // TODO: animations
-        // TODO: player directions
+        // player directions
         if (moveX < 0.0f && facingRight == false)
         {
             flipPlayer();
@@ -39,7 +39,7 @@ public class TestPlayer_Move_Prot : MonoBehaviour
         {
             flipPlayer();
         }
-        // TODO: physics
+        // physics
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2 (moveX * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
     }
 
