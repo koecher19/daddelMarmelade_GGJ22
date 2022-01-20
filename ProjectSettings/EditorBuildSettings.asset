@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/intro.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/SideScroller.unity
+    guid: 53674115eb33d554fa5bb397b4cbaeef
+  - enabled: 1
+    path: Assets/Scenes/TextAdventure.unity
+    guid: 64e9c93ec9fd259499fcf1252e463825
   m_configObjects: {}
