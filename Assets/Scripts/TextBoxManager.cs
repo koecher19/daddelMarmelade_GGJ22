@@ -15,6 +15,7 @@ public class TextBoxManager : MonoBehaviour
     public TMP_Text theText;    // displays text
     public TextAsset textFile;  // txt-file caintains whole text
     public string[] textLines;  // array which stores individual lines
+    public string[][] storyblock;//array merged with decisions
     public int currentLine;     // currently displayed line (index in array)
     public int endAtLine;       // set to last line you want to display
 
@@ -25,6 +26,20 @@ public class TextBoxManager : MonoBehaviour
         if (textFile != null)
         {
             textLines = (textFile.text.Split('\n'));
+
+            // if no endAtLine is defined: end at last line in txt-file
+            if (endAtLine == 0)
+            {
+                endAtLine = textLines.Length - 1;
+            }
+
+            for (int i = 0;i<endAtLine+1; i += 5)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    storyblock[i][j] = textLines[i + j];
+                }
+            }
         }
         // if no endAtLine is defined: end at last line in txt-file
         if (endAtLine == 0)
