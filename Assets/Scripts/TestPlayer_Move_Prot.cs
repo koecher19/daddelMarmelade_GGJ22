@@ -52,7 +52,7 @@ public class TestPlayer_Move_Prot : MonoBehaviour
     {
         // controls
         moveX = Input.GetAxis("Horizontal");
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Jump") && this.touchingObstacle)
         {
             jump();
         }
