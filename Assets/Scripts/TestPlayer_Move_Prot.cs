@@ -8,12 +8,18 @@ public class TestPlayer_Move_Prot : MonoBehaviour
     private bool facingRight = false;
     public int playerJumpPower = 1;
     private float moveX;
+    public bool touchingObstacle; // is the palyer touching an obstacle or the ground?
+    public SpriteRenderer spriteRenderer;
+    // sprides for animations
+    public Sprite standingSprite;
+    public Sprite jumpingSprite;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        // set spride renderer
+        this.spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -21,6 +27,27 @@ public class TestPlayer_Move_Prot : MonoBehaviour
     {
         playerMove();
     }
+    
+    // check for collision with obstacles/ground and set touchingObstacles accordingly
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Obstacle" || other.gameObject.tag == "Ground")
+        {
+            touchingObstacle = true;
+            // stop jumping animation
+            changeSprite(standingSprite);
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Obstacle" || other.gameObject.tag == "Ground")
+        {
+            touchingObstacle = false;
+        }
+    }
+    
+
 
     void playerMove()
     {
@@ -45,7 +72,10 @@ public class TestPlayer_Move_Prot : MonoBehaviour
 
     void jump()
     {
+        // add upwards force
         GetComponent<Rigidbody2D>().AddForce(Vector2.up * playerJumpPower);
+        // change spride to jump
+        changeSprite(jumpingSprite);
     }
 
     void flipPlayer()
@@ -54,5 +84,10 @@ public class TestPlayer_Move_Prot : MonoBehaviour
         Vector2 localScale = gameObject.transform.localScale;
         localScale.x *= -1;
         transform.localScale = localScale;
+    }
+
+    void changeSprite(Sprite newSprite)
+    {
+        spriteRenderer.sprite = newSprite;
     }
 }
