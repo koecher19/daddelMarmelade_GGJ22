@@ -11,8 +11,7 @@ public class TestPlayer_Move_Prot : MonoBehaviour
     public bool touchingObstacle; // is the palyer touching an obstacle or the ground?
     public SpriteRenderer spriteRenderer;
     // sprides for animations
-    public Sprite standingSprite;
-    public Sprite jumpingSprite;
+    public Sprite[] sprites;
 
 
     // Start is called before the first frame update
@@ -35,7 +34,7 @@ public class TestPlayer_Move_Prot : MonoBehaviour
         {
             touchingObstacle = true;
             // stop jumping animation
-            changeSprite(standingSprite);
+            changeSprite(this.sprites[0]);
         }
     }
 
@@ -75,7 +74,7 @@ public class TestPlayer_Move_Prot : MonoBehaviour
         // add upwards force
         GetComponent<Rigidbody2D>().AddForce(Vector2.up * playerJumpPower);
         // change spride to jump
-        changeSprite(jumpingSprite);
+        changeSprite(this.sprites[1]);
     }
 
     void flipPlayer()

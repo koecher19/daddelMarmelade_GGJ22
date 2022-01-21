@@ -332,8 +332,12 @@ MonoBehaviour:
   playerJumpPower: 400
   touchingObstacle: 0
   spriteRenderer: {fileID: 0}
-  standingSprite: {fileID: 21300000, guid: d3cfc30be7f5df445b13dd10dab4c49b, type: 3}
-  jumpingSprite: {fileID: 21300000, guid: 2ba3fad4a89599a4780b19a8514a6b90, type: 3}
+  sprites:
+  - {fileID: 21300000, guid: d3cfc30be7f5df445b13dd10dab4c49b, type: 3}
+  - {fileID: 21300000, guid: 2ba3fad4a89599a4780b19a8514a6b90, type: 3}
+  - {fileID: 21300000, guid: 4465701a604e2b847bb99619e72ce5e7, type: 3}
+  - {fileID: 21300000, guid: 41e8a8fb1307c004d9b57ba942f2287f, type: 3}
+  - {fileID: 21300000, guid: 4d3f23d2ff4ef3447925400e1e52ca9d, type: 3}
 --- !u!114 &255898563
 MonoBehaviour:
   m_ObjectHideFlags: 0
