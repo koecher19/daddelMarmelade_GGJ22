@@ -9,6 +9,7 @@ public class Inventory : MonoBehaviour
     /*
      * inventory consists of a list of GameObjects which names are displayed in a textbox
      * use useItem(GameObject i) to remove i from the list
+     * use pickItemUp(GameObject i) to add i to the inventory
      */
 
     public List<GameObject> items;      // a list of items you own
@@ -23,8 +24,6 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // TODO: textbox fixed to screenspace
-
         // write item list in textbox
         displayItems();
 
@@ -41,6 +40,16 @@ public class Inventory : MonoBehaviour
         this.items.Remove(item);
         // delete item
         Destroy(item);
+    }
+
+    public void pickItemUp(GameObject item)
+    {
+        // check if item is already in inventory
+        if (!items.Contains(item))
+        {
+            // if not: add item to list
+            this.items.Add(item);
+        }
     }
 
     void displayItems()
