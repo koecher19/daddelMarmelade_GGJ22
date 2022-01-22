@@ -5,20 +5,15 @@ using UnityEngine;
 public class TestPlayer_Move_Prot : MonoBehaviour
 {
     public int playerSpeed = 10;
-    private bool facingRight = false;
     public int playerJumpPower = 1;
     private float moveX;
-    public bool touchingObstacle; // is the palyer touching an obstacle or the ground?
-    public SpriteRenderer spriteRenderer;
-    // sprides for animations
-    public Sprite[] sprites;
+    public bool isGrounded; // is the palyer touching an obstacle or the ground?
 
 
     // Start is called before the first frame update
     void Start()
     {
-        // set spride renderer
-        this.spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+
     }
 
     // Update is called once per frame
@@ -32,9 +27,7 @@ public class TestPlayer_Move_Prot : MonoBehaviour
     {
         if (other.gameObject.tag == "Obstacle" || other.gameObject.tag == "Ground")
         {
-            touchingObstacle = true;
-            // stop jumping animation
-            changeSprite(this.sprites[0]);
+            isGrounded = true;
         }
     }
 
@@ -42,7 +35,7 @@ public class TestPlayer_Move_Prot : MonoBehaviour
     {
         if (other.gameObject.tag == "Obstacle" || other.gameObject.tag == "Ground")
         {
-            touchingObstacle = false;
+            isGrounded = false;
         }
     }
     
@@ -50,22 +43,34 @@ public class TestPlayer_Move_Prot : MonoBehaviour
 
     void playerMove()
     {
-        // controls
+        // CONTROLS
         moveX = Input.GetAxis("Horizontal");
-        if(Input.GetButtonDown("Jump") && this.touchingObstacle)
+        if(Input.GetButtonDown("Jump") && this.isGrounded)
         {
             jump();
         }
-        // TODO: animations
-        // player directions
-        if (moveX < 0.0f && facingRight == false)
+
+        // ANIMATIONS
+        if(moveX != 0)
         {
-            flipPlayer();
-        }else if(moveX > 0.0f && facingRight == true)
-        {
-            flipPlayer();
+            GetComponent<Animator>().SetBool("isWalking", true);
         }
-        // physics
+        else
+        {
+            GetComponent<Animator>().SetBool("isWalking", false);
+        }
+
+        // PLAYER DIRECTIONS
+        if (moveX < 0.0f)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }else if(moveX > 0.0f)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+
+        }
+
+        // PHYSICS
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2 (moveX * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
     }
 
@@ -73,20 +78,5 @@ public class TestPlayer_Move_Prot : MonoBehaviour
     {
         // add upwards force
         GetComponent<Rigidbody2D>().AddForce(Vector2.up * playerJumpPower);
-        // change spride to jump
-        changeSprite(this.sprites[1]);
-    }
-
-    void flipPlayer()
-    {
-        facingRight = !facingRight;
-        Vector2 localScale = gameObject.transform.localScale;
-        localScale.x *= -1;
-        transform.localScale = localScale;
-    }
-
-    void changeSprite(Sprite newSprite)
-    {
-        spriteRenderer.sprite = newSprite;
     }
 }
