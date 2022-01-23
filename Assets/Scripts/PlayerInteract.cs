@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
+    public GameObject Inventory;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,10 +18,13 @@ public class PlayerInteract : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D trig)
     {
-        if(trig.gameObject.tag == "Collectable")
+        if (trig.gameObject.tag == "Collectable")
         {
-            Debug.Log("trigger detected");
-            Destroy(trig.gameObject);
+            // put item in inventory
+            Inventory.GetComponent<Inventory>().pickItemUp(trig.gameObject);
+            // stop displaying item in scene
+            trig.gameObject.GetComponent<Renderer>().enabled = false;
+            //Destroy(trig.gameObject);
 
         }
     }
