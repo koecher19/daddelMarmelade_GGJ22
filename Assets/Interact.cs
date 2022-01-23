@@ -26,35 +26,7 @@ public class Interact : MonoBehaviour
 
     }
 
-    // hover mouse over this object
-    void OnMouseOver()
-    {
-        // if we have a description: display it
-        if(this.description != null)
-        {
-            textbox.SetActive(true);
-
-        }
-    }
-
-    // when you stop hovering the mouse over object
-    void OnMouseExit()
-    {
-        // stop dislplaying description
-        if(this.description != null)
-        {
-            textbox.SetActive(false);
-        }
-    }
-
-    // click on item
-    void OnMouseDown()
-    {
-        // use inventory on item
-        useItem();
-    }
-
-    void useItem()
+    public void useItem()
     {
         // check if inventory contains object that is stored as usable item for this object
         // if yes: delete from usableItem list and use item
