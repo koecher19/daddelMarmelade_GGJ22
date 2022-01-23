@@ -18,9 +18,8 @@ public class PlayerInteract : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D trig)
     {
-        if(trig.gameObject.tag == "Collectable")
+        if (trig.gameObject.tag == "Collectable")
         {
-            Debug.Log("trigger detected");
             // put item in inventory
             Inventory.GetComponent<Inventory>().pickItemUp(trig.gameObject);
             // stop displaying item in scene
