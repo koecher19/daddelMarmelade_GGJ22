@@ -15,20 +15,26 @@ public class TextBoxManager : MonoBehaviour
     public TMP_Text theText;    // displays text
     public TextAsset textFile;  // txt-file caintains whole text
     public string[] textLines;  // array which stores individual lines
-    public List<StoryBlock> storyBlockList;
     public int currentLine;     // currently displayed line (index in array)
     public int endAtLine;       // set to last line you want to display
+    private List<StoryBlock> storyBlocks  = new List<StoryBlock>();
+    private int storyBlockObjectCount = 0;
     public GameObject buttonManager;
     private ButtonManager buttonManagerScript;
+    private GameObject leftButtonGameObjectReference;
+    private GameObject rightButtonGameObjectReference;
+    private GameObject continueButtonGameObjectReference;
     public int currentScene = 0;
     public int displayedScene = 0;
-    private int storyBlockObjectCount = 0;
-
+    private int updateCount = 0;
+    private int updateMethodCount = 0;
+    private int updateMethodSuccessCount = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         buttonManagerScript = buttonManager.GetComponent<ButtonManager>();
+
         // load lines form txt file into array:
         if (textFile != null)
         {
@@ -41,32 +47,73 @@ public class TextBoxManager : MonoBehaviour
             }
 
             int tempSceneNumber;            //}
-            string tempStorytext;           //}
+            string tempStorytext;           //} 
             string tempLeftButtonText;      //}
             string tempRightButtonText;     //}temporary values to create listObjects with
             int tempLeftButtonNextScene;    //}
             int tempRightButtonNextScene;   //}
-            bool tempDecision;              //}
-            while(currentLine<endAtLine)
+            bool tempDecision;              //} 
+            int tempCharakterNumber;     //} 
+            int tempEventNumber;     //} 
+            int tempMusicEventNumber;     //}
+            while (currentLine<endAtLine)
             {
-                //   tempSceneNumber = System.Convert.ToInt32(textLines[currentLine]);
-                //   tempStorytext = textLines[currentLine + 1];
-                //tempLeftButtonText = textLines[currentLine + 2];
-                //tempRightButtonText = textLines[currentLine + 3];
-                //tempLeftButtonNextScene = System.Convert.ToInt32(textLines[currentLine+4]);
-                //tempRightButtonNextScene = System.Convert.ToInt32(textLines[currentLine+5]);
-                tempSceneNumber = 0;
+                //takes up the number which indicates the scenenumber
+                Debug.Log(storyBlockObjectCount + " tempscenenumber string:" + textLines[currentLine]);
+                Debug.Log(storyBlockObjectCount + " tempscenenumber int:" + int.Parse(textLines[currentLine]));
+                tempSceneNumber = int.Parse(textLines[currentLine]);
+                //takes up the Story which is to be displayed on the main text.
+                Debug.Log(storyBlockObjectCount + " tempStoryText string:" + textLines[currentLine+1]);
                 tempStorytext = textLines[currentLine + 1];
+                //takes the string which indicates the Text displayed on the left button 
+                Debug.Log(storyBlockObjectCount + " tempLeftButonText string:" + textLines[currentLine + 2]);
                 tempLeftButtonText = textLines[currentLine + 2];
+                //takes the string which indicates the Text displayed on the right button                                                                       
+                Debug.Log(storyBlockObjectCount + " tempRightButonText string:" + textLines[currentLine + 3]);
                 tempRightButtonText = textLines[currentLine + 3];
-                tempLeftButtonNextScene = 1;
-                tempRightButtonNextScene = 2;
-                if (textLines[currentLine + 6].Equals("1"))
+                //takes up the number indicating the next scene when the left Button is pressed.
+                Debug.Log(storyBlockObjectCount + " tempLeftButonNextScene string:" + textLines[currentLine+4]);
+                string tempLeftCompareString = textLines[currentLine + 4];
+                char tempLeftCompareToChar = 'x';
+                bool tempLeftButtonBoolean = tempLeftCompareString.StartsWith(tempLeftCompareToChar);
+                Debug.Log(storyBlockObjectCount + " tempLeftButonNextScene bool:" + tempLeftButtonBoolean);
+                if (tempLeftButtonBoolean)
+                    tempLeftButtonNextScene = tempSceneNumber + 1;
+                else
+                {
+                    Debug.Log(storyBlockObjectCount + " tempLeftButonNextScene int:" + int.Parse(textLines[currentLine + 4]));
+                    tempLeftButtonNextScene = int.Parse(textLines[currentLine + 4]);
+                }
+                //takes up the number indicating the next scene when the right Button is pressed.
+                Debug.Log(storyBlockObjectCount + " tempRightButonNextScene string:" + textLines[currentLine + 5]);
+                string tempRightCompareString = textLines[currentLine + 5];
+                char tempRightCompareToChar = 'x';
+                bool tempRightButtonBoolean = tempRightCompareString.StartsWith(tempRightCompareToChar);
+                Debug.Log(storyBlockObjectCount + " tempRightButonNextScene bool:" + tempLeftButtonBoolean);
+                if (tempRightButtonBoolean)
+                    tempRightButtonNextScene = tempSceneNumber + 1;
+                else
+                {
+                    Debug.Log(storyBlockObjectCount + " tempRightButonNextScene int:" + int.Parse(textLines[currentLine + 5]));
+                    tempRightButtonNextScene = int.Parse(textLines[currentLine + 5]);
+                }
+                //takes up the boolean which indicates if a decision should be made
+                Debug.Log(storyBlockObjectCount + " tempDecision string:" + textLines[currentLine + 6]);
+                string tempDecisionCompareString = textLines[currentLine + 6];
+                char tempDecisionCompareToChar = '1';
+                bool tempDecisionBoolean = tempDecisionCompareString.StartsWith(tempDecisionCompareToChar);
+                Debug.Log(storyBlockObjectCount + " tempDecision bool:" + tempDecisionBoolean);
+                if (tempDecisionBoolean)
                     tempDecision = true;
                 else
                     tempDecision = !true;
-                storyBlockList.Add(new StoryBlock(storyBlockObjectCount,tempStorytext,tempLeftButtonText,tempRightButtonText,tempLeftButtonNextScene,tempRightButtonNextScene,tempDecision));
+                Debug.Log(storyBlockObjectCount + " tempDecision bool:" + tempDecision);
+
+                //creates an object from the class Storyblock with the temporary variables and adds said object to the StoryBlockList.
+                storyBlocks.Add(new StoryBlock(tempSceneNumber,tempStorytext,tempLeftButtonText,tempRightButtonText,tempLeftButtonNextScene,tempRightButtonNextScene,tempDecision));
                 storyBlockObjectCount++;
+                // 7 equals tupelnumber
+                currentLine += 7;
             }
 
         }
@@ -75,6 +122,12 @@ public class TextBoxManager : MonoBehaviour
         {
             endAtLine = textLines.Length - 1;
         }
+
+        leftButtonGameObjectReference = GameObject.Find("leftButton");
+        rightButtonGameObjectReference = GameObject.Find("rightButton");
+        continueButtonGameObjectReference = GameObject.Find("continueButton");
+
+        updateDisplay();
     }
 
     // Update is called once per frame
@@ -86,54 +139,64 @@ public class TextBoxManager : MonoBehaviour
         // if return key is pressed: go to next line
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            currentLine += 7;
+            currentScene += 1;
         }
 
-        // if we reach last text line: stop displaying
-        if (currentLine > endAtLine)
-        {
-            textBox.SetActive(false);
-        }
+        updateCount++;
     }
 
     private void sceneUpdate()
     {
-        if(displayedScene != currentScene)
-        {
-            StoryBlock readingStoryBlock = storyBlockList[currentScene];
-            if (readingStoryBlock.getDecision())
-            {
-                GameObject.Find("continueButton").SetActive(false);
-                theText.text = readingStoryBlock.getStorytext();
-                buttonManagerScript.getLeftButtonText().text = readingStoryBlock.getLeftButtonText();
-                buttonManagerScript.getRightButtonText().text = readingStoryBlock.getRightButtonText();
-                GameObject.Find("leftButton").SetActive(true);
-                GameObject.Find("rightButton").SetActive(true);
-            }
-            else
-            {
-                GameObject.Find("continueButton").SetActive(true);
-                GameObject.Find("leftButton").SetActive(false);
-                GameObject.Find("rightButton").SetActive(false);
-                buttonManagerScript.getLeftButtonText().text = readingStoryBlock.getLeftButtonText();
-                buttonManagerScript.getRightButtonText().text = readingStoryBlock.getRightButtonText();
-            }
 
+        updateMethodCount++;
+        if (displayedScene != currentScene)
+        {
+            updateMethodSuccessCount++;
+            updateDisplay();
         }
 
     }
 
+    public void updateDisplay()
+    {
+
+        StoryBlock readingStoryBlock = storyBlocks[currentScene];
+        if (readingStoryBlock.getDecision()==true)
+        {
+            continueButtonGameObjectReference.SetActive(false);
+            theText.color = Random.ColorHSV();
+            theText.text = readingStoryBlock.getStorytext();
+            leftButtonGameObjectReference.SetActive(false);
+            rightButtonGameObjectReference.SetActive(false);
+            buttonManagerScript.getLeftButtonText().text = readingStoryBlock.getLeftButtonText();
+            buttonManagerScript.getRightButtonText().text = readingStoryBlock.getRightButtonText();
+            leftButtonGameObjectReference.SetActive(true);
+            rightButtonGameObjectReference.SetActive(true);
+            displayedScene = currentScene;
+        }
+        else
+        {
+            theText.text = readingStoryBlock.getStorytext();
+            continueButtonGameObjectReference.SetActive(true);
+            leftButtonGameObjectReference.SetActive(false);
+            rightButtonGameObjectReference.SetActive(false);
+            buttonManagerScript.getLeftButtonText().text = readingStoryBlock.getLeftButtonText();
+            buttonManagerScript.getRightButtonText().text = readingStoryBlock.getRightButtonText();
+            displayedScene = currentScene;
+        }
+    }
+
     public void leftButtonClicked()
     {
-        currentScene = storyBlockList[currentScene].getLeftButtonNextScene();
+        currentScene = storyBlocks[currentScene].getLeftButtonNextScene();
     }
 
     public void rightButtonClicked()
     {
-        currentScene = storyBlockList[currentScene].getRightButtonNextScene();
+        currentScene = storyBlocks[currentScene].getRightButtonNextScene();
     }
 
-    public void middleButtonClicked()
+    public void continueButtonClicked()
     {
         currentScene++;
     }
@@ -179,12 +242,12 @@ public class TextBoxManager : MonoBehaviour
 
         public int getLeftButtonNextScene()
         {
-            return sceneNumber;
+            return leftButtonNextScene;
         }
 
         public int getRightButtonNextScene()
         {
-            return sceneNumber;
+            return rightButtonNextScene;
         }
 
         public bool getDecision()
