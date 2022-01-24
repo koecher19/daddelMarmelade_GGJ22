@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class TextBoxManager : MonoBehaviour
 {
@@ -21,10 +22,14 @@ public class TextBoxManager : MonoBehaviour
     private int storyBlockObjectCount = 0;
     public GameObject buttonManager;
     private ButtonManager buttonManagerScript;
+    public CharacterColorReference charakterColors;
+    public tACurrentSceneManager tASceneManager;
+    public GameObject musicPlayerReference;
+    private AudioSource musicPlayer;
+    public AudioList audioList;
     private GameObject leftButtonGameObjectReference;
     private GameObject rightButtonGameObjectReference;
     private GameObject continueButtonGameObjectReference;
-    public int currentScene = 0;
     public int displayedScene = 0;
     private int updateCount = 0;
     private int updateMethodCount = 0;
@@ -34,6 +39,9 @@ public class TextBoxManager : MonoBehaviour
     void Start()
     {
         buttonManagerScript = buttonManager.GetComponent<ButtonManager>();
+        musicPlayer = musicPlayerReference.GetComponent<AudioSource>();
+
+        //charakterColors.appointColors();
 
         // load lines form txt file into array:
         if (textFile != null)
@@ -59,8 +67,8 @@ public class TextBoxManager : MonoBehaviour
             while (currentLine<endAtLine)
             {
                 //takes up the number which indicates the scenenumber
-                Debug.Log(storyBlockObjectCount + " tempscenenumber string:" + textLines[currentLine]);
-                Debug.Log(storyBlockObjectCount + " tempscenenumber int:" + int.Parse(textLines[currentLine]));
+                Debug.Log(storyBlockObjectCount + " tempScenenumber string:" + textLines[currentLine]);
+                Debug.Log(storyBlockObjectCount + " tempScenenumber int:" + int.Parse(textLines[currentLine]));
                 tempSceneNumber = int.Parse(textLines[currentLine]);
                 //takes up the Story which is to be displayed on the main text.
                 Debug.Log(storyBlockObjectCount + " tempStoryText string:" + textLines[currentLine+1]);
@@ -102,18 +110,33 @@ public class TextBoxManager : MonoBehaviour
                 string tempDecisionCompareString = textLines[currentLine + 6];
                 char tempDecisionCompareToChar = '1';
                 bool tempDecisionBoolean = tempDecisionCompareString.StartsWith(tempDecisionCompareToChar);
-                Debug.Log(storyBlockObjectCount + " tempDecision bool:" + tempDecisionBoolean);
+                Debug.Log(storyBlockObjectCount + " tempDecisionBool bool:" + tempDecisionBoolean);
                 if (tempDecisionBoolean)
                     tempDecision = true;
                 else
                     tempDecision = !true;
                 Debug.Log(storyBlockObjectCount + " tempDecision bool:" + tempDecision);
 
+                //takes up the number representing the Charakter for recoloring.
+                Debug.Log(storyBlockObjectCount + " tempCharakterNumber string:" + textLines[currentLine + 7]);
+                Debug.Log(storyBlockObjectCount + " tempCharakterNumber int:" + int.Parse(textLines[currentLine + 7]));
+                tempCharakterNumber = int.Parse(textLines[currentLine + 7]);
+
+                //takes up the number indicating if a Event will happen(0 = no) other numbers refer to the event.
+                Debug.Log(storyBlockObjectCount + " tempEventNumber string:" + textLines[currentLine + 8]);
+                Debug.Log(storyBlockObjectCount + " tempEventNumber int:" + int.Parse(textLines[currentLine + 8]));
+                tempEventNumber = int.Parse(textLines[currentLine + 8]);
+
+                //takes up the number indicating if a musical Event will happen(0 = no) other numbers refer to the event.
+                Debug.Log(storyBlockObjectCount + " tempMusicEventNumber string:" + textLines[currentLine + 9]);
+                Debug.Log(storyBlockObjectCount + " tempMusicEventNumber int:" + int.Parse(textLines[currentLine + 9]));
+                tempMusicEventNumber = int.Parse(textLines[currentLine + 9]);
+
                 //creates an object from the class Storyblock with the temporary variables and adds said object to the StoryBlockList.
-                storyBlocks.Add(new StoryBlock(tempSceneNumber,tempStorytext,tempLeftButtonText,tempRightButtonText,tempLeftButtonNextScene,tempRightButtonNextScene,tempDecision));
+                storyBlocks.Add(new StoryBlock(tempSceneNumber,tempStorytext,tempLeftButtonText,tempRightButtonText,tempLeftButtonNextScene,tempRightButtonNextScene,tempDecision,tempCharakterNumber,tempEventNumber,tempMusicEventNumber));
                 storyBlockObjectCount++;
                 // 7 equals tupelnumber
-                currentLine += 7;
+                currentLine += 10;
             }
 
         }
@@ -135,12 +158,13 @@ public class TextBoxManager : MonoBehaviour
     {
         sceneUpdate();
 
-
+           /*
         // if return key is pressed: go to next line
         if (Input.GetKeyDown(KeyCode.Return))
         {
             currentScene += 1;
         }
+           */
 
         updateCount++;
     }
@@ -149,7 +173,7 @@ public class TextBoxManager : MonoBehaviour
     {
 
         updateMethodCount++;
-        if (displayedScene != currentScene)
+        if (displayedScene != tASceneManager.currentScene)
         {
             updateMethodSuccessCount++;
             updateDisplay();
@@ -160,46 +184,91 @@ public class TextBoxManager : MonoBehaviour
     public void updateDisplay()
     {
 
-        StoryBlock readingStoryBlock = storyBlocks[currentScene];
-        if (readingStoryBlock.getDecision()==true)
+        StoryBlock readingStoryBlock = storyBlocks[tASceneManager.currentScene];
+        if (readingStoryBlock.getEventNumber() == 0)
         {
-            continueButtonGameObjectReference.SetActive(false);
-            theText.color = Random.ColorHSV();
-            theText.text = readingStoryBlock.getStorytext();
-            leftButtonGameObjectReference.SetActive(false);
-            rightButtonGameObjectReference.SetActive(false);
-            buttonManagerScript.getLeftButtonText().text = readingStoryBlock.getLeftButtonText();
-            buttonManagerScript.getRightButtonText().text = readingStoryBlock.getRightButtonText();
-            leftButtonGameObjectReference.SetActive(true);
-            rightButtonGameObjectReference.SetActive(true);
-            displayedScene = currentScene;
+            if (readingStoryBlock.getDecision() == true)
+            {
+                checkForMusicEvent(readingStoryBlock.getMusicEventNumber());
+                continueButtonGameObjectReference.SetActive(false);
+                checkForCharakterNumber(readingStoryBlock.getCharakterNumber());
+                theText.text = readingStoryBlock.getStorytext();
+                leftButtonGameObjectReference.SetActive(false);
+                rightButtonGameObjectReference.SetActive(false);
+                buttonManagerScript.getLeftButtonText().text = readingStoryBlock.getLeftButtonText();
+                buttonManagerScript.getRightButtonText().text = readingStoryBlock.getRightButtonText();
+                leftButtonGameObjectReference.SetActive(true);
+                rightButtonGameObjectReference.SetActive(true);
+                displayedScene = tASceneManager.currentScene;
+            }
+            else
+            {
+                checkForMusicEvent(readingStoryBlock.getMusicEventNumber());
+                checkForCharakterNumber(readingStoryBlock.getCharakterNumber());
+                theText.text = readingStoryBlock.getStorytext();
+                continueButtonGameObjectReference.SetActive(true);
+                leftButtonGameObjectReference.SetActive(false);
+                rightButtonGameObjectReference.SetActive(false);
+                buttonManagerScript.getLeftButtonText().text = readingStoryBlock.getLeftButtonText();
+                buttonManagerScript.getRightButtonText().text = readingStoryBlock.getRightButtonText();
+                displayedScene = tASceneManager.currentScene;
+            }
         }
         else
         {
-            theText.text = readingStoryBlock.getStorytext();
-            continueButtonGameObjectReference.SetActive(true);
-            leftButtonGameObjectReference.SetActive(false);
-            rightButtonGameObjectReference.SetActive(false);
-            buttonManagerScript.getLeftButtonText().text = readingStoryBlock.getLeftButtonText();
-            buttonManagerScript.getRightButtonText().text = readingStoryBlock.getRightButtonText();
-            displayedScene = currentScene;
+            checkForMusicEvent(readingStoryBlock.getMusicEventNumber());
+            SceneManager.LoadScene("SideScroller");
         }
     }
 
+    public void checkForCharakterNumber(int charakterNumber)
+    {
+        Debug.Log("currentScene:" + tASceneManager.currentScene + "  getCharakterNumber.result: " + charakterNumber);
+        if (charakterNumber == 1)       //IN CASE OF NARRATOR
+        {
+            theText.fontSize = 60;
+            theText.fontStyle = FontStyles.Italic;
+            theText.color = charakterColors.colors[charakterNumber];
+        }
+        else
+        {
+            theText.color = charakterColors.colors[charakterNumber];
+            theText.fontStyle = FontStyles.Normal;
+            theText.fontSize = 38;
+        }
+    }
+
+    public void checkForMusicEvent(int MusicEventNumber)
+    {
+        Debug.Log("currentScene:" + tASceneManager.currentScene + "  getMusicEventNumber.result" + MusicEventNumber);
+        if (MusicEventNumber == 0)
+        {
+
+        }
+        else
+        {
+            Debug.Log("musicPlayer.clip = audioList.audios[MusicEventNumber];");
+            musicPlayer.clip = audioList.audios[MusicEventNumber];
+            Debug.Log("musicPlayer.Play();");
+            musicPlayer.Play();
+            //playMusic...
+        }
+    }
     public void leftButtonClicked()
     {
-        currentScene = storyBlocks[currentScene].getLeftButtonNextScene();
+        tASceneManager.currentScene = storyBlocks[tASceneManager.currentScene].getLeftButtonNextScene();
     }
 
     public void rightButtonClicked()
     {
-        currentScene = storyBlocks[currentScene].getRightButtonNextScene();
+        tASceneManager.currentScene = storyBlocks[tASceneManager.currentScene].getRightButtonNextScene();
     }
 
     public void continueButtonClicked()
     {
-        currentScene++;
+        tASceneManager.currentScene++;
     }
+
     public class StoryBlock
     {
 
@@ -210,7 +279,10 @@ public class TextBoxManager : MonoBehaviour
         private int leftButtonNextScene;
         private int rightButtonNextScene;
         private bool decision;
-        public StoryBlock(int pSceneNumber, string pStorytext, string pLeftButtonText, string pRightButtonText, int pLeftButtonNextScene,int pRightButtonNextScene, bool pDecision)
+        private int charakterNumber;
+        private int eventNumber;
+        private int musicEventNumber;
+        public StoryBlock(int pSceneNumber, string pStorytext, string pLeftButtonText, string pRightButtonText, int pLeftButtonNextScene,int pRightButtonNextScene, bool pDecision, int pCharakterNumber, int pEventNumber, int pMusicEventNumber)
         {
             sceneNumber = pSceneNumber;
             storytext = pStorytext;
@@ -219,6 +291,9 @@ public class TextBoxManager : MonoBehaviour
             leftButtonNextScene = pLeftButtonNextScene;
             rightButtonNextScene = pRightButtonNextScene;
             decision = pDecision;
+            charakterNumber = pCharakterNumber;
+            eventNumber = pEventNumber;
+            musicEventNumber = pMusicEventNumber;
         }
 
         public int getSceneNumber()
@@ -253,6 +328,19 @@ public class TextBoxManager : MonoBehaviour
         public bool getDecision()
         {
             return decision;
+        }
+
+        public int getCharakterNumber()
+        {
+            return charakterNumber;
+        }
+        public int getEventNumber()
+        {
+            return eventNumber;
+        }
+        public int getMusicEventNumber()
+        {
+            return musicEventNumber;
         }
     }
 }

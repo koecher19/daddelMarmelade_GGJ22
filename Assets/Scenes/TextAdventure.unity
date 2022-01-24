@@ -139,6 +139,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9850aacb130bff540b88fc6a53fa21c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &378449680 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6258081461219306584, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+  m_PrefabInstance: {fileID: 1733710765}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &427086656 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5912227799560027259, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+  m_PrefabInstance: {fileID: 1733710765}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &476861941 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1753125325139663279, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
@@ -419,11 +435,35 @@ PrefabInstance:
     - target: {fileID: 2406871419842375513, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
       propertyPath: textFile
       value: 
-      objectReference: {fileID: 4900000, guid: 67399c8945ad55643ac2b7e68f7f06c4, type: 3}
+      objectReference: {fileID: 4900000, guid: 9cc066b1f1ba55b48a1304b46d192f5e, type: 3}
+    - target: {fileID: 2406871419842375513, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: audioList
+      value: 
+      objectReference: {fileID: 11400000, guid: e8861b701d9ec244b8b78b8f76df2a10, type: 2}
     - target: {fileID: 2406871419842375513, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
       propertyPath: buttonManager
       value: 
       objectReference: {fileID: 680444203}
+    - target: {fileID: 2406871419842375513, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: tASceneManager
+      value: 
+      objectReference: {fileID: 11400000, guid: dc952c32e5d2e7e41882cfaede45b0a4, type: 2}
+    - target: {fileID: 2406871419842375513, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: charakterColors
+      value: 
+      objectReference: {fileID: 11400000, guid: 4ed26465790e3ff42898251b18247e50, type: 2}
+    - target: {fileID: 2406871419842375513, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: musicPlayerReference
+      value: 
+      objectReference: {fileID: 378449680}
+    - target: {fileID: 3472576558988295060, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: eef546c989b175f47a5fd25d6171eb55, type: 3}
+    - target: {fileID: 3472576558988295060, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3751719521559807314, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -516,6 +556,34 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1081652588}
+    - target: {fileID: 5912227799560027259, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912227799560027259, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912227799560027259, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 49429460}
+    - target: {fileID: 5912227799560027259, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912227799560027259, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: continueButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912227799560027259, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TextBoxManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912227799560027259, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8101913828442904619, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
       propertyPath: m_SizeDelta.x
       value: 500
@@ -592,6 +660,10 @@ PrefabInstance:
       propertyPath: rightButton
       value: 
       objectReference: {fileID: 476861941}
+    - target: {fileID: 9151120567388251707, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: continueButton
+      value: 
+      objectReference: {fileID: 427086656}
     - target: {fileID: 9151120567388251707, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
       propertyPath: textBoxManager
       value: 
