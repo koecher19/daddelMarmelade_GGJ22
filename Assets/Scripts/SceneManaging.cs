@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneManaging : MonoBehaviour
 {
-    // 
-    public float maxXPos = 10.0f;
+    public GameObject sceneChangeTrigger;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,9 +16,14 @@ public class SceneManaging : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.transform.position.x > maxXPos)
+
+    }
+
+    void OnTriggerEnter2D(Collider2D trig)
+    {
+        if (trig.gameObject.tag == "sceneChangeTrigger")
         {
-            Debug.Log(gameObject.transform.position.x);
+            Debug.Log("hit scene change trigger");
             SceneManager.LoadScene("TextAdventure");
         }
     }

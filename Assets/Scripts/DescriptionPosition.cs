@@ -21,10 +21,12 @@ public class DescriptionPosition : MonoBehaviour
         {
             // Move the object to the same position as the interactable sprite
             Vector3 spritePos = itemSprite.transform.position;
+            /*
             // get size of sprite
             float itemHeigth = itemSprite.GetComponent<SpriteRenderer>().bounds.size.y;
+            */
             //var panelHeigth = stupidPanel.GetComponent<RectTransform>().sizeDelta;
-            transform.position = new Vector3(spritePos.x, spritePos.y + descriptionHeight, spritePos.z);
+            transform.position = new Vector3(spritePos.x, descriptionHeight, spritePos.z);
         }
     }
 }
