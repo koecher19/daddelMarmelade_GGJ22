@@ -84,7 +84,7 @@ public class TestPlayer_Move_Prot : MonoBehaviour
         else if (gameObject.GetComponent<Rigidbody2D>().position.x >= this.maxPosRight)
         {
 
-            gameObject.GetComponent<Rigidbody2D>().transform.position = new Vector3(this.maxPosLeft - 0.1f, gameObject.GetComponent<Rigidbody2D>().transform.position.y, gameObject.GetComponent<Rigidbody2D>().transform.position.z);
+            gameObject.GetComponent<Rigidbody2D>().transform.position = new Vector3(this.maxPosRight - 0.1f, gameObject.GetComponent<Rigidbody2D>().transform.position.y, gameObject.GetComponent<Rigidbody2D>().transform.position.z);
 
         }
         else

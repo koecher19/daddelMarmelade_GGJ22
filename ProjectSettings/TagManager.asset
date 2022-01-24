@@ -8,6 +8,7 @@ TagManager:
   - Obstacle
   - Collectable
   - Interactable
+  - sceneChangeTrigger
   layers:
   - Default
   - TransparentFX
