@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class TestPlayer_Move_Prot : MonoBehaviour
 {
-    public int playerSpeed = 10;
-    public int playerJumpPower = 1;
+    public int playerSpeed;
+    public int playerJumpPower;
     private float moveX;
+    public float maxPosLeft;
+    public float maxPosRight;
     public bool isGrounded; // is the palyer touching an obstacle or the ground?
 
 
@@ -71,7 +73,27 @@ public class TestPlayer_Move_Prot : MonoBehaviour
         }
 
         // PHYSICS
+        // make shure palyer doesnt walk past max pos left:
+        if(gameObject.GetComponent<Rigidbody2D>().position.x <= this.maxPosLeft)
+        {
+
+            gameObject.GetComponent<Rigidbody2D>().transform.position = new Vector3(this.maxPosLeft + 0.1f, gameObject.GetComponent<Rigidbody2D>().transform.position.y, gameObject.GetComponent<Rigidbody2D>().transform.position.z);
+            
+        }
+        // make shure player doesnt walk past max pos right:
+        else if (gameObject.GetComponent<Rigidbody2D>().position.x >= this.maxPosRight)
+        {
+
+            gameObject.GetComponent<Rigidbody2D>().transform.position = new Vector3(this.maxPosLeft - 0.1f, gameObject.GetComponent<Rigidbody2D>().transform.position.y, gameObject.GetComponent<Rigidbody2D>().transform.position.z);
+
+        }
+        else
+        {
+            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
+        }
+        /*
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2 (moveX * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
+        */
     }
 
     void jump()
