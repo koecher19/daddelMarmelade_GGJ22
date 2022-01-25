@@ -22,7 +22,7 @@ public class InteractableitemScript : MonoBehaviour
     void OnMouseOver()
     {
         // if we have a description: display it
-        if (this.interactableParent.GetComponent<Interact>().description != null)
+        if (this.interactableParent.GetComponent<Interact>().textfiles.Count != 0)
         {
             this.interactableParent.GetComponent<Interact>().textbox.SetActive(true);
         }
@@ -32,7 +32,7 @@ public class InteractableitemScript : MonoBehaviour
     void OnMouseExit()
     {
         // stop dislplaying description
-        if (this.interactableParent.GetComponent<Interact>().description != null)
+        if (this.interactableParent.GetComponent<Interact>().textfiles.Count != 0)
         {
             this.interactableParent.GetComponent<Interact>().textbox.SetActive(false);
         }
