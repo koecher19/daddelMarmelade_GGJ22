@@ -6,18 +6,25 @@ using TMPro;
 
 public class Interact : MonoBehaviour
 {
-    public GameObject textbox;      // panel
-    public TMP_Text description;    // text
-    public TextAsset textfile;      // textfile contains description
-    public GameObject inventory;    // players inventory
+    public GameObject textbox;              // panel
+    public TMP_Text description;            // text
+    public List<TextAsset> textfiles;       // textfiles contain dialog
+    public GameObject inventory;            // players inventory
     public List<GameObject> usableItems;
+    public int dialogIterator = 0;          // iterates over amount of dialog scripts
 
     // Start is called before the first frame update
     void Start()
     {
         // dont display text at beginning
         textbox.SetActive(false);
-        description.text = textfile.text;
+        
+        // if there is dialog
+        if (!(textfiles.Count == 0))
+        {
+            // set dialog box to fist dialog
+        description.text = gameObject.name + " : \n" + textfiles[0].text;
+        }
     }
 
     // Update is called once per frame
@@ -45,4 +52,13 @@ public class Interact : MonoBehaviour
         }
     }
 
+    public void nextDialog()
+    {
+        // clicking on character will result in next dialog showing up
+        if(dialogIterator < textfiles.Count - 1)
+        {
+            this.dialogIterator++;
+            description.text = gameObject.name + " : \n" + textfiles[dialogIterator].text;
+        }
+    }
 }

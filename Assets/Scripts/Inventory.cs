@@ -54,8 +54,8 @@ public class Inventory : MonoBehaviour
 
     void displayItems()
     {
+        string names = "pockets: \n";
         // run over all items and collect name
-        string names = "";
         foreach (GameObject item in this.items)
         {
             names += "- ";
