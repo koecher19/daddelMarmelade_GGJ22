@@ -20,7 +20,7 @@ public class Interact : MonoBehaviour
         textbox.SetActive(false);
         
         // if there is dialog
-        if (!(textfiles.Count == 0))
+        if (textfiles.Count != 0)
         {
             // set dialog box to fist dialog
         description.text = gameObject.name + " : \n" + textfiles[0].text;

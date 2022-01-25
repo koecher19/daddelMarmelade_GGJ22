@@ -22,7 +22,7 @@ public class interactableCharacter : MonoBehaviour
     void OnMouseOver()
     {
         // if we have a dialog: display it
-        if (this.interactableParent.GetComponent<Interact>().description != null)
+        if (this.interactableParent.GetComponent<Interact>().textfiles.Count != 0)
         {
             this.interactableParent.GetComponent<Interact>().textbox.SetActive(true);
         }
@@ -32,7 +32,7 @@ public class interactableCharacter : MonoBehaviour
     void OnMouseExit()
     {
         // stop dislplaying dialog
-        if (this.interactableParent.GetComponent<Interact>().description != null)
+        if (this.interactableParent.GetComponent<Interact>().textfiles.Count != 0)
         {
             this.interactableParent.GetComponent<Interact>().textbox.SetActive(false);
         }
