@@ -10,8 +10,8 @@ x
 0
 1
 Trusting the wrong ones turned out to be fatal. They had lost everything. There was no way to continue living this way. No choice is left, but was there ever any, to begin with? Every day could be their last one, nowhere to go and nothing to eat.
- 
- 
+
+
 x
 x
 0
@@ -57,4 +57,84 @@ x
 0
 0
 1
+0
+6
+Bruno finds themself entering a large room. The grotesque atmosphere and the smell of cigarette smoke hit them unexpectedly. They decided to come here, but the nerve wrecking feeling will not leave. The person standing right in front of Bruno does not change that. Everything about that man is intimidating. The suit, his height and the piercing gaze from his steel blue eyes.
+
+
+x
+x
+0
+0
+0
+0
+7
+"The new addition to the team. Welcome to Circus de la Lune!"
+
+
+x
+x
+0
+4
+0
+0
+8
+His words sound friendly.
+
+
+x
+x
+0
+0
+0
+0
+9
+"I assume we haven’t met yet. Let’s change that quickly. Gordon Inwestar - the head of this circus."
+
+
+x
+x
+0
+4
+0
+0
+10
+Gordon pauses and directly looks at them.
+
+
+x
+x
+0
+0
+0
+0
+11
+Is it Bruno's turn?
+
+
+x
+x
+0
+1
+0
+0
+12
+"I am Bru-"
+
+
+x
+x
+0
+2
+0
+0
+13
+ "Bruno. I know. I already heard of you. You’re supposed to be... intriguing. This circus needs a little more - spice. And my instincts told me you would be the perfect person for the job. That leads me to my offer: You should work here."
+Take the job offer
+Don't work here
+x
+x
+1
+4
+0
 0

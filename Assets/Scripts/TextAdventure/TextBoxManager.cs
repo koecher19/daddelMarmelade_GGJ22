@@ -27,9 +27,12 @@ public class TextBoxManager : MonoBehaviour
     public GameObject musicPlayerReference;
     private AudioSource musicPlayer;
     public AudioList audioList;
+    public GameObject panelGameObjectReference;
     private GameObject leftButtonGameObjectReference;
     private GameObject rightButtonGameObjectReference;
     private GameObject continueButtonGameObjectReference;
+    public GameObject flyerPanelGameObjectReference;
+    public GameObject middlePanelGameObjectReference;
     public int displayedScene = 0;
     private int updateCount = 0;
     private int updateMethodCount = 0;
@@ -41,9 +44,14 @@ public class TextBoxManager : MonoBehaviour
         buttonManagerScript = buttonManager.GetComponent<ButtonManager>();
         musicPlayer = musicPlayerReference.GetComponent<AudioSource>();
 
+        leftButtonGameObjectReference = GameObject.Find("leftButton");
+        rightButtonGameObjectReference = GameObject.Find("rightButton");
+        continueButtonGameObjectReference = GameObject.Find("continueButton");
+        flyerPanelGameObjectReference.SetActive(false);
+
         //charakterColors.appointColors();
 
-        // load lines form txt file into array:
+        // load lines form txt file into array[] and then List<Storyblock>
         if (textFile != null)
         {
             textLines = (textFile.text.Split('\n'));
@@ -135,7 +143,7 @@ public class TextBoxManager : MonoBehaviour
                 //creates an object from the class Storyblock with the temporary variables and adds said object to the StoryBlockList.
                 storyBlocks.Add(new StoryBlock(tempSceneNumber,tempStorytext,tempLeftButtonText,tempRightButtonText,tempLeftButtonNextScene,tempRightButtonNextScene,tempDecision,tempCharakterNumber,tempEventNumber,tempMusicEventNumber));
                 storyBlockObjectCount++;
-                // 7 equals tupelnumber
+                // 10 equals tupelnumber
                 currentLine += 10;
             }
 
@@ -146,9 +154,6 @@ public class TextBoxManager : MonoBehaviour
             endAtLine = textLines.Length - 1;
         }
 
-        leftButtonGameObjectReference = GameObject.Find("leftButton");
-        rightButtonGameObjectReference = GameObject.Find("rightButton");
-        continueButtonGameObjectReference = GameObject.Find("continueButton");
 
         updateDisplay();
     }
@@ -179,6 +184,8 @@ public class TextBoxManager : MonoBehaviour
             updateDisplay();
         }
 
+
+
     }
 
     public void updateDisplay()
@@ -187,8 +194,11 @@ public class TextBoxManager : MonoBehaviour
         StoryBlock readingStoryBlock = storyBlocks[tASceneManager.currentScene];
         if (readingStoryBlock.getEventNumber() == 0)
         {
-            if (readingStoryBlock.getDecision() == true)
+            if (readingStoryBlock.getDecision() == true) //Setup TextAdventure mit Entscheidung
             {
+                middlePanelGameObjectReference.SetActive(true);
+                flyerPanelGameObjectReference.SetActive(false);
+                panelGameObjectReference.SetActive(true);
                 checkForMusicEvent(readingStoryBlock.getMusicEventNumber());
                 continueButtonGameObjectReference.SetActive(false);
                 checkForCharakterNumber(readingStoryBlock.getCharakterNumber());
@@ -201,8 +211,11 @@ public class TextBoxManager : MonoBehaviour
                 rightButtonGameObjectReference.SetActive(true);
                 displayedScene = tASceneManager.currentScene;
             }
-            else
+            else                                         //Setup TextAdventure ohne Entscheidung
             {
+                middlePanelGameObjectReference.SetActive(true);
+                flyerPanelGameObjectReference.SetActive(false);
+                panelGameObjectReference.SetActive(true);
                 checkForMusicEvent(readingStoryBlock.getMusicEventNumber());
                 checkForCharakterNumber(readingStoryBlock.getCharakterNumber());
                 theText.text = readingStoryBlock.getStorytext();
@@ -216,11 +229,12 @@ public class TextBoxManager : MonoBehaviour
         }
         else
         {
+            displayedScene = tASceneManager.currentScene;
             checkForMusicEvent(readingStoryBlock.getMusicEventNumber());
-            SceneManager.LoadScene("SideScroller");
+            checkForEvent(readingStoryBlock.getEventNumber());
         }
     }
-
+                                                                                        
     public void checkForCharakterNumber(int charakterNumber)
     {
         Debug.Log("currentScene:" + tASceneManager.currentScene + "  getCharakterNumber.result: " + charakterNumber);
@@ -238,22 +252,50 @@ public class TextBoxManager : MonoBehaviour
         }
     }
 
-    public void checkForMusicEvent(int MusicEventNumber)
+    public void checkForMusicEvent(int musicEventNumber)
     {
-        Debug.Log("currentScene:" + tASceneManager.currentScene + "  getMusicEventNumber.result" + MusicEventNumber);
-        if (MusicEventNumber == 0)
+        Debug.Log("currentScene:" + tASceneManager.currentScene + "  getMusicEventNumber.result" + musicEventNumber);
+        if (musicEventNumber == 0)
         {
 
         }
         else
         {
             Debug.Log("musicPlayer.clip = audioList.audios[MusicEventNumber];");
-            musicPlayer.clip = audioList.audios[MusicEventNumber];
+            musicPlayer.clip = audioList.audios[musicEventNumber];
             Debug.Log("musicPlayer.Play();");
             musicPlayer.Play();
             //playMusic...
         }
     }
+
+    //3 --> text to side
+    //3 <-- side to text
+    public void checkForEvent(int eventNumber)
+    {
+        Debug.Log("currentScene:" + tASceneManager.currentScene + "  getEventNumber.result" + eventNumber);
+        switch (eventNumber)
+        {
+            case 1:/*Flyer spawns*/
+                middlePanelGameObjectReference.SetActive(false);
+                leftButtonGameObjectReference.SetActive(false);
+                rightButtonGameObjectReference.SetActive(false);
+                continueButtonGameObjectReference.SetActive(true);
+                flyerPanelGameObjectReference.SetActive(true);
+                theText.text = storyBlocks[tASceneManager.currentScene].getStorytext();
+                break;
+            case 2:/*transition first Textadvenure -> first sidescroller*/
+                tASceneManager.currentScene++;
+                SceneManager.LoadScene("SideScroller"); 
+                break;
+            case 3:/*transition second Textadvenure -> third sidescroller*/break;
+            case 4:/*transition first Textadvenure -> fifth sidescroller*/ break;
+            case 5:/*transition first Textadvenure -> fifth sidescroller*/ break;
+            case 6:/*transition first Textadvenure -> fifth sidescroller*/ break;
+            case 7:/*transition first Textadvenure -> fifth sidescroller*/ break;
+        }
+    }
+
     public void leftButtonClicked()
     {
         tASceneManager.currentScene = storyBlocks[tASceneManager.currentScene].getLeftButtonNextScene();

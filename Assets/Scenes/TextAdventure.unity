@@ -395,6 +395,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1102309928 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7213348475043106710, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+  m_PrefabInstance: {fileID: 1733710765}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1155849355 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8733939460424797747, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+  m_PrefabInstance: {fileID: 1733710765}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1177399472
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,6 +749,18 @@ PrefabInstance:
       propertyPath: musicPlayerReference
       value: 
       objectReference: {fileID: 378449680}
+    - target: {fileID: 2406871419842375513, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: panelGameObjectReference
+      value: 
+      objectReference: {fileID: 506654956}
+    - target: {fileID: 2406871419842375513, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: flyerPanelGameObjectReference
+      value: 
+      objectReference: {fileID: 1155849355}
+    - target: {fileID: 2406871419842375513, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: middlePanelGameObjectReference
+      value: 
+      objectReference: {fileID: 1102309928}
     - target: {fileID: 3472576558988295060, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
       propertyPath: m_Volume
       value: 0.099
@@ -749,7 +771,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: eef546c989b175f47a5fd25d6171eb55, type: 3}
     - target: {fileID: 3472576558988295060, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
       propertyPath: m_PlayOnAwake
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3751719521559807314, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
       propertyPath: m_Name
@@ -879,6 +901,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6506322049935006619, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6506322049935006619, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 50801b643f738d64e8b17d2084b9af4c, type: 3}
     - target: {fileID: 8101913828442904619, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
       propertyPath: m_SizeDelta.x
       value: 500
@@ -970,6 +1000,14 @@ PrefabInstance:
     - target: {fileID: 8528853675449976677, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4281295643
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733939460424797747, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_Name
+      value: flyerPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733939460424797747, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9151120567388251707, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
       propertyPath: leftButton
