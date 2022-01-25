@@ -9,6 +9,7 @@ TagManager:
   - Collectable
   - Interactable
   - sceneChangeTrigger
+  - Character
   layers:
   - Default
   - TransparentFX
