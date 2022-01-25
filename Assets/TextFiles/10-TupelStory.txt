@@ -89,7 +89,7 @@ x
 0
 0
 9
-"I assume we haven’t met yet. Let’s change that quickly. Gordon Inwestar - the head of this circus."
+"I assume we haven’t met yet. Let’s change that quickly. Gordon Inwenstar - the head of this circus."
 
 
 x
@@ -137,4 +137,74 @@ x
 1
 4
 0
+0
+14
+"Good Choice 1"
+
+
+x
+x
+0
+0
+8
+0
+15
+"Good Choice 2"
+
+
+x
+x
+0
+0
+9
+0
+16
+"Good Choice 3"
+
+
+x
+x
+0
+0
+10
+0
+17
+"Good Choice 4"
+
+
+x
+x
+0
+0
+11
+0
+18
+"Good Choice 5?"
+KILL THE BABY
+Dont kill the baby
+20
+19
+1
+1
+0
+0
+19
+"Good Choice 5"
+
+
+x
+x
+0
+3
+12
+0
+20
+Wenn du das hier sehen kannst, warst du böse!!!
+
+
+x
+x
+0
+0
+13
 0

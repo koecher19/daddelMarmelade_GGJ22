@@ -31,6 +31,7 @@ public class TextBoxManager : MonoBehaviour
     private GameObject leftButtonGameObjectReference;
     private GameObject rightButtonGameObjectReference;
     private GameObject continueButtonGameObjectReference;
+    private GameObject debugButtonManagerGameObjectReference;
     public GameObject flyerPanelGameObjectReference;
     public GameObject middlePanelGameObjectReference;
     public int displayedScene = 0;
@@ -47,7 +48,9 @@ public class TextBoxManager : MonoBehaviour
         leftButtonGameObjectReference = GameObject.Find("leftButton");
         rightButtonGameObjectReference = GameObject.Find("rightButton");
         continueButtonGameObjectReference = GameObject.Find("continueButton");
+        debugButtonManagerGameObjectReference = GameObject.Find("DebugButtonManager");
         flyerPanelGameObjectReference.SetActive(false);
+        debugButtonManagerGameObjectReference.SetActive(tASceneManager.debugEnabled);
 
         //charakterColors.appointColors();
 
@@ -161,36 +164,27 @@ public class TextBoxManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        sceneUpdate();
-
-           /*
-        // if return key is pressed: go to next line
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            currentScene += 1;
+            tASceneManager.debugEnabled = !tASceneManager.debugEnabled;
+            debugButtonManagerGameObjectReference.SetActive(tASceneManager.debugEnabled);
         }
-           */
-
+        sceneUpdate();
         updateCount++;
     }
 
     private void sceneUpdate()
     {
-
         updateMethodCount++;
         if (displayedScene != tASceneManager.currentScene)
         {
             updateMethodSuccessCount++;
             updateDisplay();
         }
-
-
-
     }
 
     public void updateDisplay()
     {
-
         StoryBlock readingStoryBlock = storyBlocks[tASceneManager.currentScene];
         if (readingStoryBlock.getEventNumber() == 0)
         {
@@ -229,7 +223,6 @@ public class TextBoxManager : MonoBehaviour
         }
         else
         {
-            displayedScene = tASceneManager.currentScene;
             checkForMusicEvent(readingStoryBlock.getMusicEventNumber());
             checkForEvent(readingStoryBlock.getEventNumber());
         }
@@ -283,16 +276,46 @@ public class TextBoxManager : MonoBehaviour
                 continueButtonGameObjectReference.SetActive(true);
                 flyerPanelGameObjectReference.SetActive(true);
                 theText.text = storyBlocks[tASceneManager.currentScene].getStorytext();
+                displayedScene = tASceneManager.currentScene;
                 break;
             case 2:/*transition first Textadvenure -> first sidescroller*/
                 tASceneManager.currentScene++;
-                SceneManager.LoadScene("SideScroller"); 
+                SceneManager.LoadScene("SideScroller");
+                displayedScene = tASceneManager.currentScene;
                 break;
             case 3:/*transition second Textadvenure -> third sidescroller*/break;
             case 4:/*transition first Textadvenure -> fifth sidescroller*/ break;
             case 5:/*transition first Textadvenure -> fifth sidescroller*/ break;
             case 6:/*transition first Textadvenure -> fifth sidescroller*/ break;
             case 7:/*transition first Textadvenure -> fifth sidescroller*/ break;
+            case 8:/*switch first gooddecision*/  tASceneManager.goodChoice1 = true; tASceneManager.currentScene++; break;
+            case 9:/*switch second gooddecision*/ tASceneManager.goodChoice2 = true; tASceneManager.currentScene++; break;
+            case 10:/*switch third gooddecision*/ tASceneManager.goodChoice3 = true; tASceneManager.currentScene++; break;
+            case 11:/*switch fourth gooddecision*/tASceneManager.goodChoice4 = true; tASceneManager.currentScene++; break;
+            case 12:/*switch fifth gooddecision*/ tASceneManager.goodChoice5 = true; tASceneManager.currentScene++; break;
+            case 13:/*check for SecretGoodEnding*/
+                if (tASceneManager.checkGoodChoices()) 
+                {
+                    tASceneManager.currentScene = 0;  //DIESE ZAHL ÄNDERN ZU ENDING-SCENENZAHL
+                } 
+                else
+                {                                                      
+                    //tASceneManager.currentScene = 0;  //Normaler Pfad, wenn man böse war
+                                                      //basicaly aufrufen der DisplayScene-Methode 
+                    middlePanelGameObjectReference.SetActive(true);
+                    flyerPanelGameObjectReference.SetActive(false);
+                    panelGameObjectReference.SetActive(true);
+                    checkForMusicEvent(storyBlocks[tASceneManager.currentScene].getMusicEventNumber());
+                    checkForCharakterNumber(storyBlocks[tASceneManager.currentScene].getCharakterNumber());
+                    theText.text = storyBlocks[tASceneManager.currentScene].getStorytext();
+                    continueButtonGameObjectReference.SetActive(true);
+                    leftButtonGameObjectReference.SetActive(false);
+                    rightButtonGameObjectReference.SetActive(false);
+                    buttonManagerScript.getLeftButtonText().text = storyBlocks[tASceneManager.currentScene].getLeftButtonText();
+                    buttonManagerScript.getRightButtonText().text = storyBlocks[tASceneManager.currentScene].getRightButtonText();
+                    displayedScene = tASceneManager.currentScene;
+                } 
+                break;
         }
     }
 
