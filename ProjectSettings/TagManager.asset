@@ -47,12 +47,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: ground
-    uniqueID: 737844641
+  - name: object
+    uniqueID: 2494097539
     locked: 0
   - name: player
     uniqueID: 950206183
     locked: 0
   - name: overlay
     uniqueID: 493306759
+    locked: 0
+  - name: over overlay
+    uniqueID: 671170869
     locked: 0

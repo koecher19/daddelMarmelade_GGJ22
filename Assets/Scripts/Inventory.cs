@@ -14,6 +14,7 @@ public class Inventory : MonoBehaviour
 
     public List<GameObject> items;      // a list of items you own
     public TMP_Text theText;            // displays text
+    public GameObject overlay;
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +49,12 @@ public class Inventory : MonoBehaviour
         {
             // if not: add item to list
             this.items.Add(item);
+        }
+
+        if(item.name == "Paper")
+        {
+            // display letter:
+            overlay.SetActive(true);
         }
     }
 
