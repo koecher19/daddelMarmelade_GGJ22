@@ -12,6 +12,7 @@ public class Interact : MonoBehaviour
     public GameObject inventory;            // players inventory
     public List<GameObject> usableItems;
     public int dialogIterator = 0;          // iterates over amount of dialog scripts
+    public bool isCharacter;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,14 @@ public class Interact : MonoBehaviour
         if (textfiles.Count != 0)
         {
             // set dialog box to fist dialog
-        description.text = gameObject.name + " : \n" + textfiles[0].text;
+            if (isCharacter)
+            {
+                description.text = gameObject.name + " : \n" + textfiles[0].text;
+            }
+            else
+            {
+                description.text = textfiles[0].text;
+            }
         }
     }
 
@@ -58,7 +66,16 @@ public class Interact : MonoBehaviour
         if(dialogIterator < textfiles.Count - 1)
         {
             this.dialogIterator++;
-            description.text = gameObject.name + " : \n" + textfiles[dialogIterator].text;
+            
+            if (isCharacter)
+            {
+                description.text = gameObject.name + " : \n" + textfiles[0].text;
+            }
+            else
+            {
+                description.text = textfiles[0].text;
+            }
         }
     }
 }
+
