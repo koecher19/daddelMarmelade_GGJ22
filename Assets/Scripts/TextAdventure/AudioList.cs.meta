@@ -6,17 +6,17 @@ MonoImporter:
   defaultReferences:
   - normal: {instanceID: 0}
   - narrator: {instanceID: 0}
-  - bruno: {fileID: 8300000, guid: 7c6a7f1453f4bee45840027f2968bf3f, type: 3}
-  - harvey: {fileID: 8300000, guid: 34902c47daf1b4247ac55a65eb7d27a4, type: 3}
-  - gordon: {instanceID: 0}
-  - eugene: {fileID: 8300000, guid: e465f8fe46cf6a645800d445b8223267, type: 3}
-  - tori: {fileID: 8300000, guid: e05a09711dac0554d828ad50e881c721, type: 3}
-  - sunshine: {fileID: 8300000, guid: b9e42c13847861c40917d6b800063865, type: 3}
-  - donna: {fileID: 8300000, guid: 43df0ce549abdce4ca3c516b7baa0c87, type: 3}
-  - avery: {fileID: 8300000, guid: 1d349cd2f66ac8043ba32ad2add2b812, type: 3}
+  - bruno: {fileID: 8300000, guid: dfc55b8960f2a4f49a970d7168392648, type: 3}
+  - harvey: {fileID: 8300000, guid: 8866d717f612acd41bc955a0aad64f26, type: 3}
+  - gordon: {fileID: 8300000, guid: 351ab0d8435a4ed42adb11b0e68c5298, type: 3}
+  - eugene: {fileID: 8300000, guid: 826713dc825e34d4a8f681418b0a7032, type: 3}
+  - tori: {fileID: 8300000, guid: dc6f36a7663c81f429a36962ee2ca3a0, type: 3}
+  - sunshine: {fileID: 8300000, guid: ddb5261f7f19b284eb1ec103f86f12cb, type: 3}
+  - donna: {fileID: 8300000, guid: 4783db0435f9ab0429f703e2974ba235, type: 3}
+  - avery: {fileID: 8300000, guid: cb8bbeee58fe068429a80d18203e882d, type: 3}
   - celeste: {fileID: 8300000, guid: 4d8adc224038a1540843bbeb33f72109, type: 3}
-  - esmira: {fileID: 8300000, guid: 1277dafb0e0944547a548246c4d9ea89, type: 3}
-  - nimues: {fileID: 8300000, guid: 7d8276a46a4881a48a12e4bc3c2aaf36, type: 3}
+  - nimues: {fileID: 8300000, guid: 00b4f661a049d5a4cba6950ea42a945b, type: 3}
+  - esmira: {instanceID: 0}
   - stepSound: {fileID: 8300000, guid: eef546c989b175f47a5fd25d6171eb55, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}

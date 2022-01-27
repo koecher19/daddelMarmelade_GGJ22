@@ -37,7 +37,7 @@ x
 0
 0
 0
-1
+13
 4
 Wrong thought
 
@@ -167,7 +167,7 @@ Don't work here
 1
 1
 0
-1
+0
 17
 Bruno was a fool - There was no choice. No offer could have been better, and they knew that.
 
@@ -748,3 +748,423 @@ x
 1
 0
 1
+75
+Nimue, on the other hand, has not cleaned her clothes. Blood is everywhere on her body and she's staring at the small particles of dust in the air - ignoring everything around her. At some point, she will get up, walk into her room and cry, but Bruno eventually won't see that.
+
+
+x
+x
+0
+0
+0
+0
+76
+So, what is Bruno doing? 
+
+
+x
+x
+0
+1
+0
+1
+77
+It was all their fault.
+
+
+x
+x
+0
+1
+0
+1
+78
+All those sounds. All those screams. Everyone asks for the guilty one. It is chaos made out of voices and terrible yet sad sounds. Was it an accident? Who killed Harvey?
+
+
+x
+x
+0
+0
+0
+0
+79
+But Bruno already knows who the guilty one is, don't they?
+
+
+x
+x
+0
+1
+0
+1
+80
+Bruno is running straight to their room - Did they read the instructions wrong? After opening the door, they check for the note, but there is nothing else in his room but the small amount of interior. Has someone of the crew stolen it while Bruno was away? Or was it never even there?
+
+
+x
+x
+0
+0
+0
+0
+81
+Brunos head feels like it is going to explode. They is in their room. Not making any sound, while their thoughts are overwhelming them. Was it Bruno's fault? What about those instructions? And why aren’t these in Brunos room anymore? Why would anyone give them false instructions that would lead to something that terrible?
+
+
+x
+x
+0
+0
+0
+0
+82
+Nothing makes sense. The only rational explanation is that Bruno must have done something wrong.
+
+
+x
+x
+0
+0
+0
+0
+83
+Like they always do.
+
+
+x
+x
+0
+1
+0
+1
+84
+Guilt overcomes them and Bruno realizes that this feeling will never go away. A murderer. A failure. Someone that will never be worthy of making own decisions. The headache is unbearable. Their thoughts go crazy. They whisper. They laugh. They scream. All inside Bruno's head. This has to stop. This needs to stop. Whatever it takes.
+Slam their head against the wall
+Breath in and out three times.
+85
+90
+1
+0
+0
+0
+85
+Sometimes extreme situations take extreme actions. Bruno does not hesitate a second longer and slams their head against the wooden wall. An unpleasant dull noise echoes through the room. They feel a piercing pain in the head. But it isn’t enough.
+
+
+x
+x
+0
+0
+0
+0
+86
+One more time.
+
+
+x
+x
+0
+1
+0
+1
+87
+Still isn’t enough. Why can’t they just shut up? Just one more time. Two more times. Three more times. Bruno hammers their head against the wall until they only see everything blurred. It helped a bit, at least. But guilt still sticks to him like glue.
+
+
+x
+x
+0
+0
+0
+0
+88
+Bruno hears voices, but this time from outside the room. They seem desperate, Bruno should go and listen to what they are saying.
+
+
+94
+94
+0
+0
+0
+0
+89
+As the filthy sinner he is.
+
+
+x
+x
+0
+1
+0
+1
+90
+"Good Choice 2"
+
+
+x
+x
+0
+0
+10
+0
+91
+This was not very effective. Resulted in absolutely nothing. Bravo.
+
+
+x
+x
+0
+0
+0
+0
+92
+Bruno hears another voice, but this time from outside of the room. It seems desperate, Bruno should go and listen to what they are saying.
+
+
+x
+x
+0
+0
+0
+0
+93
+As the filthy sinner he is.
+
+
+x
+x
+0
+1
+0
+1
+94
+But they do not get the chance. As soon as Bruno decides to go and face the others, they hear a gentle knock on their door. Who could that be?
+
+
+x
+x
+0
+0
+0
+0
+95
+“It’s Donna. Can I come in?”
+
+
+x
+x
+0
+8
+0
+8
+96
+Why did she come here?
+
+
+x
+x
+0
+0
+0
+0
+97
+She wants to blame you.
+
+
+x
+x
+0
+1
+0
+1
+98
+“Bruno?”
+
+
+x
+x
+0
+8
+0
+8
+99
+Should they let her in? 
+Let her in.
+Stay quiet.
+100
+117
+1
+0
+0
+0
+100
+"Good Choice 3"
+
+
+x
+x
+0
+0
+11
+0
+101
+“Come in.”
+
+
+x
+x
+0
+2
+0
+2
+102
+Bruno replies. Donna does not hesitate a second longer and enters the room with grace. Beneath her makeup and her perfectly styled black hair, she looks very tired. One can clearly see that her eyes were swollen from crying.
+
+
+x
+x
+0
+0
+0
+0
+103
+“I just wanted to check up on you Bruno” 
+
+
+x
+x
+0
+8
+0
+8
+104
+Donna explains. She was a good soul.
+
+
+x
+x
+0
+0
+0
+0
+105
+Unlike Bruno.
+
+
+x
+x
+0
+1
+0
+1
+106
+Bruno remains silent. They stare at their feet.
+
+
+x
+x
+0
+0
+0
+0
+107
+“I can’t imagine how you must feel with this happening on only your second day here. I am so sorry. I just wanted to tell you that something like that has never ever happened before. Of course every now and then someone got hurt, but even then they were only minor injuries.”
+
+
+x
+x
+0
+8
+0
+8
+108
+She pauses. Trying to not let her voice break.
+
+
+x
+x
+0
+0
+0
+0
+109
+“It is a tragedy. An absolutely horrible accident that should have never happened. But I am sure that something like this will never happen again. So don’t lose faith in this circus, we may not be the best artist nor have a massive audience, but we love what we are doing. We are all like a family here and even though you had a rough start here. I want you to feel that too.”
+
+
+x
+x
+0
+8
+0
+8
+110
+She smiles kindly. Brunos guilt was barely bearable. But they know they need to reply, otherwise they would seem suspicious.
+
+
+x
+x
+0
+0
+0
+0
+111
+“T- Thank you Donna. That is very kind of you to say. And don’t worry I will get along” 
+
+
+x
+x
+0
+2
+0
+2
+112
+Bruno presses out of his lips.
+
+
+x
+x
+0
+0
+0
+0
+113
+She smiles as a reaction. A sincere, kind smile. Bruno feels like they have to throw up.
+
+
+x
+x
+0
+0
+0
+0
+114
+“I will give you some space now.” 
+
+
+x
+x
+0
+8
+0
+8
+115
+With those words she leaves the room. Bruno stares at the wall. What had they done to these innocent people? Bruno's wishes to themselves to never do that again. But deep down they already know, they had chosen a dangerous path.
+
+
+x
+x
+0
+0
+0
+0
+116
+Bruno hears someone shouting outside their room again. They finally take the chance to investigate that.
+
+
+x
+x
+0
+0
+0
+0

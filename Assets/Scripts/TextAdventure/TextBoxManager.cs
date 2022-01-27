@@ -250,19 +250,12 @@ public class TextBoxManager : MonoBehaviour
 
     public void checkForMusicEvent(int musicEventNumber)
     {
-        Debug.Log("currentScene:" + tASceneManager.currentScene + "  getMusicEventNumber.result" + musicEventNumber);
-        if (musicEventNumber == 0)
-        {
-
-        }
-        else
-        {
-            Debug.Log("musicPlayer.clip = audioList.audios[MusicEventNumber];");
-            musicPlayer.clip = audioList.audios[musicEventNumber];
-            Debug.Log("musicPlayer.Play();");
-            musicPlayer.Play();
+        Debug.Log("currentScene:" + tASceneManager.currentScene + "  getMusicEventNumber.result :" + musicEventNumber);
+        Debug.Log("currentScene:" + tASceneManager.currentScene + "musicPlayer.clip = audioList.audios[MusicEventNumber];");
+        musicPlayer.clip = audioList.audios[musicEventNumber];
+        Debug.Log("currentScene:" + tASceneManager.currentScene + "musicPlayer.Play();");
+        musicPlayer.Play();
             //playMusic...
-        }
     }
 
     //3 --> text to side
@@ -342,7 +335,7 @@ public class TextBoxManager : MonoBehaviour
 
     public void continueButtonClicked()
     {
-        tASceneManager.currentScene++;
+        tASceneManager.currentScene = storyBlocks[tASceneManager.currentScene].getLeftButtonNextScene();
     }
 
     public class StoryBlock
