@@ -142,8 +142,8 @@ x
  "Bruno. I know. I already heard of you. You’re supposed to be... intriguing. This circus needs a little more - spice. And my instincts told me you would be the perfect person for the job. That leads me to my offer: You should work here."
 Take the job offer
 Don't work here
-17
-14
+18
+15
 1
 4
 0
@@ -156,18 +156,18 @@ x
 x
 0
 0
-8
+9
 0
 16
 Bruno WILL work there
 Bruno WILL work there
 Don't work here
+17
 16
-15
 1
 1
 0
-0
+1
 17
 Bruno was a fool - There was no choice. No offer could have been better, and they knew that.
 

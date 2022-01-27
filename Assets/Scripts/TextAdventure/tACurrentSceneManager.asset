@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: tACurrentSceneManager
   m_EditorClassIdentifier: 
   currentScene: 0
-  debugEnabled: 0
+  debugEnabled: 1
   goodChoice1: 0
   goodChoice2: 0
   goodChoice3: 0
   goodChoice4: 0
-  goodChoice5: 0

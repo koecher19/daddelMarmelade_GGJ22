@@ -33,6 +33,7 @@ public class TextBoxManager : MonoBehaviour
     private GameObject continueButtonGameObjectReference;
     private GameObject debugButtonManagerGameObjectReference;
     public GameObject flyerPanelGameObjectReference;
+    public GameObject instructionsPanelGameObjectReference;
     public GameObject middlePanelGameObjectReference;
     public int displayedScene = 0;
     private int updateCount = 0;
@@ -192,6 +193,7 @@ public class TextBoxManager : MonoBehaviour
             {
                 middlePanelGameObjectReference.SetActive(true);
                 flyerPanelGameObjectReference.SetActive(false);
+                instructionsPanelGameObjectReference.SetActive(false);
                 panelGameObjectReference.SetActive(true);
                 checkForMusicEvent(readingStoryBlock.getMusicEventNumber());
                 continueButtonGameObjectReference.SetActive(false);
@@ -209,6 +211,7 @@ public class TextBoxManager : MonoBehaviour
             {
                 middlePanelGameObjectReference.SetActive(true);
                 flyerPanelGameObjectReference.SetActive(false);
+                instructionsPanelGameObjectReference.SetActive(false);
                 panelGameObjectReference.SetActive(true);
                 checkForMusicEvent(readingStoryBlock.getMusicEventNumber());
                 checkForCharakterNumber(readingStoryBlock.getCharakterNumber());
@@ -278,21 +281,30 @@ public class TextBoxManager : MonoBehaviour
                 theText.text = storyBlocks[tASceneManager.currentScene].getStorytext();
                 displayedScene = tASceneManager.currentScene;
                 break;
-            case 2:/*transition first Textadvenure -> first sidescroller*/
-                tASceneManager.currentScene++;
-                SceneManager.LoadScene("SideScroller");
+            case 2:/*Instruction spawns*/
+                middlePanelGameObjectReference.SetActive(false);
+                leftButtonGameObjectReference.SetActive(false);
+                rightButtonGameObjectReference.SetActive(false);
+                continueButtonGameObjectReference.SetActive(true);
+                instructionsPanelGameObjectReference.SetActive(true);
+                theText.text = storyBlocks[tASceneManager.currentScene].getStorytext();
                 displayedScene = tASceneManager.currentScene;
                 break;
-            case 3:/*transition second Textadvenure -> third sidescroller*/break;
-            case 4:/*transition first Textadvenure -> fifth sidescroller*/ break;
+            case 3:/*transition first Textadvenure -> first sidescroller*/
+                tASceneManager.currentScene++;
+                SceneManager.LoadScene("6-Sidescroller");
+                displayedScene = tASceneManager.currentScene;
+                break;
+            case 4:/*transition second Textadvenure -> third sidescroller*/break;
             case 5:/*transition first Textadvenure -> fifth sidescroller*/ break;
             case 6:/*transition first Textadvenure -> fifth sidescroller*/ break;
             case 7:/*transition first Textadvenure -> fifth sidescroller*/ break;
-            case 8:/*switch first gooddecision*/  tASceneManager.goodChoice1 = true; tASceneManager.currentScene++; break;
-            case 9:/*switch second gooddecision*/ tASceneManager.goodChoice2 = true; tASceneManager.currentScene++; break;
-            case 10:/*switch third gooddecision*/ tASceneManager.goodChoice3 = true; tASceneManager.currentScene++; break;
-            case 11:/*switch fourth gooddecision*/tASceneManager.goodChoice4 = true; tASceneManager.currentScene++; break;
-            case 12:/*check for SecretGoodEnding*/
+            case 8:/*transition first Textadvenure -> fifth sidescroller*/ break;
+            case 9:/*switch first gooddecision*/  tASceneManager.goodChoice1 = true; tASceneManager.currentScene++; break;
+            case 10:/*switch second gooddecision*/ tASceneManager.goodChoice2 = true; tASceneManager.currentScene++; break;
+            case 11:/*switch third gooddecision*/ tASceneManager.goodChoice3 = true; tASceneManager.currentScene++; break;
+            case 12:/*switch fourth gooddecision*/tASceneManager.goodChoice4 = true; tASceneManager.currentScene++; break;
+            case 13:/*check for SecretGoodEnding*/
                 if (tASceneManager.checkGoodChoices()) 
                 {
                     tASceneManager.currentScene = 0;  //DIESE ZAHL ÄNDERN ZU ENDING-SCENENZAHL
