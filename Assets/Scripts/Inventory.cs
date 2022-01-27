@@ -54,7 +54,10 @@ public class Inventory : MonoBehaviour
         if(item.name == "Paper")
         {
             // display letter after 1 second delay:
-            overlay.SetActive(true);
+            if(this.overlay != null)
+            {
+                overlay.SetActive(true);
+            }
         }
     }
 
