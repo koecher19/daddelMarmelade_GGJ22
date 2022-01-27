@@ -66,7 +66,7 @@ public class Interact : MonoBehaviour
         if(dialogIterator < textfiles.Count - 1)
         {
             this.dialogIterator++;
-            
+
             if (isCharacter)
             {
                 description.text = gameObject.name + " : \n" + textfiles[dialogIterator].text;

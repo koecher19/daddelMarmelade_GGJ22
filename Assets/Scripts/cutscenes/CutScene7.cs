@@ -10,6 +10,8 @@ public class CutScene7 : MonoBehaviour
     public GameObject blackScreen;
     public GameObject cutSceneCamera;
 
+    private float blackoutTime = 0.5f;
+
     // specific for this cutscene
     public GameObject eugene;
     public GameObject nimue;
@@ -54,7 +56,7 @@ public class CutScene7 : MonoBehaviour
         // display black screen for 1 second
         {
             this.blackScreen.SetActive(true);
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(blackoutTime);
             this.blackScreen.SetActive(false);
         }
 
@@ -66,23 +68,27 @@ public class CutScene7 : MonoBehaviour
         "And now the show REALLY begins! A magic trick you have NEVER seen before! Let Nimue enchant you with her magic! Clear the stage and welcome our master of wizardry: Nimue!"
         */
         //PREPARATIONS
-        this.nimue.SetActive(false);
-        this.harveyAlive.SetActive(false);
-        this.harveyDead.SetActive(false);
-        this.harveyMurder.SetActive(false);
-        this.harveyMurderFirstFrame.SetActive(false);
+        {
+            this.nimue.SetActive(false);
+            this.harveyAlive.SetActive(false);
+            this.harveyDead.SetActive(false);
+            this.harveyMurder.SetActive(false);
+            this.harveyMurderFirstFrame.SetActive(false);
 
-        this.emptyBox.SetActive(true);
-        this.eugene.SetActive(true);
+            this.emptyBox.SetActive(true);
+            this.eugene.SetActive(true);
+        }
 
         yield return new WaitForSeconds(1);
 
 
         // ACTION
-        eugene.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-        yield return new WaitForSeconds(1);
-        eugene.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
-        
+        {
+            eugene.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
+            yield return new WaitForSeconds(1);
+            eugene.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
+        }
+
         yield return new WaitForSeconds(1);
 
 
@@ -92,7 +98,7 @@ public class CutScene7 : MonoBehaviour
         */
         {
             this.blackScreen.SetActive(true);
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(blackoutTime);
             this.blackScreen.SetActive(false);
         }
 
@@ -104,22 +110,26 @@ public class CutScene7 : MonoBehaviour
         */
 
         // PREPARATIONS
-        // remove chars objects form last cut:
-        this.eugene.SetActive(false);
-        this.emptyBox.SetActive(false);
+        {
+            // remove chars objects form last cut:
+            this.eugene.SetActive(false);
+            this.emptyBox.SetActive(false);
 
-        // new chars/objects
-        this.nimue.SetActive(true);
-        this.harveyAlive.SetActive(true);
+            // new chars/objects
+            this.nimue.SetActive(true);
+            this.harveyAlive.SetActive(true);
+        }
 
         yield return new WaitForSeconds(1);
 
-        
+
         // ACTION
         // dialog
-        this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-        yield return new WaitForSeconds(1);
-        //this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
+        {
+            this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
+            yield return new WaitForSeconds(1);
+            //this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
+        }
 
         yield return new WaitForSeconds(1);
 
@@ -133,9 +143,11 @@ public class CutScene7 : MonoBehaviour
         // PREPARATIONS
 
         // ACTION
-        this.harveyAlive.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-        yield return new WaitForSeconds(1);
-        this.harveyAlive.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
+        {
+            this.harveyAlive.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
+            yield return new WaitForSeconds(1);
+            this.harveyAlive.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
+        }
         
         yield return new WaitForSeconds(1);
 
@@ -154,17 +166,19 @@ public class CutScene7 : MonoBehaviour
         // PREPARATIONS
 
         //ACTION
-        this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().nextDialog();
-        //this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-        yield return new WaitForSeconds(1);
-        this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
+        {
+            this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().nextDialog();
+            //this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
+            yield return new WaitForSeconds(1);
+            this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
+        }
 
         /*
         NOTE: -> schwarzer bildschirm und danach sägt Nimue die Person auseinander:
          */
         {
             this.blackScreen.SetActive(true);
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(blackoutTime);
             this.blackScreen.SetActive(false);
         }
 
@@ -176,31 +190,40 @@ public class CutScene7 : MonoBehaviour
          */
 
         // PREPARATIONS
-        this.harveyAlive.SetActive(false);
-        this.harveyMurderFirstFrame.SetActive(true);
+        {
+            this.harveyAlive.SetActive(false);
+            this.harveyMurderFirstFrame.SetActive(true);
+        }
 
         yield return new WaitForSeconds(1);
 
         // ACTION
-        this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().nextDialog();
-        this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-        yield return new WaitForSeconds(1);
-        this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
+        {
+            this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().nextDialog();
+            this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
+
+            yield return new WaitForSeconds(1);
+
+            this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
+        }
 
         yield return new WaitForSeconds(1);
-
-        this.harveyMurderFirstFrame.SetActive(false);
-        this.harveyMurder.SetActive(true);
+        {
+            this.harveyMurderFirstFrame.SetActive(false);
+            this.harveyMurder.SetActive(true);
+        }
 
         yield return new WaitForSeconds(2);
 
 
 
         // END
-        // display black screen for 1 second
-        this.blackScreen.SetActive(true);
-        yield return new WaitForSeconds(1);
-        this.blackScreen.SetActive(false);
+        // display black screen
+        {
+            this.blackScreen.SetActive(true);
+            yield return new WaitForSeconds(blackoutTime);
+            this.blackScreen.SetActive(false);
+        }
 
         // switch back to main camera
         this.cutSceneCamera.SetActive(false);
