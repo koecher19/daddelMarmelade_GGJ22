@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentScene: 0
   debugEnabled: 1
-  goodChoice1: 0
-  goodChoice2: 0
-  goodChoice3: 0
+  goodChoice1: 1
+  goodChoice2: 1
+  goodChoice3: 1
   goodChoice4: 0

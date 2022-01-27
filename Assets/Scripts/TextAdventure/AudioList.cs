@@ -19,8 +19,8 @@ public class AudioList : ScriptableObject
     public AudioClip donna;
     public AudioClip avery;
     public AudioClip celeste;
-    public AudioClip esmira;
     public AudioClip nimues;
+    public AudioClip esmira;
 
     public AudioClip stepSound;
 
@@ -46,8 +46,8 @@ public class AudioList : ScriptableObject
         audios.Add(donna);              //Donna         = 8
         audios.Add(avery);              //Avery         = 9 
         audios.Add(celeste);            //Celeste       = 10
-        audios.Add(esmira);             //Esmira        = 11
-        audios.Add(nimues);             //Nimues        = 12
+        audios.Add(nimues);             //Nimues        = 11
+        audios.Add(esmira);             //Esmira        = 12
         audios.Add(stepSound);          //Steps         = 13
     }
 }

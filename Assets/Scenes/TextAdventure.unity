@@ -517,7 +517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3472576558988295060, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
       propertyPath: m_Volume
-      value: 0.099
+      value: 0.515
       objectReference: {fileID: 0}
     - target: {fileID: 3472576558988295060, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
       propertyPath: m_audioClip
@@ -862,6 +862,54 @@ PrefabInstance:
     - target: {fileID: 8733939460424797747, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935585149979750671, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.3529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935585149979750671, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.30588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935585149979750671, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0.11764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935585149979750671, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.3529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935585149979750671, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.2784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935585149979750671, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.10980393
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935585149979750671, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935585149979750671, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 0.31764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935585149979750671, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0.10588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935585149979750671, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.34509805
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935585149979750671, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.3529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935585149979750671, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.09411766
       objectReference: {fileID: 0}
     - target: {fileID: 9151120567388251707, guid: 1b2941f761fadb640b4b50810756b15c, type: 3}
       propertyPath: leftButton
