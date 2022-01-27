@@ -58,6 +58,8 @@ public class Inventory : MonoBehaviour
             {
                 overlay.SetActive(true);
             }
+            // deactivate trigger:
+            item.GetComponent<PolygonCollider2D>().enabled = false;
         }
     }
 

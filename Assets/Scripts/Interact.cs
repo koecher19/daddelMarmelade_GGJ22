@@ -69,7 +69,7 @@ public class Interact : MonoBehaviour
             
             if (isCharacter)
             {
-                description.text = gameObject.name + " : \n" + textfiles[0].text;
+                description.text = gameObject.name + " : \n" + textfiles[dialogIterator].text;
             }
             else
             {

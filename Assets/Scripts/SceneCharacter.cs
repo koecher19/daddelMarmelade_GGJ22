@@ -40,6 +40,5 @@ public class SceneCharacter : MonoBehaviour
     public void nextDialog()
     {
         this.parent.GetComponent<Interact>().nextDialog();
-
     }
 }
