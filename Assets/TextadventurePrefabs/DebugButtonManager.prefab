@@ -288,7 +288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3297426657589291808, guid: 8b39f995a3e255943bd509c285ce34b1, type: 3}
       propertyPath: m_text
-      value: secrettest
+      value: soundtestd
       objectReference: {fileID: 0}
     - target: {fileID: 5651115751578882497, guid: 8b39f995a3e255943bd509c285ce34b1, type: 3}
       propertyPath: m_Pivot.x
@@ -376,7 +376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8656058978375015977, guid: 8b39f995a3e255943bd509c285ce34b1, type: 3}
       propertyPath: changeToSceneNumber
-      value: 13
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b39f995a3e255943bd509c285ce34b1, type: 3}

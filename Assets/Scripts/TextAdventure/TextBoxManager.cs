@@ -292,8 +292,7 @@ public class TextBoxManager : MonoBehaviour
             case 9:/*switch second gooddecision*/ tASceneManager.goodChoice2 = true; tASceneManager.currentScene++; break;
             case 10:/*switch third gooddecision*/ tASceneManager.goodChoice3 = true; tASceneManager.currentScene++; break;
             case 11:/*switch fourth gooddecision*/tASceneManager.goodChoice4 = true; tASceneManager.currentScene++; break;
-            case 12:/*switch fifth gooddecision*/ tASceneManager.goodChoice5 = true; tASceneManager.currentScene++; break;
-            case 13:/*check for SecretGoodEnding*/
+            case 12:/*check for SecretGoodEnding*/
                 if (tASceneManager.checkGoodChoices()) 
                 {
                     tASceneManager.currentScene = 0;  //DIESE ZAHL ÄNDERN ZU ENDING-SCENENZAHL

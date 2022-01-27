@@ -1,4 +1,14 @@
 0
+PROLOG
+
+
+x
+x
+0
+1
+0
+0
+1
 Bruno’s mind is blank. No exhausting errands anymore, but at what cost? Sitting between wet piles of trash. A foul odor surrounding them. They collapse in a tiny back alley, one of the many shit holes of this city. No one right in their mind ever comes here - unlike Bruno.
 
 
@@ -8,7 +18,7 @@ x
 0
 0
 0
-1
+2
 Trusting the wrong ones turned out to be fatal. They had lost everything. There was no way to continue living this way. No choice is left, but was there ever any, to begin with? Every day could be their last one, nowhere to go and nothing to eat.
 
 
@@ -18,7 +28,7 @@ x
 0
 0
 0
-2
+3
 They startle. Steps coming closer - they know steps mean trouble. People in this part of the city never have good intentions. Trying to make themself as small as possible would hopefully keep danger away.
 
 
@@ -28,7 +38,7 @@ x
 0
 0
 1
-3
+4
 Wrong thought
 
 
@@ -37,8 +47,8 @@ x
 0
 1
 0
-0
-4
+1
+5
 The steps stopped in front of them. Bruno slowly looked up, right into an obnoxiously colored broadsheet.
 
 
@@ -48,7 +58,7 @@ x
 0
 0
 0
-5
+6
 
 
 
@@ -58,7 +68,7 @@ x
 0
 1
 0
-6
+7
 Bruno finds themself entering a large room. The grotesque atmosphere and the smell of cigarette smoke hit them unexpectedly. They decided to come here, but the nerve wrecking feeling will not leave. The person standing right in front of Bruno does not change that. Everything about that man is intimidating. The suit, his height and the piercing gaze from his steel blue eyes.
 
 
@@ -68,7 +78,7 @@ x
 0
 0
 0
-7
+8
 "The new addition to the team. Welcome to Circus de la Lune!"
 
 
@@ -77,8 +87,8 @@ x
 0
 4
 0
-0
-8
+4
+9
 His words sound friendly.
 
 
@@ -88,7 +98,7 @@ x
 0
 0
 0
-9
+10
 "I assume we haven’t met yet. Let’s change that quickly. Gordon Inwenstar - the head of this circus."
 
 
@@ -97,8 +107,8 @@ x
 0
 4
 0
-0
-10
+4
+11
 Gordon pauses and directly looks at them.
 
 
@@ -108,7 +118,7 @@ x
 0
 0
 0
-11
+12
 Is it Bruno's turn?
 
 
@@ -117,8 +127,8 @@ x
 0
 1
 0
-0
-12
+1
+13
 "I am Bru-"
 
 
@@ -127,18 +137,18 @@ x
 0
 2
 0
-0
-13
+2
+14
  "Bruno. I know. I already heard of you. You’re supposed to be... intriguing. This circus needs a little more - spice. And my instincts told me you would be the perfect person for the job. That leads me to my offer: You should work here."
 Take the job offer
 Don't work here
-x
-x
+17
+14
 1
 4
 0
-0
-14
+4
+15
 "Good Choice 1"
 
 
@@ -148,63 +158,593 @@ x
 0
 8
 0
-15
-"Good Choice 2"
-
-
-x
-x
-0
-0
-9
-0
 16
-"Good Choice 3"
-
-
-x
-x
+Bruno WILL work there
+Bruno WILL work there
+Don't work here
+16
+15
+1
+1
 0
-0
-10
 0
 17
-"Good Choice 4"
+Bruno was a fool - There was no choice. No offer could have been better, and they knew that.
 
 
 x
 x
 0
+1
 0
-11
 0
 18
-"Good Choice 5?"
-KILL THE BABY
-Dont kill the baby
+The curtain opens. This is not what Bruno expected from a circus. A large tent with some tall pillars supporting the heavy tarpaulin. Without them the tent would definitely collapse. There is no grass growing, no dirt, the whole ground is covered in colored carpet. Everything is so - clean.
+
+
+x
+x
+0
+0
+0
+0
+19
+As soon as they step in, a woman approaches them. Her strides are powerful. Her appearance is elegant yet energetic. And she is staring right into Bruno's eyes - stops just a few inches in front of him.
+
+
+x
+x
+0
+0
+0
+0
 20
-19
-1
-1
+"So we got a new one here. Welcome."
+
+
+x
+x
+0
+8
+0
+8
+21
+Bruno, still a bit intimidated, looks around. Right behind her stand two men. One of them is big and strong, the other one rather small, always close to the bigger one.
+
+
+x
+x
 0
 0
-19
-"Good Choice 5"
+0
+0
+22
+"Haha. Well well. Our darling Donna. Always up to the front. Don't be afraid of her, she is quite nice. By the way, I am Harvey, and this little guy behind me is Tori."
 
 
 x
 x
 0
 3
-12
 0
-20
-Wenn du das hier sehen kannst, warst du böse!!!
+3
+23
+Harvey looks back and smiles at the younger boy. Tori, yet not small, is still smaller than Harvey. His light, fancy clothes are moving with every motion. The purple, puffy shorts, the black hair, and the white west complete the picture of an elegant artist. As soon as Tori sees Harveys' smile he blushes.
 
 
 x
 x
 0
 0
-13
 0
+0
+24
+"Isn't he cute? Haha."
+
+
+x
+x
+0
+3
+0
+3
+25
+Flattered by this statement Tori backs down and tries to hide his face behind his hand.
+
+
+x
+x
+0
+0
+0
+0
+26
+"But now, let me show you the facilities - well, the few we got here. I am sure we have a nice place for you and maybe meet more people."
+
+
+x
+x
+0
+3
+0
+3
+27
+"So follow me I'll show you around."
+
+
+x
+x
+0
+3
+0
+3
+28
+Harvey turnes around and makes a gesture to the rest of the staff. Because of this, Bruno is not paying attention to the shadow moving behind Herveys back.
+
+
+x
+x
+0
+0
+0
+0
+29
+The people now surrounding them all wear bright if not fancy clothing.
+
+
+x
+x
+0
+0
+0
+0
+30
+"Let me introduce you to Avery and Celeste. If they are together - which is always the case - they shine brighter than the sun. I can't remember when they joined, but it even had to be before me! Both of them are our trainers. They can handle any animal, haha. Trust me."
+
+
+x
+x
+0
+3
+0
+3
+31
+Both of them look at Bruno. Avery is checking them out but shaking their hand. Celeste stares right at Bruno, smiling, giving him a better feeling than everyone until here.
+
+
+x
+x
+0
+0
+0
+0
+32
+Danger can be anywhere
+
+
+x
+x
+0
+1
+0
+1
+33
+"Avery here will do nothing more but shake your hand. Let me introduce myself first. I am Celeste or, as Avery calls me: Her bright blind soul."
+
+
+x
+x
+0
+10
+0
+10
+34
+Celeste, the curtsy was a bit too much. 
+
+
+x
+x
+0
+1
+0
+1
+35
+"Such a sweet reference, isn't it?"
+
+
+x
+x
+0
+10
+0
+10
+36
+Oh, a kiss? How convenient. 
+
+
+x
+x
+0
+1
+0
+1
+37
+"Ah, sorry, if you need anything or want to know anything, talk to us. We both are living here the longest by far. Many things have changed in the past few years, but we will be happy to give you the best first impression of this circus that we can!"
+
+
+x
+x
+0
+10
+0
+10
+38
+Both leave Bruno to Harvey again and turn to Tori, teasing him a little.
+
+
+x
+x
+0
+0
+0
+0
+39
+"Good, good. And back there is Nimue. She needs some time to be comfortable with others, but once you talk to her - well, you'll see."
+
+
+x
+x
+0
+3
+0
+3
+40
+The figure in the back never looked up through this whole conversation. Bruno could only see her white, curly hair and the well-made dress she wears.
+
+
+x
+x
+0
+0
+0
+0
+41
+Harvey takes a step forward and signals Tori to step aside, who is doing so, looking at Harvey with a sparkle in his eyes. And even if Tori is skinny, behind his back hides another person. As soon as she gets recognized she winks but makes no sign of moving - standing stiff like a board.
+
+
+x
+x
+0
+0
+0
+0
+42
+"Oh and, this is our sunshine in person. Also, her name is sunshine... well, as far as I know. A little of a mystery you know!"
+
+
+x
+x
+0
+3
+0
+3
+43
+Harvey pats Sunshines’ back a bit too forcefully. She stumbles a bit.
+
+
+x
+x
+0
+0
+0
+0
+44
+"Hey."
+
+
+x
+x
+0
+7
+0
+7
+45
+Is the only answer Bruno gets from this woman, who seems to be the only one in her regular outfit. Then she quickly turns around, grabbing her book and hiding behind it.
+
+
+x
+x
+0
+0
+0
+0
+46
+"The courage of making a choice” - what an interesting title to read.
+
+
+x
+x
+0
+1
+0
+1
+47
+"Also it seems like Esmira is missing. Well kind of like always. Hmmm."
+
+
+x
+x
+0
+3
+0
+3
+48
+The staff leaves and Harvey points to the back of the tent.
+
+
+x
+x
+0
+0
+0
+0
+49
+"That is where we - tend - to live. Haha, do you understand?"
+
+
+x
+x
+0
+3
+0
+3
+50
+Bruno looks up at him with a weird, a bit judging glance. Tori is laughing up his sleeve.
+
+
+x
+x
+0
+0
+0
+0
+51
+"I am not a bit sorry for that. So the room at the right corner is yours. I leave you alone a bit. Talk to me whenever you feel like it!”
+
+
+x
+x
+0
+3
+0
+3
+52
+Kapitel 1
+
+
+x
+x
+0
+1
+0
+0
+53
+Bruno was surprised, the other members were quite nice. Could it be that their view on this circus is way too negative? Maybe they just imagined the chilling feeling they had when talking to Gordon.
+
+
+x
+x
+0
+0
+0
+0
+54
+No, they didn't.
+
+
+x
+x
+0
+1
+0
+1
+55
+Anyway, they should check out their room. Bruno does not expect much. But the least they expect when turning the doorknob, is the well-dressed man that stands in his room. A grimy look is on his face that is partly covered by an enormous mustache
+
+
+x
+x
+0
+0
+0
+0
+56
+"Why are you here?"
+
+
+x
+x
+0
+5
+0
+5
+57
+"I was told that this is my room."
+
+
+x
+x
+0
+2
+0
+2
+58
+"Sir."
+
+
+x
+x
+0
+5
+0
+5
+59
+"Sorry?"
+
+
+x
+x
+0
+2
+0
+2
+60
+"Seems that you don't know who you've been talking to. I am Mister Eugene the circus director, but for you I am Sir. Did I make myself clear?"
+
+
+x
+x
+0
+5
+0
+5
+61
+"Yes."
+
+
+x
+x
+0
+2
+0
+2
+62
+He pauses. His eyes glimmer angry at them.
+
+
+x
+x
+0
+0
+0
+0
+63
+"Ah, sorry. Yes, sir."
+
+
+x
+x
+0
+2
+0
+2
+64
+Eugene just let out an annoyed snort, before leaving Bruno's room.
+
+
+x
+x
+0
+0
+0
+0
+65
+"I recommend you to prove useful soon. The next show is tomorrow."
+
+
+x
+x
+0
+5
+0
+5
+66
+Eugene says while leaving.
+
+
+x
+x
+0
+0
+0
+0
+67
+Bruno just stands there, confused from the odd encounter.
+
+
+x
+x
+0
+0
+0
+0
+68
+They finally step into their room. It is quite plain with only a bed, a desk and a small dresser in it. Their attention leads to the desk where along a tool box a small written note is.
+
+
+x
+x
+0
+0
+0
+0
+69
+
+
+
+x
+x
+0
+0
+2
+0
+70
+Bruno doesn't know much. But what they know is that, in order to stay here, they have to be useful. Bruno quickly grabs the tool box on their way to the circus arena.
+
+
+x
+x
+0
+0
+0
+0
+71
+They just didn't know any better.
+
+
+x
+x
+0
+1
+0
+1
+72
+
+
+
+x
+x
+0
+0
+3
+0
+73
+Tori is crying, pulling his hair, pushing help away. He is not looking sad, he seems to be broken - empty like a candle without a wick. His mouth moves as if he wants to say something, but no sound comes over his lips. Donna is desperately trying to help him, but it seems to be senseless.
+
+
+x
+x
+0
+0
+0
+0
+74
+No one can undo what Bruno did.
+
+
+x
+x
+0
+1
+0
+1

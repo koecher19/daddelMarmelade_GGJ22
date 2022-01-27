@@ -3,7 +3,21 @@ guid: 9c83ddd846e015f41a6025ac3b6b014e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - normal: {instanceID: 0}
+  - narrator: {instanceID: 0}
+  - bruno: {fileID: 8300000, guid: 7c6a7f1453f4bee45840027f2968bf3f, type: 3}
+  - harvey: {fileID: 8300000, guid: 34902c47daf1b4247ac55a65eb7d27a4, type: 3}
+  - gordon: {instanceID: 0}
+  - eugene: {fileID: 8300000, guid: e465f8fe46cf6a645800d445b8223267, type: 3}
+  - tori: {fileID: 8300000, guid: e05a09711dac0554d828ad50e881c721, type: 3}
+  - sunshine: {fileID: 8300000, guid: b9e42c13847861c40917d6b800063865, type: 3}
+  - donna: {fileID: 8300000, guid: 43df0ce549abdce4ca3c516b7baa0c87, type: 3}
+  - avery: {fileID: 8300000, guid: 1d349cd2f66ac8043ba32ad2add2b812, type: 3}
+  - celeste: {fileID: 8300000, guid: 4d8adc224038a1540843bbeb33f72109, type: 3}
+  - esmira: {fileID: 8300000, guid: 1277dafb0e0944547a548246c4d9ea89, type: 3}
+  - nimues: {fileID: 8300000, guid: 7d8276a46a4881a48a12e4bc3c2aaf36, type: 3}
+  - stepSound: {fileID: 8300000, guid: eef546c989b175f47a5fd25d6171eb55, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
