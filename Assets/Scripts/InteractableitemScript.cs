@@ -6,10 +6,14 @@ public class InteractableitemScript : MonoBehaviour
 {
     public GameObject interactableParent;
 
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (interactableParent.gameObject.name == "WaterBucket")
+        {
+            // set acid bucket as inactive
+        }
     }
 
     // Update is called once per frame
@@ -43,6 +47,10 @@ public class InteractableitemScript : MonoBehaviour
     {
         // use inventory on item
         this.interactableParent.GetComponent<Interact>().useItem();
+        if(interactableParent.gameObject.name == "WaterBucket")
+        {
+            // set acid bucket as active
+        }
     }
     
 }

@@ -414,6 +414,7 @@ MonoBehaviour:
   usableItems:
   - {fileID: 0}
   dialogIterator: 0
+  isCharacter: 0
 --- !u!1 &9048069830395550766
 GameObject:
   m_ObjectHideFlags: 0

@@ -66,7 +66,7 @@ public class CutScene11 : MonoBehaviour
         {
             // eugene dialog:
             this.eugene.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(7);
             this.eugene.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
 
             yield return new WaitForSeconds(1);
@@ -77,12 +77,15 @@ public class CutScene11 : MonoBehaviour
         /*
         NOTE: ->Maybe schwarzer Bildschirm und dann geht es weiter, so als "Pause für den Tod"
         */
+        /*
         {
             this.blackScreen.SetActive(true);
             yield return new WaitForSeconds(2);
             this.blackScreen.SetActive(false);
         }
-
+        */
+        // oder einfach pause 
+        yield return new WaitForSeconds(5);
 
 
         /*
@@ -96,7 +99,7 @@ public class CutScene11 : MonoBehaviour
             this.eugene.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().nextDialog();
             this.eugene.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
 
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(15);
 
             this.eugene.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
 
@@ -135,7 +138,7 @@ public class CutScene11 : MonoBehaviour
 
             // "What do you call bears with no ears?"
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(2.5f);
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
 
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().nextDialog();
@@ -151,7 +154,7 @@ public class CutScene11 : MonoBehaviour
 
             // "What do you call a farm that makes bad jokes?"
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(3);
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
 
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().nextDialog();
@@ -208,7 +211,7 @@ public class CutScene11 : MonoBehaviour
 
             //"What do you call a fake noodle?"
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(2.5f);
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
 
 
@@ -217,7 +220,7 @@ public class CutScene11 : MonoBehaviour
 
             //"An impasta."
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(1.5f);
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
 
 
@@ -233,7 +236,7 @@ public class CutScene11 : MonoBehaviour
 
             //"So you want a tired clown? One that you can laugh at?"
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(5);
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
         }
         /*
@@ -251,7 +254,7 @@ public class CutScene11 : MonoBehaviour
 
             //“Did you hear about the guy who invented the knock-knock joke ?”
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(5);
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
 
 
@@ -260,9 +263,11 @@ public class CutScene11 : MonoBehaviour
 
             //“He won the no-bell prize.”
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(2);
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
         }
+
+        yield return new WaitForSeconds(1);
 
         /*
         NOTE: -> Blackscreen, Sunshine richtet Blume auf sich selber
@@ -292,7 +297,7 @@ public class CutScene11 : MonoBehaviour
 
             //  "aaa AAAAA"
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(2);
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
 
 
@@ -301,7 +306,7 @@ public class CutScene11 : MonoBehaviour
 
             //"AAAAAAAAAAAA”
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(3);
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
         }
 
@@ -323,14 +328,14 @@ public class CutScene11 : MonoBehaviour
         {
             // reposition sunshine:
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<Transform>().position += Vector3.left * 2.0f + Vector3.up * 0.2f;
+
+            yield return new WaitForSeconds(1);
+
             //"AAAAAAAAAAAA”
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(4);
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
         }
-
-
-        yield return new WaitForSeconds(2);
 
 
 

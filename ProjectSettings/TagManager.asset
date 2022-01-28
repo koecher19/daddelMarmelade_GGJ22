@@ -50,6 +50,9 @@ TagManager:
   - name: object
     uniqueID: 2494097539
     locked: 0
+  - name: object top
+    uniqueID: 14665373
+    locked: 0
   - name: player
     uniqueID: 950206183
     locked: 0
