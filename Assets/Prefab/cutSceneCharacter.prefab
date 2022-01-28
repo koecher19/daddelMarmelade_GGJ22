@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 9154652614008901183}
   - component: {fileID: 9154652614008901182}
   - component: {fileID: 9154652614008901181}
-  - component: {fileID: 187725799153988279}
   - component: {fileID: 3815226391766544479}
   m_Layer: 0
   m_Name: InteractableItem
@@ -113,19 +112,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.95, y: 1.05}
   m_EdgeRadius: 0
---- !u!114 &187725799153988279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9154652614008901152}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddfa9219aaf060f45b14152e9d33556c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactableParent: {fileID: 9154652614868843828}
 --- !u!114 &3815226391766544479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fe1e3a5f3e82b3458d2e85770a72f4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 0}
+  parent: {fileID: 9154652614868843828}
 --- !u!1 &9154652614090367752
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,13 +409,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textbox: {fileID: 9154652614151688052}
   description: {fileID: 9154652615447448195}
-  textfiles:
-  - {fileID: 4900000, guid: d0721b4a0609de94a972406f72e82b2f, type: 3}
-  - {fileID: 4900000, guid: a12895d77f0675b4480cfe6fc98a9492, type: 3}
+  textfiles: []
   inventory: {fileID: 0}
   usableItems: []
   dialogIterator: 0
-  isCharacter: 0
+  isCharacter: 1
 --- !u!1 &9154652615447448196
 GameObject:
   m_ObjectHideFlags: 0
