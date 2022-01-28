@@ -277,6 +277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Instructionspanel
       objectReference: {fileID: 0}
+    - target: {fileID: 1861715178475934088, guid: 6af02baa6d2f1024c933a67b6669ff3b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6af02baa6d2f1024c933a67b6669ff3b, type: 3}
 --- !u!224 &3807684378876478926 stripped
@@ -378,6 +382,10 @@ PrefabInstance:
     - target: {fileID: 8069546563265254704, guid: c57487b258045064e9c5688b51b66f86, type: 3}
       propertyPath: m_Name
       value: Flyerpanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8069546563265254704, guid: c57487b258045064e9c5688b51b66f86, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c57487b258045064e9c5688b51b66f86, type: 3}

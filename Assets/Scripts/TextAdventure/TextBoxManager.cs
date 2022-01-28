@@ -32,6 +32,8 @@ public class TextBoxManager : MonoBehaviour
     private GameObject rightButtonGameObjectReference;
     private GameObject continueButtonGameObjectReference;
     private GameObject debugButtonManagerGameObjectReference;
+    private int leftButtonNextSceneReference;
+    private int rightButtonNextSceneReference;   
     public GameObject flyerPanelGameObjectReference;
     public GameObject instructionsPanelGameObjectReference;
     public GameObject middlePanelGameObjectReference;
@@ -160,6 +162,7 @@ public class TextBoxManager : MonoBehaviour
 
 
         updateDisplay();
+        updateDisplay();
     }
 
     // Update is called once per frame
@@ -181,6 +184,8 @@ public class TextBoxManager : MonoBehaviour
         {
             updateMethodSuccessCount++;
             updateDisplay();
+            leftButtonNextSceneReference = storyBlocks[tASceneManager.currentScene].getLeftButtonNextScene();
+            rightButtonNextSceneReference = storyBlocks[tASceneManager.currentScene].getRightButtonNextScene();
         }
     }
 

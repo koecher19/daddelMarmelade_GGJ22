@@ -142,8 +142,8 @@ x
  "Bruno. I know. I already heard of you. You’re supposed to be... intriguing. This circus needs a little more - spice. And my instincts told me you would be the perfect person for the job. That leads me to my offer: You should work here."
 Take the job offer
 Don't work here
-17
-14
+18
+15
 1
 4
 0
@@ -156,14 +156,14 @@ x
 x
 0
 0
-8
+9
 0
 16
 Bruno WILL work there
 Bruno WILL work there
 Don't work here
+17
 16
-15
 1
 1
 0
@@ -906,7 +906,7 @@ x
 x
 0
 0
-9
+10
 0
 91
 This was not very effective. Resulted in absolutely nothing. Bravo.
@@ -1089,7 +1089,7 @@ x
 0
 0
 109
-“It is a tragedy. An absolutely horrible accident that should have never happened. But I am sure that something like this will never happen again. So don’t lose faith in this circus, we may not be the best artist nor have a massive audience, but we love what we are doing. We are all like a family here and even though you had a rough start here. I want you to feel that too.”“I can’t imagine how you must feel with this happening on only your second day here. I am so sorry. I just wanted to tell you that something like that has never ever happened before. Of course every now and then someone got hurt, but even then they were only minor injuries.”
+“It is a tragedy. An absolutely horrible accident that should have never happened. But I am sure that something like this will never happen again. So don’t lose faith in this circus, we may not be the best artist nor have a massive audience, but we love what we are doing. We are all like a family here and even though you had a rough start here. I want you to feel that too.”
 
 
 x
@@ -1527,4 +1527,174 @@ x
 0
 0
 12
+0
+153
+Maybe Bruno doesn't want to do this.
+
+
+x
+x
+0
+1
+0
+1
+154
+Okay, but let me say a warning: They won't be happy.
+
+
+x
+x
+0
+1
+0
+1
+155
+I hope they have fun.
+
+
+x
+x
+0
+1
+0
+1
+156
+"I - the director gave me a note. He told me what to do. It's just..."
+
+
+x
+x
+0
+2
+0
+2
+157
+Bruno thinks for a moment. Their mind is telling them to surrender. Surrender and everything will be good. It was an accident. They can’t be a murderer…
+
+
+x
+x
+0
+0
+0
+0
+158
+Was it an accident? Also, yes, surrender.
+
+
+x
+x
+0
+1
+0
+1
+159
+"Okay, well the director is mean. I always try to avoid him… But, uhm, can you show me the note?."
+
+
+x
+x
+0
+6
+0
+6
+160
+Tori is reaching out with his hand, looking at Bruno with lifted eyebrows. Bruno hesitates. He looks so sad.
+
+
+x
+x
+0
+0
+0
+0
+161
+"You still have it, right?"
+
+
+x
+x
+0
+6
+0
+6
+162
+"Yeah, I mean, I thought I had it, but... The note is gone. It was placed on my desk. I wanted to make sure I did everything right and check it. But now it is not there anymore."
+
+
+x
+x
+0
+2
+0
+2
+163
+Oh, how inconvenient for Bruno. Maybe they should lie more to not get in trouble.
+
+
+x
+x
+0
+1
+0
+1
+164
+"Oh, typical!"
+
+
+x
+x
+0
+6
+0
+6
+165
+Tori reaches to his temple and closes his eyes.
+
+
+x
+x
+0
+0
+0
+0
+166
+"Sorry, I didn’t mean to… Okay, so. I don’t know what to think anymore.”
+
+
+x
+x
+0
+6
+0
+6
+167
+He takes a step back, sighing.
+
+
+x
+x
+0
+0
+0
+0
+168
+Tori: “If you did something wrong and it was an accident, okay. I still despise you for killing Harvey though. Accident or not I lo…”
+
+
+x
+x
+0
+6
+0
+6
+169
+Tori stops and shakes his head.
+
+
+x
+x
+0
+0
+0
 0
