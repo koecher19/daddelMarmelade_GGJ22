@@ -37,7 +37,7 @@ x
 0
 0
 0
-13
+1
 4
 Wrong thought
 
@@ -142,8 +142,8 @@ x
  "Bruno. I know. I already heard of you. You’re supposed to be... intriguing. This circus needs a little more - spice. And my instincts told me you would be the perfect person for the job. That leads me to my offer: You should work here."
 Take the job offer
 Don't work here
-18
-15
+17
+14
 1
 4
 0
@@ -156,14 +156,14 @@ x
 x
 0
 0
-9
+8
 0
 16
 Bruno WILL work there
 Bruno WILL work there
 Don't work here
-17
 16
+15
 1
 1
 0
@@ -906,7 +906,7 @@ x
 x
 0
 0
-10
+9
 0
 91
 This was not very effective. Resulted in absolutely nothing. Bravo.
@@ -1089,7 +1089,7 @@ x
 0
 0
 109
-“It is a tragedy. An absolutely horrible accident that should have never happened. But I am sure that something like this will never happen again. So don’t lose faith in this circus, we may not be the best artist nor have a massive audience, but we love what we are doing. We are all like a family here and even though you had a rough start here. I want you to feel that too.”
+“It is a tragedy. An absolutely horrible accident that should have never happened. But I am sure that something like this will never happen again. So don’t lose faith in this circus, we may not be the best artist nor have a massive audience, but we love what we are doing. We are all like a family here and even though you had a rough start here. I want you to feel that too.”“I can’t imagine how you must feel with this happening on only your second day here. I am so sorry. I just wanted to tell you that something like that has never ever happened before. Of course every now and then someone got hurt, but even then they were only minor injuries.”
 
 
 x
@@ -1167,4 +1167,364 @@ x
 0
 0
 0
+0
+117
+Bruno decides to stay quiet. They don’t want to talk to anyone right now. Hopefully Donna will just go away. She knocks again.
+
+
+x
+x
+0
+0
+0
+0
+118
+“Bruno? Are you ok?.”
+
+
+x
+x
+0
+8
+0
+8
+119
+They remain silent.
+
+
+x
+x
+0
+0
+0
+0
+120
+“I will come in now, okay?”
+
+
+x
+x
+0
+8
+0
+8
+121
+Seems that she won’t let it go easily. Very irritating
+
+
+x
+x
+0
+0
+0
+0
+122
+Donna does not hesitate a second longer and enters the room with grace. Beneath her makeup and her perfectly styled black hair, she looks very tired. One can clearly see that her eyes were swollen from crying.
+
+
+x
+x
+0
+0
+0
+0
+123
+Bruno sights loudly.
+
+
+x
+x
+0
+0
+0
+0
+124
+“Why are you here Donna? I don’t want to talk to you right now”
+
+
+x
+x
+0
+2
+0
+2
+125
+She looks hurt.
+
+
+x
+x
+0
+0
+0
+0
+126
+“I-I just wanted to check on you…” 
+
+
+x
+x
+0
+8
+0
+8
+127
+“That is not necessary. Please leave now.”
+
+
+x
+x
+0
+2
+0
+2
+128
+“I am sorry that I cared!”
+
+
+x
+x
+0
+8
+0
+8
+129
+She quickly leaves the room and slams the door.
+
+
+x
+x
+0
+0
+0
+0
+130
+Bruno successfully avoided this conversation, but they know they hurt Donna.
+
+
+x
+x
+0
+0
+0
+0
+131
+Cause that’s the only thing that Bruno can do.
+
+
+x
+x
+0
+1
+0
+1
+132
+Bruno stares at the wall. Deep down they already know, they had chosen a dangerous path.
+
+
+x
+x
+0
+0
+0
+0
+133
+Bruno hears someone shouting outside their room again. They will finally take the chance to investigate that.
+
+
+x
+x
+0
+0
+0
+0
+134
+"I thought all of it was for the audience. That Harvey screams so loud because he wanted to make a good show. The director told us many times now that our shows needed 'something more'. I thought maybe Harvey was sick of the director arguing, of his mad behavior, of HIM. I. DON'T. KNOW. Now, leave me alone Donna. I know you want to help, but… I- I don’t want to talk to anyone right now..."
+
+
+x
+x
+0
+11
+0
+11
+135
+Nimue slams the door of her room shut. A click sound makes it clear: The door is closed now. Everyone can hear her crying behind that door.
+
+
+x
+x
+0
+0
+0
+0
+136
+Donna immediately grabs her hair and turns around, looking stressed and kind of lost. She is walking into her room herself, closing the door.
+
+
+x
+x
+0
+0
+0
+0
+137
+Esmira is, like always, nowhere to be found and Tori is awkwardly standing in the middle of the tent.
+
+
+x
+x
+0
+0
+0
+0
+138
+Esmira is, like always, nowhere to be found and Tori is awkwardly standing in the middle of the tent.
+
+
+x
+x
+0
+0
+0
+0
+139
+Meanwhile Avery is talking to Celeste, trying to explain what happened while Celeste holds her breath the entire conversation.
+
+
+x
+x
+0
+0
+0
+0
+140
+And Sunshine is outside. Trying to make the best of it. She is dancing and making jokes in Harveys' blood. She has to please the crowd while everyone tries to accept that the unthinkable happened.
+
+
+x
+x
+0
+0
+0
+0
+141
+"The courage of making a choice" - How ironic.
+Facing Tori
+Talk to Avery and Celeste
+142
+
+1
+1
+0
+1
+142
+Bruno decides to speak to Tori, who stands in the middle of the backstage area. He is clearly in his own thoughts right now. As Bruno approaches him, he slightly shakes his head and puts on a slowly fading smile - into a desperate look.
+
+
+x
+x
+0
+0
+0
+0
+143
+"Oh, hey Bruno."
+
+
+x
+x
+0
+6
+0
+6
+144
+Tori looks at him with anger on his face. He tries to hide that expression though.
+
+
+x
+x
+0
+0
+0
+0
+145
+“I know I probably am wrong, but - didn’t you work on the Box Harvey was in?”
+
+
+x
+x
+0
+6
+0
+6
+146
+Brunos’ thoughts go wild. What should they answer? The screams resound in their head louder as Tori talks. The next time he stops talking, Brunos’ mind is empty again. Their emotions slip away for a moment until Bruno comes back into reality.
+
+
+x
+x
+0
+0
+0
+0
+147
+They do not know what the last sentence of Tori was, but they feel no answer could satisfy him. So Bruno just answers Tori's first question.
+
+
+x
+x
+0
+0
+0
+0
+148
+"Yes, I mean, I have been told to do it. But I thought everything would be alright. Like, why would anyone..."
+
+
+x
+x
+0
+2
+0
+2
+149
+Oh, Bruno, you poor soul. Do they really think their job is to set up things the way they are meant to be set up? Foolish Bruno.
+
+
+x
+x
+0
+1
+0
+1
+150
+"Uhm, yeah… Right, haha… But who told you to do this, if… if I may ask?"
+
+
+x
+x
+0
+6
+0
+6
+151
+Don't tell him.
+Tell him about the note
+
+152 
+x
+0
+1
+0
+1
+152
+"Good Choice 4"
+
+
+x
+x
+0
+0
+12
 0
