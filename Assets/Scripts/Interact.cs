@@ -26,7 +26,7 @@ public class Interact : MonoBehaviour
             // set dialog box to fist dialog
             if (isCharacter)
             {
-                description.text = gameObject.name + " : \n" + textfiles[0].text;
+                description.text = gameObject.name + " : \n\n" + textfiles[0].text;
             }
             else
             {
