@@ -361,6 +361,7 @@ GameObject:
   - component: {fileID: 1650417094}
   - component: {fileID: 1650417093}
   - component: {fileID: 1650417095}
+  - component: {fileID: 1650417096}
   m_Layer: 0
   m_Name: startCutscene
   m_TagString: Untagged
@@ -433,6 +434,23 @@ MonoBehaviour:
   emptyBox: {fileID: 0}
   harveyMurder: {fileID: 0}
   harveyMurderFirstFrame: {fileID: 0}
+--- !u!114 &1650417096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650417091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a56c414fd9c057438354fc9998fd47c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 2008390730}
+  player: {fileID: 1356457230}
+  mainCamera: {fileID: 1754827406}
+  blackScreen: {fileID: 1427881158}
+  cutSceneCamera: {fileID: 1846543639}
 --- !u!1 &1754827406
 GameObject:
   m_ObjectHideFlags: 0
