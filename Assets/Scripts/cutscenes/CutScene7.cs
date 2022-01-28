@@ -84,8 +84,9 @@ public class CutScene7 : MonoBehaviour
 
         // ACTION
         {
+            // "And now the show REALLY begins! A magic trick you have NEVER seen before! Let Nimue enchant you with her magic! Clear the stage and welcome our master of wizardry: Nimue!"
             eugene.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(10);
             eugene.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
         }
 
@@ -126,8 +127,9 @@ public class CutScene7 : MonoBehaviour
         // ACTION
         // dialog
         {
+            // "What if I tell you that you can make two men out of one? Would you want that?"
             this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(4);
             //this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
         }
 
@@ -144,8 +146,9 @@ public class CutScene7 : MonoBehaviour
 
         // ACTION
         {
+            // “Oh, there is more space in here than usual.You guys took a long time to do that, haha.”
             this.harveyAlive.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(5);
             this.harveyAlive.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
         }
         
@@ -167,9 +170,10 @@ public class CutScene7 : MonoBehaviour
 
         //ACTION
         {
+            // "So, let me show you my new trick!"
             this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().nextDialog();
             //this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(2.5f);
             this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
         }
 
@@ -199,21 +203,22 @@ public class CutScene7 : MonoBehaviour
 
         // ACTION
         {
+            // "And now let's pull this man apart. And you see the wonder!"
             this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().nextDialog();
             this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
 
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(4);
 
             this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
         }
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         {
             this.harveyMurderFirstFrame.SetActive(false);
             this.harveyMurder.SetActive(true);
         }
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(4);
 
 
 

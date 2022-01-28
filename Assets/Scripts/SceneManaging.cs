@@ -21,10 +21,26 @@ public class SceneManaging : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D trig)
     {
+        var sceneTransitions = new List<(string thisScene, string nextScene)>
+        {
+            ("6-Sidescroller", "7-Sidescroller"),
+            ("7-Sidescroller", "TextAdventure"),
+            ("10-Sidescroller", "11-Sidescroller"),
+            ("11-Sidescroller", "12-Sidescroller"),
+            ("12-Sidescroller", "TextAdventure")
+        };
+
         if (trig.gameObject.tag == "sceneChangeTrigger")
         {
-            Debug.Log("hit scene change trigger");
-            SceneManager.LoadScene("TextAdventure");
+            
+            foreach(var tupel in sceneTransitions)
+            {
+                if(tupel.thisScene == SceneManager.GetActiveScene().name)
+                {
+                    SceneManager.LoadScene(tupel.nextScene);
+                }
+            }
+            
         }
     }
 }
