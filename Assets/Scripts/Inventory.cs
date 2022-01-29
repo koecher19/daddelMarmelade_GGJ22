@@ -38,8 +38,11 @@ public class Inventory : MonoBehaviour
     {
         // remove item from list
         this.items.Remove(item);
-        // delete item
-        Destroy(item);
+        // delete item if you dont put it in the scene in exchange for another item
+        if (!item.GetComponent<Interact>().interchanges)
+        {
+            Destroy(item);
+        };
     }
 
     public void pickItemUp(GameObject item)
