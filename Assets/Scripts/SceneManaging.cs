@@ -32,8 +32,7 @@ public class SceneManaging : MonoBehaviour
 
         if (trig.gameObject.tag == "sceneChangeTrigger")
         {
-            
-            foreach(var tupel in sceneTransitions)
+            foreach (var tupel in sceneTransitions)
             {
                 if(tupel.thisScene == SceneManager.GetActiveScene().name)
                 {

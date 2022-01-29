@@ -13,6 +13,10 @@ public class Interact : MonoBehaviour
     public List<GameObject> usableItems;
     public int dialogIterator = 0;          // iterates over amount of dialog scripts
     public bool isCharacter;
+    public bool interchangable;             // if you can change this item with another one in scene
+    public bool interchanges;               // if you can put this in the scene in change for another one
+    public bool collectOnClick;
+    public GameObject changeWith;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +36,12 @@ public class Interact : MonoBehaviour
             {
                 description.text = textfiles[0].text;
             }
+        }
+
+        // if you can change out the item: deactivate other item
+        if (this.interchangable)
+        {
+            this.changeWith.transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 
@@ -54,9 +64,24 @@ public class Interact : MonoBehaviour
                 this.usableItems.Remove(item);
                 // use item on this object
                 inventory.GetComponent<Inventory>().useItem(item);
+
+                // now to exchange with item from inventory:
+                if (this.interchangable)
+                {
+                    this.changeWith.transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>().enabled = true;
+                    // deactivate panel
+                    this.transform.GetChild(0).gameObject.SetActive(false);
+                }
+
                 // to use other item you have to click again
                 break;
             }
+        }
+
+        // if we want to collect the item on click:
+        if (collectOnClick)
+        {
+            inventory.GetComponent<Inventory>().pickItemUp(gameObject);
         }
     }
 
