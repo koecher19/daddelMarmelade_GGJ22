@@ -26,12 +26,6 @@ public class Inventory : MonoBehaviour
     {
         // write item list in textbox
         displayItems();
-
-        // test if useItem works by pressing escape key
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            useItem(this.items[0]);
-        }
     }
 
     public void useItem(GameObject item)
