@@ -46,4 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftButton: {fileID: 4935679886863910298, guid: 98cd7c02dae3b2e4baa88d0e7e89a033, type: 3}
   rightButton: {fileID: 3189836299089211600, guid: d704ffe4a211bae42bcc058ab56ddb26, type: 3}
+  continueButton: {fileID: 5039139431009221122, guid: b890727031b489e44a3ab73153f3ad71, type: 3}
   textBoxManager: {fileID: 261663331972967215, guid: b5e93916eb32edb4eb221b0fd3067563, type: 3}

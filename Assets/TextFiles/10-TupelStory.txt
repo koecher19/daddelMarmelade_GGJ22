@@ -37,7 +37,7 @@ x
 0
 0
 0
-1
+13
 4
 Wrong thought
 
@@ -167,7 +167,7 @@ Don't work here
 1
 1
 0
-0
+1
 17
 Bruno was a fool - There was no choice. No offer could have been better, and they knew that.
 
@@ -177,7 +177,7 @@ x
 0
 1
 0
-0
+1
 18
 The curtain opens. This is not what Bruno expected from a circus. A large tent with some tall pillars supporting the heavy tarpaulin. Without them the tent would definitely collapse. There is no grass growing, no dirt, the whole ground is covered in colored carpet. Everything is so - clean.
 
@@ -187,7 +187,7 @@ x
 0
 0
 0
-0
+14
 19
 As soon as they step in, a woman approaches them. Her strides are powerful. Her appearance is elegant yet energetic. And she is staring right into Bruno's eyes - stops just a few inches in front of him.
 
@@ -457,7 +457,7 @@ x
 0
 0
 0
-0
+18
 46
 "The courage of making a choice” - what an interesting title to read.
 
@@ -557,7 +557,7 @@ x
 0
 0
 0
-0
+15
 56
 "Why are you here?"
 
@@ -667,7 +667,7 @@ x
 0
 0
 0
-0
+16
 67
 Bruno just stands there, confused from the odd encounter.
 
@@ -807,7 +807,7 @@ x
 0
 0
 0
-0
+15
 81
 Brunos head feels like it is going to explode. They is in their room. Not making any sound, while their thoughts are overwhelming them. Was it Bruno's fault? What about those instructions? And why aren’t these in Brunos room anymore? Why would anyone give them false instructions that would lead to something that terrible?
 
@@ -857,7 +857,7 @@ x
 0
 0
 0
-0
+21
 86
 One more time.
 
@@ -877,13 +877,13 @@ x
 0
 0
 0
-0
+21
 88
 Bruno hears voices, but this time from outside the room. They seem desperate, Bruno should go and listen to what they are saying.
 
 
-94
-94
+x
+x
 0
 0
 0
@@ -892,8 +892,8 @@ Bruno hears voices, but this time from outside the room. They seem desperate, Br
 As the filthy sinner he is.
 
 
-x
-x
+94
+94
 0
 1
 0
@@ -1027,7 +1027,7 @@ x
 0
 0
 0
-0
+15
 103
 “I just wanted to check up on you Bruno” 
 
@@ -1157,7 +1157,7 @@ x
 0
 0
 0
-0
+16
 116
 Bruno hears someone shouting outside their room again. They finally take the chance to investigate that.
 
@@ -1227,7 +1227,7 @@ x
 0
 0
 0
-0
+15
 123
 Bruno sights loudly.
 
@@ -1297,7 +1297,7 @@ x
 0
 0
 0
-0
+17
 130
 Bruno successfully avoided this conversation, but they know they hurt Donna.
 
@@ -1357,7 +1357,7 @@ x
 0
 0
 0
-0
+17
 136
 Donna immediately grabs her hair and turns around, looking stressed and kind of lost. She is walking into her room herself, closing the door.
 
@@ -1367,7 +1367,7 @@ x
 0
 0
 0
-0
+16
 137
 Esmira is, like always, nowhere to be found and Tori is awkwardly standing in the middle of the tent.
 
@@ -1413,7 +1413,7 @@ x
 Facing Tori
 Talk to Avery and Celeste
 142
-
+186
 1
 1
 0
@@ -1427,7 +1427,7 @@ x
 0
 0
 0
-0
+13
 143
 "Oh, hey Bruno."
 
@@ -1511,10 +1511,10 @@ x
 151
 Don't tell him.
 Tell him about the note
-
+Don't tell him about it
 152 
-x
-0
+177
+1
 1
 0
 1
@@ -1679,7 +1679,7 @@ x
 0
 0
 168
-Tori: “If you did something wrong and it was an accident, okay. I still despise you for killing Harvey though. Accident or not I lo…”
+“If you did something wrong and it was an accident, okay. I still despise you for killing Harvey though. Accident or not I lo…”
 
 
 x
@@ -1698,3 +1698,574 @@ x
 0
 0
 0
+170
+“But you could prove to us that you really want to work here and with us - not against us. I mean, why does all of this happen?”
+
+
+x
+x
+0
+6
+0
+6
+171
+Tori's eyes begin to get watery. Again shaking his head, he makes a move to leave.
+
+
+x
+x
+0
+0
+0
+0
+172
+“And if this happens again and I know who did that… I will… I will make sure for them to leave this circus. Or worse."
+
+
+x
+x
+0
+6
+0
+6
+173
+Avery and Celeste are also gone, so the only thing to do now is waiting. Everyone needs some time alone now. So does Bruno.
+
+
+x
+x
+0
+0
+0
+0
+174
+Avery and Celeste are also gone, so the only thing to do now is waiting. Everyone needs some time alone now. So does Bruno.
+
+
+x
+x
+0
+0
+0
+0
+175
+They leave and go to their room with their thoughts overwhelming them. Trapped in them, Bruno smashes against their door, stumbling and falling over. Bruno's head hurts. Everything hurts so much.
+
+
+x
+x
+0
+0
+0
+22
+176
+That went not how Bruno wanted it, right? What a shame. Maybe next time you will listen to me.
+
+
+224
+224
+0
+1
+0
+1
+177
+"I don't know. Another one of the construction crew told me to. They said Harvey would need some more space. How should I know that more space leads to this? I am new, I thought that this is how it should work!"
+
+
+x
+x
+0
+2
+0
+2
+178
+Bruno bites his lip, pulling off the thin skin with their teeth - it burns. They seem to be nervous or damaged.
+
+
+x
+x
+0
+0
+0
+0
+179
+I guess both. Can Bruno hear all the voices in their head, hm? Sweet, sweet voices.
+
+
+x
+x
+0
+1
+0
+1
+180
+"I don’t know… I really don’t know if you are telling the truth. All those workers are a part of this circus for so long and then you come in and something like that happens. I don’t know…”
+
+
+x
+x
+0
+6
+0
+6
+181
+Tori scratches his cheek and lets out a quiet murmur, Bruno does not understand.
+
+
+x
+x
+0
+0
+0
+24
+182
+“Maybe… Maybe you - we - can find out the name of this worker and, well let him pay. Oh, not like kill him, just… tell the director or something."
+
+
+x
+x
+0
+6
+0
+6
+183
+Tori sighs. Bruno can clearly see how damaged he is. He turns around and slowly walks to his room.
+
+
+x
+x
+0
+0
+0
+16
+184
+For the people, am I right, Bruno? Hahaha.
+
+
+x
+x
+0
+1
+0
+1
+185
+Bruno looks across the room. Nobody's here anymore. Avery and Celeste are also gone. Maybe all of them need a break. So does Bruno.
+
+
+224
+224
+0
+0
+0
+0
+186
+Bruno ignores tori and walks straight to Avery and Celeste. Avery looks at them, with a menacing flicker in her eyes.
+
+
+x
+x
+0
+0
+0
+13
+187
+"What do you want?"
+
+
+x
+x
+0
+9
+0
+9
+188
+Avery stands up, shielding Celeste.
+
+
+x
+x
+0
+0
+0
+0
+189
+"I don't think you should be here. Like Nimue. Or anyone else."
+
+
+x
+x
+0
+9
+0
+9
+190
+She pushes Bruno away.
+
+
+x
+x
+0
+0
+0
+0
+191
+"Darling stop. Let them be. They are just as shocked as we are."
+
+
+x
+x
+0
+10
+0
+10
+192
+Celeste grabs Averys' arms and signals her to sit down again.
+
+
+x
+x
+0
+0
+0
+0
+193
+"But... Didn't you hear what I told you? Bruno was the one that was involved in  Harvey's death!"
+
+
+x
+x
+0
+9
+0
+9
+194
+"Hush, Avery! You don't know that. Neither do I. I know why you are worried, but who is telling us that this was not an accident? Also, would they just come out and talk to us, if they would have killed Hervey on purpose? We offered help if they needed it. So, we help. We joined this circus a long time ago, only with help. So who are we to deny them help?"
+
+
+x
+x
+0
+10
+0
+10
+195
+Celeste kisses Avery on the forehead. After that, she looks at Bruno. This time she is not smiling but Bruno still gets the warm feeling around Celeste.
+Ask why Avery is worried
+Ask why they joined this Circus
+196
+205
+1
+0
+0
+0
+196
+"Good Choice 4"
+
+
+x
+x
+0
+0
+12
+0
+197
+"I am worried because of all the shit happening right now."
+
+
+x
+x
+0
+9
+0
+9
+198
+Avery turns, so she does not need to look at Bruno anymore. A single tear is running down her cheek. Celeste is touching Averys' shoulder and rubbing her back.
+
+
+x
+x
+0
+0
+0
+0
+199
+"Bruno... We... Things changing is what she is worried about. And the death of Harvey - a good friend and soul - has initiated something like that for sure. I mean it's just natural that things change - like Eugene. We called him by his name, you know?”
+
+
+x
+x
+0
+10
+0
+10
+200
+“So, we felt something was coming, but something like that? I can't say who is guilty, but as long as we don't know, we won't be safe anymore. And having that feeling again... no, we won't let this happen.”
+
+
+x
+x
+0
+10
+0
+10
+201
+Celeste hugs Avery. At the same moment, Avery turns around, crying even more.
+
+
+x
+x
+0
+0
+0
+0
+202
+Weird to ask a question Bruno could answer themself. Safety is what they desire, and also what both of them desire.
+
+
+x
+x
+0
+1
+0
+1
+203
+Bruno, looking at two soulmates that are not happy anymore, is hurting them. But what could they have done to avoid that? Guilt, but also anger about the director, overcome Bruno. They decide to leave Avery and Celeste alone for now, going back to their room. They need time for themselves, so does Bruno.
+
+
+x
+x
+0
+0
+0
+0
+204
+A stab in the heart... Exactly what we wanted.
+
+
+224
+224
+0
+1
+0
+1
+205
+Celeste: "This would be a story for another time. Not something we talk about with everyone. And you know, since what happened with something you were preparing... We can't trust you for now. We can't trust a few people here at the moment."
+
+
+x
+x
+0
+10
+0
+10
+206
+Let's ask again.
+Leave them alone
+Ask about it again
+207
+214
+1
+1
+0
+1
+207
+"Good Choice 4"
+
+
+x
+x
+0
+0
+12
+0
+208
+Avery and Celeste look at Bruno, now in the arms of each other. Bruno nods, but won't leave for a moment. Their brain is thinking about another approach of asking the two women about their story. But before Bruno can ask again, they leave and go back to their room.
+
+
+x
+x
+0
+0
+0
+0
+209
+On their door, they look back once more. Tori is leaning on a pillar, the face burrowed in his hands. She looks up from time to time. As she sees Bruno she turns around.
+
+
+x
+x
+0
+0
+0
+0
+210
+Bruno enters their room and closes the door. They slide down on it. Staring into the room, while their thoughts break apart. The one part is thinking about what they have done. Was it avoidable?
+
+
+x
+x
+0
+0
+0
+16
+211
+Nothing is avoidable. The saying "nothing happens without a reason"? It is more than true. Especially for you.
+
+
+x
+x
+0
+1
+0
+1
+212
+The other part just wants more. Feel something again. Since Harveys' death, this part was never satisfied. Everything is so sad. They just want to slam their head against the wall. The voices, the whispers, all of them shall leave!
+
+
+x
+x
+0
+0
+0
+0
+213
+Maybe some sleep helps.
+
+
+224
+224
+0
+0
+0
+0
+214
+So, now we speak the same language!
+
+
+x
+x
+0
+1
+0
+1
+215
+Bruno looks at them, wondering. They want to know.
+
+
+x
+x
+0
+0
+0
+0
+216
+"So, you really won't tell me, right?"
+
+
+x
+x
+0
+2
+0
+2
+217
+The words leave their lips faster as they can react. But instantly after saying it, Bruno regrets this decision.
+
+
+x
+x
+0
+0
+0
+0
+218
+No regrets here, buddy.
+
+
+x
+x
+0
+1
+0
+1
+219
+"Excuse me? Haven't you heard what Celest said? It was and is not safe out there for us. This circus not only gave us a new chance, but it also made our life liveable! And now..."
+
+
+x
+x
+0
+9
+0
+9
+220
+Avery pushes Bruno. Bruno falls, with their face first, on the carpet. Meanwhile, Celeste calms Avery. She rubs her back, brings her to sit, and just holds Avery in her arms, whispering sweet things into her ear.
+
+
+x
+x
+0
+0
+0
+25
+221
+Bruno gets up, running to their room. They close the door as fast as they can, kneeling before the table and resting their head in their hands. Why did Bruno ask another time? Voices, whispers, all the things let them do it, will make Bruno mad. What should they do?
+
+
+x
+x
+0
+0
+0
+17
+222
+Being a better version of yourself. That is what they should do.
+
+
+x
+x
+0
+1
+0
+1
+223
+Bruno just hopes they can at least sleep now…
+
+
+224
+224
+0
+0
+0
+0
+224
+KAPITEL 2
+
+
+x
+x
+0
+1
+0
+0
+225
+The door opens as Eugene comes in with heavy steps. He looks at Bruno and smiles a bit - It is creepy to see that man smile. Instead of lifting both sides of the mouth, he presses his lips against each other. Maybe he is just trying to hide something?
+
+
+x
+x
+0
+0
+0
+15
+226
+"Well, well, well. The last show was glorious! The audience loved it! Haha"
+
+
+x
+x
+0
+5
+0
+5
+227

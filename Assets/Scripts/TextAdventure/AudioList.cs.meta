@@ -4,8 +4,8 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - normal: {instanceID: 0}
-  - narrator: {instanceID: 0}
+  - normal: {fileID: 8300000, guid: 24a2315babb84e14484ca394e611e3a6, type: 3}
+  - narrator: {fileID: 8300000, guid: 5331745d1713d2a4dbec83dda59e1c12, type: 3}
   - bruno: {fileID: 8300000, guid: dfc55b8960f2a4f49a970d7168392648, type: 3}
   - harvey: {fileID: 8300000, guid: 8866d717f612acd41bc955a0aad64f26, type: 3}
   - gordon: {fileID: 8300000, guid: 351ab0d8435a4ed42adb11b0e68c5298, type: 3}
@@ -17,7 +17,19 @@ MonoImporter:
   - celeste: {fileID: 8300000, guid: 4d8adc224038a1540843bbeb33f72109, type: 3}
   - nimues: {fileID: 8300000, guid: 00b4f661a049d5a4cba6950ea42a945b, type: 3}
   - esmira: {instanceID: 0}
-  - stepSound: {fileID: 8300000, guid: eef546c989b175f47a5fd25d6171eb55, type: 3}
+  - stepSound: {fileID: 8300000, guid: 7fad5c6ea35d4aa4ea4316b9a0680252, type: 3}
+  - courtain: {fileID: 8300000, guid: 7fad5c6ea35d4aa4ea4316b9a0680252, type: 3}
+  - doorOpen: {fileID: 8300000, guid: bc1a1959fff68c84bae53a5722d8fd60, type: 3}
+  - doorClose: {fileID: 8300000, guid: 7402572b55cdd624eb8b1384a8cd6bb9, type: 3}
+  - doorSlam: {fileID: 8300000, guid: 37be1d40615e3864ab01e098de8f04f1, type: 3}
+  - bookGrabing: {fileID: 8300000, guid: 186ecb7a2a927df42bea3e155fd6704e, type: 3}
+  - slapSound: {fileID: 8300000, guid: 14eb919f0d11c1b4aa4fe56bdc0e5953, type: 3}
+  - punchSound: {fileID: 8300000, guid: d22251e1f4508744ab2712cba32a31bc, type: 3}
+  - wallBangSound: {fileID: 8300000, guid: 252bd9fcabcbb0743ac84f350fc852fc, type: 3}
+  - horrorLoop: {fileID: 8300000, guid: 5ca65bf7d9b8e3b4a927c04452152e8a, type: 3}
+  - normalLoop: {fileID: 8300000, guid: fb10d653bfa5a5341bad5a7098d01b0d, type: 3}
+  - scratching: {fileID: 8300000, guid: 186d3ad86ec761941ad2dfde6eb779c4, type: 3}
+  - fallingBody: {fileID: 8300000, guid: 84f222787f91d2e4db60ece9df860c87, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -260,6 +260,7 @@ public class TextBoxManager : MonoBehaviour
         musicPlayer.clip = audioList.audios[musicEventNumber];
         Debug.Log("currentScene:" + tASceneManager.currentScene + "musicPlayer.Play();");
         musicPlayer.Play();
+        
             //playMusic...
     }
 
