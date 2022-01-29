@@ -26,17 +26,30 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4d8adc224038a1540843bbeb33f72109, type: 3}
   - {fileID: 8300000, guid: 00b4f661a049d5a4cba6950ea42a945b, type: 3}
   - {fileID: 0}
-  - {fileID: 8300000, guid: 7fad5c6ea35d4aa4ea4316b9a0680252, type: 3}
+  - {fileID: 8300000, guid: b5d19dbdc8ab1444183028bf7b96c7e2, type: 3}
   - {fileID: 8300000, guid: 7fad5c6ea35d4aa4ea4316b9a0680252, type: 3}
   - {fileID: 8300000, guid: bc1a1959fff68c84bae53a5722d8fd60, type: 3}
   - {fileID: 8300000, guid: 7402572b55cdd624eb8b1384a8cd6bb9, type: 3}
-  - {fileID: 8300000, guid: 37be1d40615e3864ab01e098de8f04f1, type: 3}
+  - {fileID: 8300000, guid: 1d44760fbedb894489180a8b677f6ad0, type: 3}
   - {fileID: 8300000, guid: 186ecb7a2a927df42bea3e155fd6704e, type: 3}
   - {fileID: 8300000, guid: 14eb919f0d11c1b4aa4fe56bdc0e5953, type: 3}
   - {fileID: 8300000, guid: d22251e1f4508744ab2712cba32a31bc, type: 3}
   - {fileID: 8300000, guid: 252bd9fcabcbb0743ac84f350fc852fc, type: 3}
   - {fileID: 8300000, guid: 5ca65bf7d9b8e3b4a927c04452152e8a, type: 3}
   - {fileID: 8300000, guid: fb10d653bfa5a5341bad5a7098d01b0d, type: 3}
+  - {fileID: 8300000, guid: 186d3ad86ec761941ad2dfde6eb779c4, type: 3}
+  - {fileID: 8300000, guid: 84f222787f91d2e4db60ece9df860c87, type: 3}
+  - {fileID: 8300000, guid: ccc59bd110ee91c4383e18428c2c8da9, type: 3}
+  - {fileID: 8300000, guid: 3e1e4ba7d090b9042a67d2acd064ff63, type: 3}
+  - {fileID: 8300000, guid: 4e8fca5b9c069bf40ab554ee277ef38e, type: 3}
+  - {fileID: 8300000, guid: ca771ffc3219a8748bfe6525a6594d72, type: 3}
+  - {fileID: 8300000, guid: 55b1926f393d38d4a989b26f4c2e1a91, type: 3}
+  - {fileID: 8300000, guid: b3ca9e1f9a300824abdfc41cf7f1ca77, type: 3}
+  - {fileID: 8300000, guid: 7d085861a9ae8a64d96df2082284926d, type: 3}
+  - {fileID: 8300000, guid: eb339c126bac36245937e9bcafd9334d, type: 3}
+  - {fileID: 8300000, guid: cf87e38595d71a448be4367a5d77ce76, type: 3}
+  - {fileID: 8300000, guid: 7edff621c3b295443b01396614fca8ef, type: 3}
+  - {fileID: 8300000, guid: e88778de973d04a44b23d3fce3817c42, type: 3}
   normal: {fileID: 8300000, guid: 24a2315babb84e14484ca394e611e3a6, type: 3}
   narrator: {fileID: 8300000, guid: 5331745d1713d2a4dbec83dda59e1c12, type: 3}
   bruno: {fileID: 8300000, guid: dfc55b8960f2a4f49a970d7168392648, type: 3}
@@ -50,14 +63,27 @@ MonoBehaviour:
   celeste: {fileID: 8300000, guid: 4d8adc224038a1540843bbeb33f72109, type: 3}
   nimues: {fileID: 8300000, guid: 00b4f661a049d5a4cba6950ea42a945b, type: 3}
   esmira: {fileID: 0}
-  stepSound: {fileID: 8300000, guid: 7fad5c6ea35d4aa4ea4316b9a0680252, type: 3}
+  stepSound: {fileID: 8300000, guid: b5d19dbdc8ab1444183028bf7b96c7e2, type: 3}
   courtain: {fileID: 8300000, guid: 7fad5c6ea35d4aa4ea4316b9a0680252, type: 3}
   doorOpen: {fileID: 8300000, guid: bc1a1959fff68c84bae53a5722d8fd60, type: 3}
   doorClose: {fileID: 8300000, guid: 7402572b55cdd624eb8b1384a8cd6bb9, type: 3}
-  doorSlam: {fileID: 8300000, guid: 37be1d40615e3864ab01e098de8f04f1, type: 3}
+  doorSlam: {fileID: 8300000, guid: 1d44760fbedb894489180a8b677f6ad0, type: 3}
   bookGrabing: {fileID: 8300000, guid: 186ecb7a2a927df42bea3e155fd6704e, type: 3}
   slapSound: {fileID: 8300000, guid: 14eb919f0d11c1b4aa4fe56bdc0e5953, type: 3}
   punchSound: {fileID: 8300000, guid: d22251e1f4508744ab2712cba32a31bc, type: 3}
   wallBangSound: {fileID: 8300000, guid: 252bd9fcabcbb0743ac84f350fc852fc, type: 3}
   horrorLoop: {fileID: 8300000, guid: 5ca65bf7d9b8e3b4a927c04452152e8a, type: 3}
   normalLoop: {fileID: 8300000, guid: fb10d653bfa5a5341bad5a7098d01b0d, type: 3}
+  scratching: {fileID: 8300000, guid: 186d3ad86ec761941ad2dfde6eb779c4, type: 3}
+  fallingBody: {fileID: 8300000, guid: 84f222787f91d2e4db60ece9df860c87, type: 3}
+  meatDrippin: {fileID: 8300000, guid: ccc59bd110ee91c4383e18428c2c8da9, type: 3}
+  knocking: {fileID: 8300000, guid: 3e1e4ba7d090b9042a67d2acd064ff63, type: 3}
+  toriSigh: {fileID: 8300000, guid: 4e8fca5b9c069bf40ab554ee277ef38e, type: 3}
+  toriLaugh: {fileID: 8300000, guid: ca771ffc3219a8748bfe6525a6594d72, type: 3}
+  whisper1: {fileID: 8300000, guid: 55b1926f393d38d4a989b26f4c2e1a91, type: 3}
+  whisper2: {fileID: 8300000, guid: b3ca9e1f9a300824abdfc41cf7f1ca77, type: 3}
+  nervousLaughter: {fileID: 8300000, guid: 7d085861a9ae8a64d96df2082284926d, type: 3}
+  clearThroat: {fileID: 8300000, guid: eb339c126bac36245937e9bcafd9334d, type: 3}
+  fullWhisper: {fileID: 8300000, guid: cf87e38595d71a448be4367a5d77ce76, type: 3}
+  kiss: {fileID: 8300000, guid: 7edff621c3b295443b01396614fca8ef, type: 3}
+  toriCry: {fileID: 8300000, guid: e88778de973d04a44b23d3fce3817c42, type: 3}
