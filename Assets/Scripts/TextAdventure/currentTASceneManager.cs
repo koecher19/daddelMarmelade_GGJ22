@@ -7,6 +7,7 @@ public class tACurrentSceneManager : ScriptableObject
 {
 
     public int currentScene;
+    public int nextSceneStart;
     public bool debugEnabled;
     public bool goodChoice1;
     public bool goodChoice2;

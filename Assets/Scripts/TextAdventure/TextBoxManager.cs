@@ -54,6 +54,7 @@ public class TextBoxManager : MonoBehaviour
         debugButtonManagerGameObjectReference = GameObject.Find("DebugButtonManager");
         flyerPanelGameObjectReference.SetActive(false);
         debugButtonManagerGameObjectReference.SetActive(tASceneManager.debugEnabled);
+        tASceneManager.currentScene = tASceneManager.nextSceneStart;
 
         //charakterColors.appointColors();
 
@@ -290,21 +291,23 @@ public class TextBoxManager : MonoBehaviour
                 displayedScene = tASceneManager.currentScene;
                 break;
             case 3:/*transition first Textadvenure -> first sidescroller*/
-                tASceneManager.currentScene++;
                 SceneManager.LoadScene("6-Sidescroller");
+                tASceneManager.nextSceneStart = tASceneManager.currentScene++;
                 displayedScene = tASceneManager.currentScene;
                 tASceneManager.currentScene = tASceneManager.currentScene;
                 break;
             case 4:/*transition second Textadvenure -> third sidescroller*/
-                tASceneManager.currentScene++;
                 SceneManager.LoadScene("10-Sidescroller");
+                tASceneManager.nextSceneStart = tASceneManager.currentScene++;
                 displayedScene = tASceneManager.currentScene;
                 tASceneManager.currentScene = tASceneManager.currentScene;
                 break;
-            case 5:/*transition first Textadvenure -> fifth sidescroller*/ break;
-            case 6:/*transition first Textadvenure -> fifth sidescroller*/ break;
-            case 7:/*transition first Textadvenure -> fifth sidescroller*/ break;
-            case 8:/*transition first Textadvenure -> fifth sidescroller*/ break;
+            case 5:/*transition first Textadvenure -> fifth sidescroller*/
+                SceneManager.LoadScene("15-Sidescroller");
+                tASceneManager.nextSceneStart = tASceneManager.currentScene++;
+                displayedScene = tASceneManager.currentScene;
+                tASceneManager.currentScene = tASceneManager.currentScene; 
+                break;
             case 9:/*switch first gooddecision*/    tASceneManager.goodChoice1 = true; tASceneManager.currentScene++; break;
             case 10:/*switch second gooddecision*/  tASceneManager.goodChoice2 = true; tASceneManager.currentScene++; break;
             case 11:/*switch third gooddecision*/   tASceneManager.goodChoice3 = true; tASceneManager.currentScene++; break;
