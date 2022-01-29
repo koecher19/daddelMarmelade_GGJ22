@@ -197,7 +197,7 @@ x
 0
 0
 0
-0
+13
 20
 "So we got a new one here. Welcome."
 
@@ -357,7 +357,7 @@ x
 0
 10
 0
-10
+35
 36
 Oh, a kiss? How convenient. 
 
@@ -507,7 +507,7 @@ x
 0
 0
 0
-0
+29
 51
 "I am not a bit sorry for that. So the room at the right corner is yours. I leave you alone a bit. Talk to me whenever you feel like it!”
 
@@ -737,7 +737,7 @@ x
 0
 0
 0
-0
+36
 74
 No one can undo what Bruno did.
 
@@ -847,7 +847,7 @@ Breath in and out three times.
 1
 0
 0
-0
+34
 85
 Sometimes extreme situations take extreme actions. Bruno does not hesitate a second longer and slams their head against the wooden wall. An unpleasant dull noise echoes through the room. They feel a piercing pain in the head. But it isn’t enough.
 
@@ -947,7 +947,7 @@ x
 0
 0
 0
-0
+27
 95
 “It’s Donna. Can I come in?”
 
@@ -1152,8 +1152,8 @@ x
 With those words she leaves the room. Bruno stares at the wall. What had they done to these innocent people? Bruno's wishes to themselves to never do that again. But deep down they already know, they had chosen a dangerous path.
 
 
-x
-x
+134
+134
 0
 0
 0
@@ -1837,7 +1837,7 @@ x
 0
 0
 0
-16
+28
 184
 For the people, am I right, Bruno? Hahaha.
 
@@ -2269,3 +2269,1012 @@ x
 0
 5
 227
+The laughter sounds nervous, a bit too artificial.
+
+
+x
+x
+0
+0
+0
+32
+228
+"You see... to make our audience even more interested in the show and our circus particularly, we - I mean you, not me, haha, I, uhm”
+
+
+x
+x
+0
+5
+0
+5
+229
+Eugene clears his throat.
+
+
+x
+x
+0
+0
+0
+33
+230
+“So, yeah. YOU have to do this again."
+
+
+x
+x
+0
+5
+0
+5
+231
+He is sweating, even if he is not the one making this decision? Disgusting.
+
+
+x
+x
+0
+1
+0
+1
+232
+"Sir, I can't do this. It was horrible! What happened..."
+
+
+x
+x
+0
+2
+0
+2
+233
+The director slams the flower on the desk. Bruno on the other hand is struggling to even come up with a clear thought. The only picture in their head is Harvey, split into halves, blood dripping to the ground.
+
+
+x
+x
+0
+0
+0
+26
+234
+"No. No. No. No. No. You don’t understand."
+
+
+x
+x
+0
+5
+0
+5
+235
+Eugene scratches his forehead and leans forward. He looks frightened.
+
+
+x
+x
+0
+0
+0
+24
+236
+What a weak man.
+
+
+x
+x
+0
+1
+0
+1
+237
+“If the audience is not pleased I - we, I mean we all, haha - lose our heads. So take this flower and do whatever is necessary…”
+
+
+x
+x
+0
+5
+0
+5
+238
+Bruno knows what they should do. There is no way back from here.
+Take the flower
+Don't take the flower
+239
+249
+1
+1
+0
+1
+239
+Good.
+
+
+x
+x
+0
+1
+0
+1
+240
+"Great! Great! I knew you would make the right decision! Well, I'll be off and don't tell anyone. You have never seen me." 
+
+
+x
+x
+0
+5
+0
+5
+241
+He leans back and looks across the room as if he fears someone is following him. Then he goes to the door, opening it slightly and peeking out.
+
+
+x
+x
+0
+0
+0
+15
+242
+"Well.. I’ll be off. Do what I, uhm, told you."
+
+
+x
+x
+0
+5
+0
+5
+243
+Bruno nods. With a last nervous flicker in his eyes, the director leaves the room as fast as when he walked in.
+
+
+x
+x
+0
+0
+0
+16
+244
+“ONE STEP ASIDE. IS THAT SO HARD TO DO IN THIS WORLD. I am only working with incompetent people!”
+
+
+x
+x
+0
+5
+0
+5
+245
+This man is even worse than Bruno. Who would have thought that?
+
+
+x
+x
+0
+1
+0
+1
+246
+Bruno, now alone, is sitting there with the flower in their hands, but without instructions on what to do with it. They don't even want to do it… Or?
+
+
+x
+x
+0
+0
+0
+0
+247
+We will figure out what to do. Don't worry, Bruno is a creative one.
+
+
+x
+x
+0
+1
+0
+1
+248
+The only thing they can do now is wait for the preparation to begin.
+
+
+252
+252
+0
+0
+0
+0
+249
+Bruno will do it nonetheless. Trust me.
+Take it
+DO NOT TAKE IT
+239
+250
+1
+1
+0
+1
+250
+
+
+
+x
+x
+0
+0
+13
+0
+251
+Hear the voices. Hear the whispers, Bruno. Tell me what they are saying to them? What do they want from Bruno? Tell me. I wanna know.
+Take it
+Take it
+239
+239
+1
+1
+0
+1
+252
+
+
+
+x
+x
+0
+0
+4
+0
+253
+Bruno saw all of it. They was standing on the edge of the tent to see how sunshine shines. The crew always said how hilarious her shows are… but now? There is no show of her anymore. Soon there will be no more shows at all. And again it was their fault. Like always. Only their fault.
+
+
+x
+x
+0
+0
+0
+0
+254
+At least Bruno is seeing it now. Now, do whatever it takes to stay safe. The circus is still Bruno's best chance. Do not let the others get them down. Or else…
+
+
+x
+x
+0
+1
+0
+1
+255
+Tori in the same area as Bruno is looking at the ground. Tears are running down his face. He looks up at Bruno.
+
+
+x
+x
+0
+0
+0
+0
+256
+“Please, quick, help me! Something terrible happened.”
+
+
+x
+x
+0
+6
+0
+6
+257
+Tori sprints away. Instinctively Bruno follows him. Both of them do not run through the backstage area. They take a small door on the right side of this room. Tori stops, so that Bruno makes the first step. Both end up in the backyard of the circus - a space far away from the crowd and where no one else sees them.
+
+
+x
+x
+0
+0
+0
+0
+258
+For a moment Bruno wonders: Why did Tori lead him here? But after Bruno turns around, Tori glanz is way different than before. He now focuses on Bruno with his eyes closed to a small slit.
+
+
+x
+x
+0
+0
+0
+0
+259
+“You muderer!”
+
+
+x
+x
+0
+6
+0
+6
+260
+“W-What are you talking about?” 
+
+
+x
+x
+0
+2
+0
+2
+261
+A desperate attempt.
+
+
+x
+x
+0
+0
+0
+0
+262
+“I saw you. Replacing the flower. I saw you. Working on Harveys Box. Sunshine and Harvey. My best friend and my loved one. Dead. AND ALL OF THIS IS YOUR FAULT.”
+
+
+x
+x
+0
+6
+0
+6
+263
+Tori looks up at Bruno with a smile on his face that they only can describe as crazy, mad, insane. Bruno backs down, but Tori makes sure he can’t walk back. First of all Bruno would need Tori to move out of their way.
+
+
+x
+x
+0
+0
+0
+0
+264
+“One Death was already enough. NO MORE DEATHS.”
+
+
+x
+x
+0
+6
+0
+6
+265
+With a jump Tori starts running at Bruno.
+
+
+x
+x
+0
+0
+0
+0
+266
+Kill him.
+
+
+x
+x
+0
+1
+0
+1
+267
+Do it.
+
+
+x
+x
+0
+1
+0
+1
+268
+No way back.
+LMNMVL GWXYAMTN
+LWVB LMNMVL GWXYAMTN
+269
+279
+1
+1
+0
+1
+269
+Before Tori can hit Bruno with his fist, they jump to the site. Still Tori is quick, turns around and gives Bruno a punch in their face.
+
+
+x
+x
+0
+0
+0
+20
+270
+Bruno falls over and lands right on their butt. The Pain goes from his tailbone up to their spine and Bruno reaches at his back. Under their shirt Bruno can feel the sword they took in the arena.
+
+
+x
+x
+0
+0
+0
+25
+271
+Useless. Worthless. No Chance.
+
+
+x
+x
+0
+1
+0
+1
+272
+In this moment something changes. Bruno grabs the sword and swings it to the front. Tori, who was about to get on Bruno to give them the rest, now stands still. He is just one feet away from Bruno, eyes wide open.
+
+
+x
+x
+0
+0
+0
+14
+273
+“What did you…”
+
+
+x
+x
+0
+6
+0
+6
+274
+Bruno's breath is faster than normal. High on adrenaline, they did not even think about what they were doing.
+
+
+x
+x
+0
+0
+0
+0
+275
+Blood runs out of Tori’s mouth and is dropping on Brunos shirt. Toris eyes are closed now, his head limp, just as his whole body. He falls to the side. The sword in his bloody hands.
+
+
+x
+x
+0
+0
+0
+25
+276
+Bruno lets go of the sword, shivering. What have they done? Why is this happening, again and again and again. They reach to their head. All those whispers.
+
+
+x
+x
+0
+0
+0
+30
+277
+It was self defense. It had to be done.
+
+
+x
+x
+0
+1
+0
+1
+278
+They would like to just crush their head like they crushed all those lives.
+
+
+295
+295
+0
+0
+0
+0
+279
+
+
+
+x
+x
+0
+0
+14
+0
+280
+Tori punches Bruno right in the face. The partly open eye of Bruno now twitches as the other fist of Tori beats them to the ground.
+
+
+x
+x
+0
+0
+0
+20
+281
+Bruno, facing more and more of Tori's rage, isn’t strong enough to push Tori away.
+
+
+x
+x
+0
+0
+0
+20
+282
+Bruno… Weak. So weak.
+
+
+x
+x
+0
+1
+0
+1
+283
+They try everything but with every punch Bruno is getting even closer to the verge of collapsing.
+
+
+x
+x
+0
+0
+0
+20
+284
+“YOU. HAVE. TO. D…”
+
+
+x
+x
+0
+6
+0
+6
+285
+One moment Tori shouts curses at Bruno, the other moment he goes quiet. Tori is coughing, his mouth wide open and spitting blood - onto Bruno.
+
+
+x
+x
+0
+0
+0
+0
+286
+The blood on Bruno's face is making it hard to see. But something must have gone straight through Toris head. The sound of whatever hit Tori was so silent, Bruno can not think of what it is. Especially because their head is still hurting from all the punches.
+
+
+x
+x
+0
+0
+0
+0
+287
+Tori, now completely still and limp, gets pushed to the site from the foot of another person, falling down like a filled bag.
+
+
+x
+x
+0
+0
+0
+25
+288
+“Such a waste of a good show. I hope you are more careful in the future.”
+
+
+x
+x
+0
+4
+0
+4
+289
+Gordon, holding a gun with a silencer, looks onto Tori, shaking his head.
+
+
+x
+x
+0
+0
+0
+0
+290
+“Unfortunate. So many resources wasted for nothing.”
+
+
+x
+x
+0
+4
+0
+4
+291
+He sighs. Bruno is breathing even faster seeing that man.
+
+
+x
+x
+0
+0
+0
+0
+292
+Weak.
+
+
+x
+x
+0
+1
+0
+1
+293
+“Hmpf. So, get up. I tell you what to do. And no, I expect full commitment. If you wouldn’t be that useful I would just dump you into some trash pile.”
+
+
+x
+x
+0
+4
+0
+4
+294
+Gordon reaches down to them.
+
+
+308
+308
+0
+0
+0
+0
+295
+Bruno gets up, seeing Gordon standing in the door to the backyard.
+
+
+x
+x
+0
+0
+0
+0
+296
+“That would have been a good show for the audience.”
+
+
+x
+x
+0
+4
+0
+4
+297
+He walks closer to Tori and pokes him with his feet.
+
+
+x
+x
+0
+0
+0
+0
+298
+“A shame. All the resources that got wasted because of this.”
+
+
+x
+x
+0
+4
+0
+4
+299
+Gordon sighs and pulls on the sword without getting it out.
+
+
+x
+x
+0
+0
+0
+28
+300
+“Hm, we still need that. But, let me tell you what to do.”
+
+
+x
+x
+0
+4
+0
+4
+301
+Learning from the master. Listen closely Bruno.
+
+
+x
+x
+0
+1
+0
+1
+302
+“So, no one saw you going here - I made sure of that. I know that Avery is very skeptical about you - a problem. Just go out there and try to look as sad as you can. I take care of this mess you made.”
+
+
+x
+x
+0
+4
+0
+4
+303
+Bruno walks past Gordon to the door.
+
+
+x
+x
+0
+0
+0
+13
+304
+“Ah and Bruno.”
+
+
+x
+x
+0
+4
+0
+4
+305
+Gordon takes out a shirt that looks just like theirs and throws it over to Bruno.
+
+
+x
+x
+0
+0
+0
+0
+306
+“You got blood on your shirt. Change it. But even more important - I have a feeling you could need that.”
+
+
+x
+x
+0
+4
+0
+4
+307
+He walks a bit closer to Bruno and gives them a gun, with a silencer on it. Then Gordon turns around again and pokes Tori one more time with the sword, shrugging.
+
+
+x
+x
+0
+0
+0
+13
+308
+Bruno takes his hand. They tremble in fear about this man. Gordon recognizes that and snorts.
+
+
+x
+x
+0
+0
+0
+0
+309
+“Don’t worry I won’t shoot you with that gun - yet.”
+
+
+x
+x
+0
+4
+0
+4
+310
+He flips the gun one time and gives it to Bruno.
+
+
+x
+x
+0
+0
+0
+0
+311
+“Seeing all of this, I assume you could need that. Also, you are looking terrible. Here change.”
+
+
+x
+x
+0
+4
+0
+4
+312
+Gordon gives Bruno new clothes that look exactly like theirs.
+
+
+x
+x
+0
+0
+0
+0
+313
+With this face you need to have a good story you know. Your one eye is so blue, I can’t even see it anymore.”
+
+
+x
+x
+0
+4
+0
+4
+314
+He pulls out a wet cloth.
+
+
+x
+x
+0
+0
+0
+0
+315
+Gordon has to do everything for Bruno… Tsss… disappointing.
+
+
+x
+x
+0
+1
+0
+1
+316
+“Here. Your face is all bloody. That does not help with trying to look innocent. You know - lucky for you - I made sure no one saw you going here. Eugene… the poor pig. Haha.”
+
+
+x
+x
+0
+4
+0
+4
+317
+Gordon steps aside and points to the door.
+
+
+x
+x
+0
+0
+0
+13
+318
+“Leave and act sad for the others. Let me handle this mess here.”
+
+
+x
+x
+0
+4
+0
+4
+319
+Kapitel 3
+
+
+x
+x
+0
+1
+0
+0
+320
+Bruno walks backstage again, seeing that not many of the crew members are here right now. The mood is - for obvious reasons - down again. Donna is trying to comfort everyone at once, but is struggling to keep up.
+
+
+x
+x
+0
+0
+0
+0
+321
+Bruno walks to Donna, looking as sad as they can.
+
+
+x
+x
+0
+0
+0
+13
+322
+They can’t let the other know what happened or… Who intervened. Your sword, through his body.
+
+
+x
+x
+0
+1
+0
+1
+323
+“Oh, Bruno! I hope you did not see it first hand! That must have been so terrible!”
+
+
+x
+x
+0
+8
+0
+8
+324
+Donna gives Bruno a hug. Avery, still in tears, is joining them.
+
+
+x
+x
+0
+0
+0
+0
+325
+“I don’t know why all of this happens. I really wish we could do something about it. I am so sorry…”
+
+
+x
+x
+0
+8
+0
+8
+326
+Avery looks up as on the other side of the room a curtain opens and Eugene steps in. He got a bag behind him, dragging it across the floor.
+
+
+x
+x
+0
+0
+0
+0
+327
+“Bruno? Do you know where Tori is? I haven’t seen him for a while.”
+
+
+x
+x
+0
+9
+0
+9
