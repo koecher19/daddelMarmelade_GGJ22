@@ -22,6 +22,7 @@ public class CutScene16 : MonoBehaviour
 
     public GameObject averyDead;
     public GameObject celesteSad;
+    public GameObject redScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -73,6 +74,9 @@ public class CutScene16 : MonoBehaviour
             this.celeste.SetActive(false);
             this.tatjana.SetActive(false);
             this.pesto.SetActive(false);
+            this.averyDead.SetActive(false);
+            this.celesteSad.SetActive(false);
+            this.redScreen.SetActive(false);
         }
 
         // SCENE
@@ -104,7 +108,6 @@ public class CutScene16 : MonoBehaviour
             yield return new WaitForSeconds(1);
 
         }
-
 
 
 
@@ -202,29 +205,87 @@ public class CutScene16 : MonoBehaviour
                 rip.SetActive(true);
             }
 
-            // tiger ändern position:
+            // tiggers ändern position:
             //      tatjana:
             this.tatjana.transform.GetChild(1).gameObject.GetComponent<Transform>().position += Vector3.left * 2.5f;
             //      pesto:
             this.pesto.transform.GetChild(1).gameObject.GetComponent<Transform>().position += Vector3.right * 3.5f + Vector3.down * 1.5f;
         }
 
+        // action:
+        {
+            yield return new WaitForSeconds(2);
 
-        yield return new WaitForSeconds(5);
+            // tatjana sagt rawr weil irgendwo muss ich serotonin her bekommen
+            this.tatjana.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
+            yield return new WaitForSeconds(1);
+            this.tatjana.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
+
+
+            yield return new WaitForSeconds(3);
+
+
+            // “No matter how much you cheer, with his death all of this should end soon!”
+            this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().nextDialog();
+            this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
+            yield return new WaitForSeconds(4);
+            this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
+        }
+
+        yield return new WaitForSeconds(1);
 
 
         /*
         NOTE: -> Avey umarmt Celeste
         Avery: “Celeste we did it, we never will lose someone ag…”
         */
+        {
+            this.blackScreen.SetActive(true);
+            yield return new WaitForSeconds(blackoutTime);
+            this.blackScreen.SetActive(false);
+        }
+
+        // preparing
+        {
+            // avery und celeste ändern position
+            this.avery.transform.GetChild(1).gameObject.GetComponent<Transform>().position += Vector3.right * 8.72f;
+        }
+
+        // action
+        {
+            // “Celeste we did it, we never will lose someone ag…”
+            this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().nextDialog();
+            this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
+            yield return new WaitForSeconds(4);
+            this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
+        }
 
         /*
         NOTE:  -> Avery gets the bullet in da head (auflackernder roter Bildschirm for le shooting)
         */
 
+        // PENG !!!
+        {
+            this.redScreen.SetActive(true);
+            yield return new WaitForSeconds(0.1f);
+            this.redScreen.SetActive(false);
+            yield return new WaitForSeconds(0.1f);
+            this.redScreen.SetActive(true);
+            yield return new WaitForSeconds(0.1f);
+            this.redScreen.SetActive(false);
+        }
+
         /*
         NOTE: -> Celeste am Ende, kniet weinend neben der in ihren Armen gestorbenen Avery
         */
+        //prepare
+        {
+            this.celeste.SetActive(false);
+            this.avery.SetActive(false);
+            this.averyDead.SetActive(true);
+            this.celesteSad.SetActive(true);
+        }
+        yield return new WaitForSeconds(4.0f);
 
         /*
         NOTE: -> Publikum zufrieden, whup whup

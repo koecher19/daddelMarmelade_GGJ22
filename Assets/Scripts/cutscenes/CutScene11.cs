@@ -15,8 +15,10 @@ public class CutScene11 : MonoBehaviour
     // for this specific scene:
     public GameObject eugene;
     public GameObject sunshine;
+    public GameObject sunshineHurt; // very sad :(
     public GameObject flower;
     public GameObject bucket;
+    public List<GameObject> sadBalloons;
 
     void OnTriggerEnter2D(Collider2D collider)
     {
@@ -55,6 +57,11 @@ public class CutScene11 : MonoBehaviour
         {
             this.flower.SetActive(false);
             this.sunshine.SetActive(false);
+            this.sunshineHurt.SetActive(false);
+            foreach(GameObject balloon in this.sadBalloons)
+            {
+                balloon.SetActive(false);
+            }
 
             this.bucket.SetActive(true);
             this.eugene.SetActive(true);
@@ -283,8 +290,14 @@ public class CutScene11 : MonoBehaviour
         NOTE: -> Blume macht splash, splash, Säure, Säure
         */
         //preparation:
-        this.flower.SetActive(true);
-
+        {
+            this.flower.SetActive(true);
+            foreach(GameObject balloon in this.sadBalloons)
+            {
+                balloon.SetActive(true);
+            }
+        }
+        
         /*
         NOTE: -> Sunshine screm, screm - Publikum Whuup whuup
         Publikum lines: “This is amazing! I have to tell my friends!”
@@ -317,6 +330,8 @@ public class CutScene11 : MonoBehaviour
         */
         // preparation:
         this.flower.SetActive(false);
+        this.sunshine.SetActive(false);
+        this.sunshineHurt.SetActive(true);
         
         // action:
         {
@@ -326,15 +341,21 @@ public class CutScene11 : MonoBehaviour
         }
 
         {
+            /*
             // reposition sunshine:
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<Transform>().position += Vector3.left * 2.0f + Vector3.up * 0.2f;
-
+            */
             yield return new WaitForSeconds(1);
-
+            /*
             //"AAAAAAAAAAAA”
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
             yield return new WaitForSeconds(4);
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
+            */
+            //"AAAAAAAAAAAA”
+            this.sunshineHurt.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
+            yield return new WaitForSeconds(3);
+            this.sunshineHurt.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
         }
 
 
@@ -356,7 +377,7 @@ public class CutScene11 : MonoBehaviour
         this.player.SetActive(true);
 
         // whats left:
-        this.sunshine.SetActive(false);
+        this.sunshineHurt.SetActive(false);
         this.flower.SetActive(true);
         this.flower.GetComponent<Transform>().position += Vector3.down * 2.0f;
 
