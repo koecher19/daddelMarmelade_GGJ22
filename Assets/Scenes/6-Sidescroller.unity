@@ -1089,6 +1089,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!82 &1490039730 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1871255961575765729, guid: 3a09f2daa62f2144584d6dc7ad314488, type: 3}
+  m_PrefabInstance: {fileID: 7316892865164582670}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1490039731 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9007152836094189303, guid: 3a09f2daa62f2144584d6dc7ad314488, type: 3}
+  m_PrefabInstance: {fileID: 7316892865164582670}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1616179892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1538,7 +1548,7 @@ AudioSource:
   m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -1871,6 +1881,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1871255961575765729, guid: 3a09f2daa62f2144584d6dc7ad314488, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e0ed24b48fb7e6e4e834bd70cb8ce119, type: 3}
+    - target: {fileID: 7167734710423141401, guid: 3a09f2daa62f2144584d6dc7ad314488, type: 3}
+      propertyPath: jumpsound
+      value: 
+      objectReference: {fileID: 1490039730}
+    - target: {fileID: 7167734710423141401, guid: 3a09f2daa62f2144584d6dc7ad314488, type: 3}
+      propertyPath: walksound
+      value: 
+      objectReference: {fileID: 1490039731}
     - target: {fileID: 7167734710423141401, guid: 3a09f2daa62f2144584d6dc7ad314488, type: 3}
       propertyPath: maxPosLeft
       value: -20
@@ -1939,6 +1961,10 @@ PrefabInstance:
       propertyPath: Inventory
       value: 
       objectReference: {fileID: 2008390730}
+    - target: {fileID: 9007152836094189303, guid: 3a09f2daa62f2144584d6dc7ad314488, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9007152836094189303, guid: 3a09f2daa62f2144584d6dc7ad314488, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
