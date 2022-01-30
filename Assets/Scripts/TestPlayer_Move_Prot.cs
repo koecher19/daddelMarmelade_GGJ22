@@ -10,7 +10,7 @@ public class TestPlayer_Move_Prot : MonoBehaviour
     public float maxPosLeft;
     public float maxPosRight;
     public bool isGrounded; // is the palyer touching an obstacle or the ground?
-
+    public AudioSource jumpsound;
 
     // Start is called before the first frame update
     void Start()
@@ -99,6 +99,8 @@ public class TestPlayer_Move_Prot : MonoBehaviour
     void jump()
     {
         // add upwards force
+        this.jumpsound.Play();
         GetComponent<Rigidbody2D>().AddForce(Vector2.up * playerJumpPower);
+        
     }
 }

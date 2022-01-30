@@ -27,7 +27,9 @@ public class SceneManaging : MonoBehaviour
             ("7-Sidescroller", "TextAdventure"),
             ("10-Sidescroller", "11-Sidescroller"),
             ("11-Sidescroller", "12-Sidescroller"),
-            ("12-Sidescroller", "TextAdventure")
+            ("12-Sidescroller", "TextAdventure"),
+            ("15-Sidescroller", "16-Sidescroller"),
+            ("16-Sidescroller", "TextAdventure")
         };
 
         if (trig.gameObject.tag == "sceneChangeTrigger")

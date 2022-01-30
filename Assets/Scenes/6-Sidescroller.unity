@@ -1939,6 +1939,10 @@ PrefabInstance:
       propertyPath: Inventory
       value: 
       objectReference: {fileID: 2008390730}
+    - target: {fileID: 9007152836094189303, guid: 3a09f2daa62f2144584d6dc7ad314488, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a09f2daa62f2144584d6dc7ad314488, type: 3}
 --- !u!1001 &8225566278998016929
