@@ -28,8 +28,8 @@ public class SceneManaging : MonoBehaviour
             ("7-Sidescroller", "TextAdventure", 73),
             ("10-Sidescroller", "11-Sidescroller", 253),
             ("11-Sidescroller", "TextAdventure", 253),
-            ("15-Sidescroller", "16-Sidescroller", 300),
-            ("16-Sidescroller", "TextAdventure", 300)
+            ("15-Sidescroller", "16-Sidescroller", 367),
+            ("16-Sidescroller", "TextAdventure", 367)
         };
 
         if (trig.gameObject.tag == "sceneChangeTrigger")

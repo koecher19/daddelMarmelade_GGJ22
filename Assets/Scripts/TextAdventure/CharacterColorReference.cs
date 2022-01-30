@@ -28,7 +28,7 @@ public class CharacterColorReference : ScriptableObject
         colors.Add(new Color32(149, 76, 149, 255)); //Donna     = 8  
         colors.Add(new Color32(197, 53, 94, 255));  //Avery     = 9 
         colors.Add(new Color32(156, 106, 248, 255));//Celeste   = 10 
-        colors.Add(new Color32(146, 101, 25, 255)); //Esmira    = 11
+        colors.Add(new Color32(255, 255, 255, 255));//Esmira    = 11
         colors.Add(new Color32(146, 101, 25, 255)); //Nimues    = 12
         listObjectsCount = colors.Count;
     }

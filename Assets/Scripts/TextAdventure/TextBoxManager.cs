@@ -26,6 +26,8 @@ public class TextBoxManager : MonoBehaviour
     public tACurrentSceneManager tASceneManager;
     public GameObject musicPlayerReference;
     private AudioSource musicPlayer;
+    public GameObject mainMusicPlayerReference;
+    private AudioSource mainMusicPlayer;
     public AudioList audioList;
     public GameObject panelGameObjectReference;
     private GameObject leftButtonGameObjectReference;
@@ -47,6 +49,7 @@ public class TextBoxManager : MonoBehaviour
     {
         buttonManagerScript = buttonManager.GetComponent<ButtonManager>();
         musicPlayer = musicPlayerReference.GetComponent<AudioSource>();
+        mainMusicPlayer = mainMusicPlayerReference.GetComponent<AudioSource>();
 
         leftButtonGameObjectReference = GameObject.Find("leftButton");
         rightButtonGameObjectReference = GameObject.Find("rightButton");
@@ -301,6 +304,13 @@ public class TextBoxManager : MonoBehaviour
                 SceneManager.LoadScene("15-Sidescroller");
                 displayedScene = tASceneManager.currentScene; 
                 break;
+            case 6:/*change backgroundsound to whisper*/
+                mainMusicPlayer.clip = audioList.audios[34];
+                mainMusicPlayer.Play();
+                break;
+            case 7:/*change backgroundsound to whisper*/
+                SceneManager.LoadScene("credits");
+                break;
             case 9:/*switch first gooddecision*/    tASceneManager.goodChoice1 = true; tASceneManager.currentScene++; break;
             case 10:/*switch second gooddecision*/  tASceneManager.goodChoice2 = true; tASceneManager.currentScene++; break;
             case 11:/*switch third gooddecision*/   tASceneManager.goodChoice3 = true; tASceneManager.currentScene++; break;
@@ -310,14 +320,15 @@ public class TextBoxManager : MonoBehaviour
             case 15:/*check for SecretGoodEnding*/
                 if (tASceneManager.checkGoodChoices()) 
                 {
-                    tASceneManager.currentScene = 0;  //DIESE ZAHL ÄNDERN ZU ENDING-SCENENZAHL
+                    tASceneManager.currentScene = 363;  //DIESE ZAHL ÄNDERN ZU ENDING-SCENENZAHL
                 } 
                 else
                 {                                                      
-                    //tASceneManager.currentScene = 0;  //Normaler Pfad, wenn man böse war
+                    tASceneManager.currentScene = 379; 
                                                       //basicaly aufrufen der DisplayScene-Methode 
                     middlePanelGameObjectReference.SetActive(true);
                     flyerPanelGameObjectReference.SetActive(false);
+                    instructionsPanelGameObjectReference.SetActive(false);
                     panelGameObjectReference.SetActive(true);
                     checkForMusicEvent(storyBlocks[tASceneManager.currentScene].getMusicEventNumber());
                     checkForCharakterNumber(storyBlocks[tASceneManager.currentScene].getCharakterNumber());

@@ -46,6 +46,9 @@ public class AudioList : ScriptableObject
     public AudioClip fullWhisper;
     public AudioClip kiss;
     public AudioClip toriCry;
+    public AudioClip brunoBreath;
+    public AudioClip gunShot;
+    public AudioClip brunoXNarrator;
 
 
     // Start is called before the first frame update
@@ -95,7 +98,10 @@ public class AudioList : ScriptableObject
         audios.Add(clearThroat);        //clearingThroat= 33
         audios.Add(fullWhisper);        //FullWhisper   = 34  
         audios.Add(kiss);               //kiss          = 35   
-        audios.Add(toriCry);            //toriCry       = 36
+        audios.Add(toriCry);            //toriCry       = 36   
+        audios.Add(brunoBreath);        //brunoBreath   = 37    
+        audios.Add(gunShot);            //gunShot       = 38    
+        audios.Add(brunoXNarrator);     //brunoXNarrator= 39
 
     }
 }
