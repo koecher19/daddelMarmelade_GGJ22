@@ -21,7 +21,7 @@ public class MainMenuScript : MonoBehaviour
     {
         Title.SetActive(false);
         Instructions.SetActive(true);
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(6);
         SceneManager.LoadScene("TextAdventure");
     }
 }

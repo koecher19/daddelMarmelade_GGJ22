@@ -1,5 +1,5 @@
 0
-PROLOG
+PROLOGUE
 
 
 x
@@ -519,7 +519,7 @@ x
 0
 3
 52
-Kapitel 1
+CHAPTER 1
 
 
 x
@@ -2239,7 +2239,7 @@ Bruno just hopes they can at least sleep now…
 0
 0
 224
-KAPITEL 2
+CHAPTER 2
 
 
 x
@@ -3189,7 +3189,7 @@ x
 0
 4
 319
-Kapitel 3
+CHAPTER 3
 
 
 x
