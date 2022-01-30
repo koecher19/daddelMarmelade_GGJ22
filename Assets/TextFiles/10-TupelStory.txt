@@ -2577,7 +2577,7 @@ x
 0
 0
 0
-0
+37
 258
 For a moment Bruno wonders: Why did Tori lead him here? But after Bruno turns around, Tori glanz is way different than before. He now focuses on Bruno with his eyes closed to a small slit.
 
@@ -2747,7 +2747,7 @@ x
 0
 0
 0
-0
+37
 275
 Blood runs out of Tori’s mouth and is dropping on Brunos shirt. Toris eyes are closed now, his head limp, just as his whole body. He falls to the side. The sword in his bloody hands.
 
@@ -2917,7 +2917,7 @@ x
 0
 0
 0
-0
+37
 292
 Weak.
 
@@ -3278,3 +3278,733 @@ x
 9
 0
 9
+328
+Donna leaves Bruno to themself and gets to Nimue, who is not crying, but moving back and forth. Averys glances over at Eugene. Her eyes fixated on the bag.
+
+
+x
+x
+0
+0
+0
+13
+329
+“Not, really. They told me to follow them. Something happened, I don’t know. But I couldn't because I had to help clean up…”
+
+
+x
+x
+0
+2
+0
+2
+330
+“Oh fuck! Sorry Bruno. I did not want to let you think about that again. And, I am sorry again, I need to - check something.”
+
+
+x
+x
+0
+9
+0
+9
+331
+Avery walks away - going after Eugene.
+
+
+x
+x
+0
+0
+0
+13
+332
+Great job Bruno! Just like Gordon told them to. See: no truth, no trouble.
+
+
+x
+x
+0
+1
+0
+1
+333
+CHAPTER 3
+
+
+x
+x
+0
+1
+0
+1
+334
+Bruno walks backstage again, seeing that not many of the crew members are here right now. The mood is - for obvious reasons - down again. Donna is trying to comfort everyone at once, but is struggling to keep up.
+
+
+x
+x
+0
+0
+0
+13
+335
+Bruno walks to Donna, she looks shocked.
+
+
+x
+x
+0
+0
+0
+13
+336
+They can’t let the other know what happened or… Who intervened. 
+
+
+x
+x
+0
+1
+0
+1
+337
+“Bruno! What happened to your face? You look horrible!”
+
+
+x
+x
+0
+8
+0
+8
+338
+“O-oh it’s nothing. I just tripped and fell down badly. You know.. I am a bit clumsy”
+
+
+x
+x
+0
+2
+0
+2
+339
+Donna still looks worried.
+
+
+x
+x
+0
+0
+0
+0
+340
+“Oh you are? I am sorry we don’t know each other that well yet …”
+
+
+x
+x
+0
+8
+0
+8
+341
+She seems to believe what they said. 
+
+
+x
+x
+0
+0
+0
+0
+342
+“What happened to Sunshine was horrible. I hope you didn’t see it first hand.”
+
+
+x
+x
+0
+8
+0
+8
+343
+Bruno shakes their head. Donna starts to tear up again.
+
+
+x
+x
+0
+0
+0
+0
+344
+Liar.
+
+
+x
+x
+0
+1
+0
+1
+345
+Avery, still in tears, is joining them.
+
+
+x
+x
+0
+0
+0
+0
+346
+“I don’t know why all of this happens. I really wish we could do something about it. I am so sorry…”
+
+
+x
+x
+0
+8
+0
+8
+347
+“Bruno? What happened to you? Did you get beaten up?”
+
+
+x
+x
+0
+9
+0
+9
+348
+“No haha. I tripped.”
+
+
+x
+x
+0
+2
+0
+2
+349
+“I see…”
+
+
+x
+x
+0
+9
+0
+9
+350
+She doesn’t seem to believe them.
+
+
+x
+x
+0
+0
+0
+0
+351
+Avery looks up as on the other side of the room a curtain opens and Eugene steps in. He got a bag behind him, dragging it across the floor.
+
+
+x
+x
+0
+0
+0
+14
+352
+“Bruno, do you know where Tori is? I haven’t seen him for a while.”
+
+
+x
+x
+0
+9
+0
+9
+353
+Donna leaves Bruno to themself and gets to Nimue, who is not crying, but moving back and forth. Averys glances over at Eugene. Her eyes fixated on the bag.
+
+
+x
+x
+0
+0
+0
+13
+354
+“I don’t know. I had to help clean up…”
+
+
+x
+x
+0
+2
+0
+2
+355
+“So that was the only thing you did huh? “
+
+
+x
+x
+0
+9
+0
+9
+356
+It seems as if she refers to their swollen eye.
+
+
+x
+x
+0
+0
+0
+0
+357
+“Yes and I tripped while doing that. Everything was so gruesome that I couldn't think straight.”
+
+
+x
+x
+0
+2
+0
+2
+358
+“Ah Sorry Bruno. I did not want you to think about that again. And, uhm, sorry again, I need to - check something.”
+
+
+x
+x
+0
+9
+0
+9
+359
+Avery walks away - going after Eugene.
+
+
+x
+x
+0
+0
+0
+13
+360
+Bruno came across quite suspicious. If they had only given Tori what he deserved, Bruno would be far less suspicious. See: no mercy, no trouble.
+
+
+x
+x
+0
+1
+0
+1
+361
+
+
+
+x
+x
+0
+0
+5
+0
+362
+
+
+
+x
+x
+0
+0
+15
+0
+363
+Bruno turns around, pointing the gun at Gordon's head.
+
+
+x
+x
+0
+0
+0
+0
+364
+“What are you doing?! Don’t you da- “
+
+
+x
+x
+0
+4
+0
+4
+365
+They pull the trigger - Gordon’s death was instant. For the first time Bruno has the feeling of actually deciding his own fate.The demanding controlling voice was never heard again in their head. They are free now. Everyone's free.
+
+
+x
+x
+0
+0
+0
+38
+366
+Congratulations…This time you managed to break free. You seem to be a lucky one. We challenge you to another round. We wonder if your luck may leave you?
+
+
+400
+400
+0
+11
+0
+0
+367
+Donna is looking at Bruno - shocked from what they did moments before. She couldn’t even move. As soon as Nimue hears the shot, she runs away. All those events, every new sound that she isn't able to match together make her flinch.
+
+
+x
+x
+0
+0
+0
+0
+368
+Just a few seconds later someone is clapping from behind.
+
+
+x
+x
+0
+0
+0
+0
+369
+“What a glorious show! Come Bruno, I have some announcements to do…”
+
+
+x
+x
+0
+4
+0
+4
+370
+Let's go Bruno. They did so many things for us. Now let us finish this story with a good ending.
+
+
+x
+x
+0
+1
+0
+1
+371
+Bruno stands still for a moment, wondering what the good ending could be?
+
+
+x
+x
+0
+0
+0
+0
+372
+Driven by these strange voices in their head Bruno gives in and follows Gordon into the arena.
+
+
+x
+x
+0
+0
+0
+0
+373
+“A fantastic show, am I right?”
+
+
+x
+x
+0
+4
+0
+4
+374
+Gordon turns in circles, having his arms stretched out. The audience freaks out once again.
+
+
+x
+x
+0
+0
+0
+0
+375
+“And you know what, future shows will be just like that! More exciting, more spicy.”
+
+
+x
+x
+0
+4
+0
+4
+376
+Bruno slowly joins Gordon, who is looking at Bruno pointing at them.
+
+
+x
+x
+0
+0
+0
+0
+377
+“And there they is! The one we have to thank for all of this. Bruno! And, you  know what, this special person got into the circus just a few days ago. So: This person needs a promotion - am I right? - and luckily we need a new circus director.”
+
+
+x
+x
+0
+4
+0
+4
+378
+Bruno is in the middle of the arena, getting celebrated by the crowd. They don’t know what to say… or think. On one hand their mind is telling them to stay and take the offer, just like the first time. On the other hand…
+
+
+362
+362
+0
+0
+0
+0
+379
+As we said. You can have a happy ending! For Bruno, for the circus, for everyone!
+Take the promotion offer
+Don’t take the offer
+380
+393
+0
+1
+0
+1
+380
+
+
+
+x
+x
+0
+0
+6
+0
+381
+The best ending for Bruno. We tried so hard to force them - we mean - to help them to get here. And they finally did it. Great job Bruno.
+
+
+x
+x
+0
+1
+0
+1
+382
+Bruno thinks for a moment. The voices in their head grow to a scream. Every single one is even louder than before.
+
+
+x
+x
+0
+0
+0
+0
+383
+TAKE.
+
+
+x
+x
+0
+1
+0
+1
+384
+THE.
+
+
+x
+x
+0
+1
+0
+1
+385
+OFFER.
+
+
+x
+x
+0
+1
+0
+1
+386
+Without another thought Bruno nods - like a robot that just follows orders.
+
+
+x
+x
+0
+0
+0
+0
+387
+All the deaths mean nothing to them. They feel the guilt still, the sadness that was part of it - but, they want to live. Maybe it is just for the voices in their head, for those sweet, sweet voices. Bruno never thought that they could actually calm them, if they let the voices and whispers take over their mind and body.
+
+
+x
+x
+0
+0
+0
+0
+388
+Enough fighting, enough mourning. Let us do what we can best.
+
+
+x
+x
+0
+1
+0
+1
+389
+“Yes, I take the offer and I will give everyone here more and more spectacular shows!”
+
+
+x
+x
+0
+2
+0
+39
+390
+“There we have it.Our new circus director - Bruno!”
+
+
+x
+x
+0
+4
+0
+4
+391
+Bruno smiles - a very weird smile.
+
+
+x
+x
+0
+0
+0
+0
+392
+Great, our final destination. Or is it Gordon?
+
+
+400
+400
+0
+1
+0
+1
+393
+There is no way out. No way to make things that happened undone.
+
+
+x
+x
+0
+0
+0
+0
+394
+Everything horrible here happened because of them. Whenever they close their eyes they see Sunshine’s acid burned corpse, they hear Harvey’s blood dripping onto the ground and feeling how Tori’s soul left his body.
+
+
+x
+x
+0
+0
+0
+0
+395
+And the worst part about it is that Bruno felt more and more numb to this. Of course guilt and sadness but mostly emptiness.
+
+
+x
+x
+0
+0
+0
+0
+396
+It would be a blessing if killing would give them a positive feeling. But it won’t. Bruno's life was not their own anymore. The only purpose that they have is harming others in order to please others. Bruno was nothing more than a puppet. They know it. Everyone knows it. Bruno is replaceable, so why bother having a miserable life? They will find another one. There are enough Bruno’s in this hell, who can take over their duty.
+
+
+x
+x
+0
+0
+0
+0
+397
+They point the gun against their head. All the noises, all the pain. It has to stop. Bruno wants silence. Even if it means forever.
+
+
+x
+x
+0
+0
+0
+0
+398
+With that they pull the trigger.
+
+
+x
+x
+0
+0
+0
+38
+399
+What a shame…They could had have a happy life, if only they took the offer.
+
+
+x
+x
+0
+1
+0
+1
+400
+
+
+
+x
+x
+0
+0
+7
+0
