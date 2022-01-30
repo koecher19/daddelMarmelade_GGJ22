@@ -3,7 +3,9 @@ guid: 07b0cf3e5b99e5740b71173d2c9924dc
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - sceneChangeTrigger: {instanceID: 0}
+  - sceneReference: {fileID: 11400000, guid: dc952c32e5d2e7e41882cfaede45b0a4, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

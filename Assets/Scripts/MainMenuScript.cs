@@ -8,6 +8,8 @@ public class MainMenuScript : MonoBehaviour
 {
     public GameObject Title;
     public GameObject Instructions;
+    public GameObject Button;
+    public tACurrentSceneManager sceneReference;
     private void Start()
     {
         
@@ -15,13 +17,23 @@ public class MainMenuScript : MonoBehaviour
 
     public void playButtonClicked()
     {
-        StartCoroutine(startRoutine());
-    }
-    IEnumerator startRoutine()
-    {
+        //StartCoroutine(startRoutine());
         Title.SetActive(false);
         Instructions.SetActive(true);
-        yield return new WaitForSeconds(6);
+        Button.SetActive(false);
+        sceneReference.currentScene = 0;
         SceneManager.LoadScene("TextAdventure");
     }
+    
+    IEnumerator startRoutine()
+    {                          
+        Title.SetActive(false);
+        Instructions.SetActive(true);
+        Button.SetActive(false);
+        sceneReference.currentScene = 0;
+        yield return new WaitForSeconds(6);
+        SceneManager.LoadScene("TextAdventure");
+
+    }
+    
 }
