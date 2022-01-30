@@ -17,14 +17,7 @@ public class tACurrentSceneManager : ScriptableObject
     public bool goodChoice6;
     private void Awake()
     {
-        goodChoice1 = false;
-        goodChoice2 = false;
-        goodChoice3 = false;
-        goodChoice4 = false;
-        goodChoice5 = false;
-        goodChoice6 = false;
-        debugEnabled = false;
-        currentScene = 0;
+
     }
     
     public bool checkGoodChoices()

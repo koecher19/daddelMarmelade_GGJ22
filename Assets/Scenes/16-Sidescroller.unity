@@ -3740,6 +3740,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7803647319062542026, guid: 3a09f2daa62f2144584d6dc7ad314488, type: 3}
+      propertyPath: sceneReference
+      value: 
+      objectReference: {fileID: 11400000, guid: dc952c32e5d2e7e41882cfaede45b0a4, type: 2}
+    - target: {fileID: 7803647319062542026, guid: 3a09f2daa62f2144584d6dc7ad314488, type: 3}
       propertyPath: sceneChangeTrigger
       value: 
       objectReference: {fileID: 1011705885}

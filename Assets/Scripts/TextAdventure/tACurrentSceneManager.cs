@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "currentTASceneManager")]
+[CreateAssetMenu(menuName = "tACurrentSceneManager")]
 public class currentTASceneManager : ScriptableObject
 {
 
