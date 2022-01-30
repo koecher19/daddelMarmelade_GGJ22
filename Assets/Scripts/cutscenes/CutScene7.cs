@@ -22,6 +22,8 @@ public class CutScene7 : MonoBehaviour
     public GameObject harveyMurderFirstFrame;
     public GameObject harveySlice;
 
+    public AudioSource kettensaegenMassaker;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -194,9 +196,11 @@ public class CutScene7 : MonoBehaviour
         /* harvey auf cuttern mit dem cuttermesser */
 
         {
+            this.kettensaegenMassaker.Play();
             this.harveySlice.SetActive(true);
             yield return new WaitForSeconds(2.8f);
             this.harveySlice.SetActive(false);
+            this.kettensaegenMassaker.Stop();
         }
 
         {
