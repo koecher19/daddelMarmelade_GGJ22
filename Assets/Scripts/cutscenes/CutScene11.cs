@@ -20,6 +20,8 @@ public class CutScene11 : MonoBehaviour
     public GameObject bucket;
     public List<GameObject> sadBalloons;
 
+    public AudioSource buuuh;
+
     void OnTriggerEnter2D(Collider2D collider)
     {
         if(collider.gameObject == this.player)
@@ -27,6 +29,9 @@ public class CutScene11 : MonoBehaviour
             StartCoroutine(startRoutine());
         }
     }
+
+
+
 
     IEnumerator startRoutine()
     {
@@ -212,6 +217,8 @@ public class CutScene11 : MonoBehaviour
         */
         //action
         {
+            this.buuuh.Play();
+
             this.sunshine.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().nextDialog();
             yield return new WaitForSeconds(1);
 

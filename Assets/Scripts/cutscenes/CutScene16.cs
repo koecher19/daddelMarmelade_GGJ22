@@ -24,6 +24,9 @@ public class CutScene16 : MonoBehaviour
     public GameObject celesteSad;
     public GameObject redScreen;
 
+    public AudioSource peng;
+    public AudioSource geheule;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -266,6 +269,7 @@ public class CutScene16 : MonoBehaviour
 
         // PENG !!!
         {
+            this.peng.Play();
             this.redScreen.SetActive(true);
             yield return new WaitForSeconds(0.1f);
             this.redScreen.SetActive(false);
@@ -285,7 +289,9 @@ public class CutScene16 : MonoBehaviour
             this.averyDead.SetActive(true);
             this.celesteSad.SetActive(true);
         }
-        yield return new WaitForSeconds(4.0f);
+        yield return new WaitForSeconds(1.0f);
+        this.geheule.Play();
+        yield return new WaitForSeconds(6.0f);
 
         /*
         NOTE: -> Publikum zufrieden, whup whup

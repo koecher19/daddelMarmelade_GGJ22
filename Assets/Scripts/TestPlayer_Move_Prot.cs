@@ -10,7 +10,9 @@ public class TestPlayer_Move_Prot : MonoBehaviour
     public float maxPosLeft;
     public float maxPosRight;
     public bool isGrounded; // is the palyer touching an obstacle or the ground?
+    public bool isWalking;
     public AudioSource jumpsound;
+    public AudioSource walksound;
 
     // Start is called before the first frame update
     void Start()
@@ -56,10 +58,22 @@ public class TestPlayer_Move_Prot : MonoBehaviour
         if(moveX != 0)
         {
             GetComponent<Animator>().SetBool("isWalking", true);
+            // if we start walking, start playing sound
+            if (!this.isWalking)
+            {
+                this.walksound.Play();
+                this.isWalking = true;
+            }
+            
         }
         else
         {
             GetComponent<Animator>().SetBool("isWalking", false);
+            if (this.isWalking)
+            {
+                this.walksound.Stop();
+                this.isWalking = false;
+            }
         }
 
         // PLAYER DIRECTIONS

@@ -20,6 +20,9 @@ public class CutScene7 : MonoBehaviour
     public GameObject emptyBox;
     public GameObject harveyMurder;
     public GameObject harveyMurderFirstFrame;
+    public GameObject harveySlice;
+
+    public AudioSource kettensaegenMassaker;
 
     // Start is called before the first frame update
     void Start()
@@ -74,6 +77,7 @@ public class CutScene7 : MonoBehaviour
             this.harveyDead.SetActive(false);
             this.harveyMurder.SetActive(false);
             this.harveyMurderFirstFrame.SetActive(false);
+            this.harveySlice.SetActive(false);
 
             this.emptyBox.SetActive(true);
             this.eugene.SetActive(true);
@@ -104,7 +108,6 @@ public class CutScene7 : MonoBehaviour
         }
 
 
-
         /*
         Nimue standing in front of the box with Harvey in it:
         "What if I tell you that you can make two men out of one? Would you want that?"
@@ -127,6 +130,7 @@ public class CutScene7 : MonoBehaviour
         // ACTION
         // dialog
         {
+
             // "What if I tell you that you can make two men out of one? Would you want that?"
             this.nimue.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
             yield return new WaitForSeconds(4);
@@ -180,6 +184,25 @@ public class CutScene7 : MonoBehaviour
         /*
         NOTE: -> schwarzer bildschirm und danach sägt Nimue die Person auseinander:
          */
+        {
+            this.blackScreen.SetActive(true);
+            yield return new WaitForSeconds(blackoutTime);
+            this.blackScreen.SetActive(false);
+        }
+
+        // preparations:
+        this.harveyAlive.SetActive(false);
+
+        /* harvey auf cuttern mit dem cuttermesser */
+
+        {
+            this.kettensaegenMassaker.Play();
+            this.harveySlice.SetActive(true);
+            yield return new WaitForSeconds(2.8f);
+            this.harveySlice.SetActive(false);
+            this.kettensaegenMassaker.Stop();
+        }
+
         {
             this.blackScreen.SetActive(true);
             yield return new WaitForSeconds(blackoutTime);
