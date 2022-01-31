@@ -419,6 +419,7 @@ MonoBehaviour:
   interchanges: 0
   collectOnClick: 0
   changeWith: {fileID: 0}
+  thisObject: {fileID: 9048069829346782110}
 --- !u!1 &9048069830395550766
 GameObject:
   m_ObjectHideFlags: 0

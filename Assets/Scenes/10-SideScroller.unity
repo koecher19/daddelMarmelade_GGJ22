@@ -146,6 +146,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9048069828562475159, guid: 152a0382d205879449fc953a1c8a1134, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 9048069828562475159, guid: 152a0382d205879449fc953a1c8a1134, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 9048069828973402585, guid: 152a0382d205879449fc953a1c8a1134, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -356,6 +364,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9048069829034669486, guid: 152a0382d205879449fc953a1c8a1134, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1754827408}
     - target: {fileID: 9048069829346782106, guid: 152a0382d205879449fc953a1c8a1134, type: 3}
       propertyPath: inventory
       value: 
@@ -730,6 +742,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9048069828562475159, guid: 152a0382d205879449fc953a1c8a1134, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9048069828562475159, guid: 152a0382d205879449fc953a1c8a1134, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9048069828973402585, guid: 152a0382d205879449fc953a1c8a1134, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -849,11 +869,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9048069828562475159, guid: 152a0382d205879449fc953a1c8a1134, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 2.75
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 9048069828562475159, guid: 152a0382d205879449fc953a1c8a1134, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 4
+      value: 2.7
       objectReference: {fileID: 0}
     - target: {fileID: 9048069828973402585, guid: 152a0382d205879449fc953a1c8a1134, type: 3}
       propertyPath: m_SizeDelta.x
@@ -950,11 +970,11 @@ PrefabInstance:
       objectReference: {fileID: 196374112, guid: cd1c8e57af84a7843adf4892b5ed66cf, type: 3}
     - target: {fileID: 9048069828562475156, guid: 152a0382d205879449fc953a1c8a1134, type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9048069828562475156, guid: 152a0382d205879449fc953a1c8a1134, type: 3}
       propertyPath: m_SortingLayerID
-      value: 14665373
+      value: -1919835177
       objectReference: {fileID: 0}
     - target: {fileID: 9048069828562475157, guid: 152a0382d205879449fc953a1c8a1134, type: 3}
       propertyPath: m_LocalPosition.x
@@ -984,6 +1004,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9048069829034669486, guid: 152a0382d205879449fc953a1c8a1134, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1754827408}
+    - target: {fileID: 9048069829346782106, guid: 152a0382d205879449fc953a1c8a1134, type: 3}
+      propertyPath: changeFor
+      value: 
+      objectReference: {fileID: 2058153524}
     - target: {fileID: 9048069829346782106, guid: 152a0382d205879449fc953a1c8a1134, type: 3}
       propertyPath: inventory
       value: 
@@ -1773,6 +1801,11 @@ PrefabInstance:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 152096254535925910, guid: b6a1028d33f4d7b43ad732fbc19c6677, type: 3}
   m_PrefabInstance: {fileID: 152096253625081052}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2058153524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9048069829346782110, guid: 152a0382d205879449fc953a1c8a1134, type: 3}
+  m_PrefabInstance: {fileID: 245184648}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &152096253625081052
 PrefabInstance:

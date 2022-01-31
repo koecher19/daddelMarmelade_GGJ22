@@ -42,6 +42,7 @@ public class Interact : MonoBehaviour
         if (this.interchangable)
         {
             this.changeWith.transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            this.changeWith.transform.GetChild(0).gameObject.SetActive(false);
         }
     }
 
@@ -69,8 +70,11 @@ public class Interact : MonoBehaviour
                 if (this.interchangable)
                 {
                     this.changeWith.transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>().enabled = true;
+                    this.changeWith.transform.GetChild(0).gameObject.SetActive(true);
                     // deactivate panel
                     this.transform.GetChild(0).gameObject.SetActive(false);
+                    // deactivate sprite + collisionbox
+                    this.transform.GetChild(1).gameObject.SetActive(false);
                 }
 
                 // to use other item you have to click again
