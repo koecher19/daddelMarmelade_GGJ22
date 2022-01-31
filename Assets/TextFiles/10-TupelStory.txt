@@ -3794,7 +3794,7 @@ Take the promotion offer
 Don’t take the offer
 380
 393
-0
+1
 1
 0
 1
