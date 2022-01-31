@@ -94,7 +94,7 @@ public class CutScene16 : MonoBehaviour
             // eugene dialog:
             // “Another day, another show! This time two of our greatest stars enter the stage! Take a step back, because you can hear them roar - Get yourself ready for Avery and Celeste!”
             this.eugene.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(9);
+            yield return new WaitForSeconds(10);
             this.eugene.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
 
             yield return new WaitForSeconds(1);
@@ -141,7 +141,7 @@ public class CutScene16 : MonoBehaviour
         {
             // No, EUGENE. Stay on stage for a moment for one moment.”
             this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(4);
             this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
 
         }
@@ -167,18 +167,18 @@ public class CutScene16 : MonoBehaviour
             // “This trick is for you, the one man destroying everything. The root of all the bad things happening. No more Changes! Celeste…”
             this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().nextDialog();
             this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(8);
+            yield return new WaitForSeconds(10);
             this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
 
             // “You know what to do.”
             this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().nextDialog();
             this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(4);
             this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
 
             // “Tatjana, Pesto. Let's go, it's playtime!”
             this.celeste.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(5);
             this.celeste.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
         }
         yield return new WaitForSeconds(1);
@@ -221,7 +221,7 @@ public class CutScene16 : MonoBehaviour
 
             // tatjana sagt rawr weil irgendwo muss ich serotonin her bekommen
             this.tatjana.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(2);
             this.tatjana.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
 
 
@@ -231,7 +231,7 @@ public class CutScene16 : MonoBehaviour
             // “No matter how much you cheer, with his death all of this should end soon!”
             this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().nextDialog();
             this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(4);
+            yield return new WaitForSeconds(6);
             this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
         }
 
@@ -259,7 +259,7 @@ public class CutScene16 : MonoBehaviour
             // “Celeste we did it, we never will lose someone ag…”
             this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().nextDialog();
             this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().showDialog();
-            yield return new WaitForSeconds(4);
+            yield return new WaitForSeconds(6);
             this.avery.transform.GetChild(1).gameObject.GetComponent<SceneCharacter>().stopDialog();
         }
 

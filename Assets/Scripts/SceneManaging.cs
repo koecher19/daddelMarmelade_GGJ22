@@ -26,7 +26,7 @@ public class SceneManaging : MonoBehaviour
         {
             ("6-Sidescroller", "7-Sidescroller", 73),
             ("7-Sidescroller", "TextAdventure", 73),
-            ("10-Sidescroller", "11-Sidescroller", 253),
+            ("10-SideScroller", "11-Sidescroller", 253),
             ("11-Sidescroller", "TextAdventure", 253),
             ("15-Sidescroller", "16-Sidescroller", 367),
             ("16-Sidescroller", "TextAdventure", 367)

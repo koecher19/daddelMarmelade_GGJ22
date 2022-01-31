@@ -5,6 +5,8 @@ using UnityEngine;
 public class skskskss : MonoBehaviour
 {
     public AudioSource spspspspsp;
+    public bool spriteActive;
+    public bool wasSpriteActive = false;
 
     // Start is called before the first frame update
     void Start()
@@ -15,12 +17,12 @@ public class skskskss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        this.spriteActive = gameObject.transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>().enabled;
+        if(this.wasSpriteActive != this.spriteActive)
+        {
+            this.spspspspsp.Play();
+            this.wasSpriteActive = true;
+        }
     }
 
-    void OnMouseOver()
-    {
-        Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAA");
-        this.spspspspsp.Play();
-    }
 }
